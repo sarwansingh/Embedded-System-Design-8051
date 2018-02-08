@@ -1,0 +1,39 @@
+C51 COMPILER V8.08   P                                                                     02/07/2018 13:34:48 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE P
+OBJECT MODULE PLACED IN p.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE p.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          void main()
+   3          {       int i;
+   4   1              while(1){
+   5   2                 P2=0xaa;   //1010 1010
+   6   2                 for(i=0;i<10700 ;i++){} // generate delay
+   7   2                 P2=0x55;       //0101 0101 
+   8   2                 for(i=0;i<107 ;i++){}        // generate delay
+   9   2                  P2=0x53;      //0101 0101 
+  10   2                 for(i=0;i<10700 ;i++){}      // generate delay
+  11   2                  P2=0x55;      //0101 0101 
+  12   2                 for(i=0;i<107 ;i++){}        // generate delay
+  13   2                  P2=0x55;      //0101 0101 
+  14   2                 for(i=0;i<10700 ;i++){}      // generate delay
+  15   2         }
+  16   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     92    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
