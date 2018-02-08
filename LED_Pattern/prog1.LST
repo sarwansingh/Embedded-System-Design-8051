@@ -1,0 +1,36 @@
+C51 COMPILER V8.08   PROG1                                                                 02/08/2018 10:52:43 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE PROG1
+OBJECT MODULE PLACED IN prog1.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE prog1.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          // first LED interfacing code 
+   2          #include <reg51.h> // header file having addresses for each port 
+   3          
+   4          void main()
+   5          {       int i; 
+   6   1              while(1) // infinite loop for each embedded program 
+   7   1              {
+   8   2                      P2 = 0xff; // 1111 1111 assign port 2 with all ones.
+   9   2                      for (i=0 ; i<32000; i++); // donothing loop to insert delay
+  10   2                      P2 = 0x00; // 0000 0000 assign port 2 with all zeros.
+  11   2                      for (i=0 ; i<32000; i++){ } // donothing loop to insert delay
+  12   2              }
+  13   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     39    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
