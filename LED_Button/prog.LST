@@ -1,0 +1,97 @@
+C51 COMPILER V8.08   PROG                                                                  02/09/2018 12:09:34 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE PROG
+OBJECT MODULE PLACED IN prog.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE prog.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          void my_delay(int delay){   
+   3   1              int i,j; 
+   4   1              for ( j=0 ; j< delay ; j++){
+   5   2                      for(i=0 ; i<30000;i++) ;        // 1 sec 
+   6   2              }
+   7   1      }
+   8          /*
+   9          by default P1 is 1111 1111
+  10          if Button is connected to P1.0 and other side of button is on ground
+  11          then if button is pressed P1 will become 1111 1110      (0xfe or 254)
+  12          */
+  13          void main()
+  14          {        int button_status =0 ; //0-off , 1-on
+  15   1              while(1){
+  16   2                       // check the status of the button
+  17   2                       if ( P1== 0xfe){
+  18   3                              if ( button_status==1) 
+  19   3                                       button_status=0;
+  20   3                              else button_status =1;
+  21   3                              while( P1== 0xfe); // wait till user releases the button 
+  22   3                       }
+  23   2                      
+  24   2                       if (button_status == 1)        P2= 0x00;       // all on               
+  25   2                       else                                           P2= 0xff; //all off  
+  26   2              }
+  27   1      }               //my_delay(3);
+  28          /* v1
+  29                  while(1){
+  30                          if ( P1== 0xfe){
+  31                                  P2= 0x0f;  my_delay(3);
+  32                                  P2= 0xf0;  my_delay(3);
+  33                          }
+  34                  }
+  35          
+  36                  version 2
+  37                  while(1){
+  38                           if ( P1== 0xfe)
+  39                                  P2= 0x0f;                       
+  40                           else
+  41                                  P2= 0xf0;  
+  42                          my_delay(3);
+  43                  }
+  44          
+  45                  version3
+  46                          while(1){
+  47                           if ( P1== 0xfe)
+  48                                  P2= 0x00;       // all on               
+  49                           else
+  50                                  P2= 0xff; //all off  
+  51                          my_delay(3);
+  52                  }
+  53                  version4
+  54                  int button_status =0 ; //0-off , 1-on
+  55                  while(1){
+C51 COMPILER V8.08   PROG                                                                  02/09/2018 12:09:34 PAGE 2   
+
+  56                           // check the status of the button
+  57                           if ( P1== 0xfe) button_status=1;
+  58                          
+  59                           if (button_status == 1)        P2= 0x00;       // all on               
+  60                           else                                           P2= 0xff; //all off  
+  61                  }
+  62                  version 5
+  63                   // check the status of the button
+  64                           if ( P1== 0xfe){
+  65                                  if ( button_status==1) 
+  66                                           button_status=0;
+  67                                  else button_status =1;
+  68                           }
+  69                          
+  70                           if (button_status == 1)        P2= 0x00;       // all on               
+  71                           else                                           P2= 0xff; //all off  
+  72          */
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     81    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
