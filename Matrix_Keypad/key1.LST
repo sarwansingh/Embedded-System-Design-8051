@@ -1,0 +1,72 @@
+C51 COMPILER V8.08   KEY1                                                                  02/13/2018 12:24:05 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE KEY1
+OBJECT MODULE PLACED IN key1.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE key1.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          /*
+   3                          C1              C2              C3
+   4                  -----------------------
+   5          R1      |       1               2               3
+   6          R2      |       4               5               6
+   7          R3      |       7               8               9
+   8          R1- P1.0
+   9          R2-     P1.1
+  10          R3- P1.2
+  11          C1- P1.3
+  12          C2- P1.4
+  13          C3- P1.5        
+  14          */
+  15          sbit R1 = P1^0 ;
+  16          sbit R2 = P1^1 ;
+  17          sbit R3 = P1^2  ;
+  18          sbit C1 = P1^3  ;
+  19          sbit C2 = P1^4  ;
+  20          sbit C3 = P1^5  ;
+  21          void my_delay(int s){
+  22   1              int i; 
+  23   1              for (;s>0; s--)
+  24   1                      for (i=0;i<30000;i++);
+  25   1      }
+  26          void main()
+  27          {       int i ;
+  28   1              for (i=0 ;i<10 ; i++ ){  P2=i;  my_delay(1); } 
+  29   1              while (1) {
+  30   2               // matrix keypad logic
+  31   2               R1=R2=R3=C1=C2=C3 = 1;
+  32   2               C1 = 0;
+  33   2               if (R1==0)     P2= 1; // print 1 
+  34   2               if (R2==0)     P2= 4; // print 4 
+  35   2               if (R3==0)     P2= 7; // print 7 
+  36   2               C1=1; C2=0;
+  37   2               if (R1==0)     P2= 2; // print  2
+  38   2               if (R2==0)     P2= 5; // print 5
+  39   2               if (R3==0)     P2= 8; // print 8
+  40   2               C2=1; C3=0;
+  41   2               if (R1==0)     P2= 3; // print  3
+  42   2               if (R2==0)     P2= 6; // print 6
+  43   2               if (R3==0)     P2= 9; // print 9
+  44   2               C3=1;
+  45   2               my_delay(4);   
+  46   2              }
+  47   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    143    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+C51 COMPILER V8.08   KEY1                                                                  02/13/2018 12:24:05 PAGE 2   
+
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,28 @@
+C51 COMPILER V8.08   SEVENSEG                                                              02/13/2018 12:58:00 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE SEVENSEG
+OBJECT MODULE PLACED IN sevenseg.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE sevenseg.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          void main(){
+   3   1              P2= 0xc0;
+   4   1              P2= 0xf9;
+   5   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =      7    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
