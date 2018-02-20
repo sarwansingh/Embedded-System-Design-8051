@@ -1,0 +1,84 @@
+C51 COMPILER V8.08   LCDPROG                                                               02/16/2018 11:38:02 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE LCDPROG
+OBJECT MODULE PLACED IN lcdprog.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE lcdprog.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.H>
+   2          #define LCDPORT P2
+   3          sbit RS=P3^0;
+   4          sbit E =P3^1;
+   5          
+   6          void my_delay(int i)
+   7          {int j; 
+   8   1              for (;i>0;i--)
+   9   1                      for (j=0; j<30000;j++){}
+  10   1      }
+  11          void LCD_Cmd ( int  i ) {
+  12   1            RS = 0;
+  13   1            E  = 1 ;   LCDPORT = i ;  my_delay(1);      E  = 0 ;
+  14   1      }
+  15          void LCD_Data ( int  i ) {
+  16   1            RS = 1;
+  17   1            E  = 1 ;   LCDPORT = i ;  my_delay(1);     E  = 0 ;
+  18   1      }
+  19          
+  20          void LCD_init()
+  21          {
+  22   1                      LCD_Cmd(0x38);   
+  23   1                      LCD_Cmd(0x38);   
+  24   1                      LCD_Cmd(0x01);   
+  25   1                      LCD_Cmd(0x0e);
+  26   1      }
+  27          char a[]="India is great"; 
+  28          char b[]="PJ111 is champ";
+  29          void main()
+  30          {               int i; 
+  31   1                      LCD_init();      
+  32   1                      while(1){
+  33   2                              for (i=0; a[i] !='\0'; i++)
+  34   2                                      LCD_Data(a[i]);
+  35   2                              // my_delay(1);
+  36   2                              LCD_Cmd(0xC0);
+  37   2                              for (i=0; b[i] !='\0'; i++)
+  38   2                                      LCD_Data(b[i]);
+  39   2                      }
+  40   1      
+  41   1      }
+  42          /* version 1
+  43                          LCD_Cmd(0x38);   my_delay(1);
+  44                          LCD_Cmd(0x38);   my_delay(1);
+  45                          LCD_Cmd(0x01);   my_delay(1);
+  46                          LCD_Cmd(0x0e);   my_delay(1);
+  47                          LCD_Data('I');   my_delay(1);
+  48                          
+  49                     version 2
+  50                          LCD_Cmd(0x38);   
+  51                          LCD_Cmd(0x38);   
+  52                          LCD_Cmd(0x01);   
+  53                          LCD_Cmd(0x0e);   
+  54                          while(1){
+  55                                  LCD_Data('I');
+C51 COMPILER V8.08   LCDPROG                                                               02/16/2018 11:38:02 PAGE 2   
+
+  56                                  LCD_Data('n');
+  57                                  LCD_Data('d');   my_delay(1);
+  58                          }
+  59                          */
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    145    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     30    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

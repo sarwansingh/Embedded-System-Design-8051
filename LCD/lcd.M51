@@ -1,0 +1,147 @@
+BL51 BANKED LINKER/LOCATER V6.05                                                        02/16/2018  11:38:03  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.05, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE lcdprog.obj TO lcd
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  lcdprog.obj (LCDPROG)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  lcd (LCDPROG)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     001EH     UNIT         ?DT?LCDPROG
+            IDATA   0026H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     008CH     UNIT         ?C_C51STARTUP
+            CODE    088CH     003CH     UNIT         ?PR?MAIN?LCDPROG
+            CODE    08C8H     0029H     UNIT         ?PR?_MY_DELAY?LCDPROG
+            CODE    08F1H     0023H     UNIT         ?C_INITSEG
+            CODE    0914H     001CH     UNIT         ?PR?LCD_INIT?LCDPROG
+            CODE    0930H     0008H     UNIT         ?PR?_LCD_CMD?LCDPROG
+            CODE    0938H     0008H     UNIT         ?PR?_LCD_DATA?LCDPROG
+
+
+
+OVERLAY MAP OF MODULE:   lcd (LCDPROG)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?LCDPROG
+  +--> ?C_INITSEG
+
+?PR?MAIN?LCDPROG
+  +--> ?PR?LCD_INIT?LCDPROG
+  +--> ?PR?_LCD_DATA?LCDPROG
+  +--> ?PR?_LCD_CMD?LCDPROG
+
+?PR?LCD_INIT?LCDPROG
+  +--> ?PR?_LCD_CMD?LCDPROG
+
+?PR?_LCD_CMD?LCDPROG
+  +--> ?PR?_MY_DELAY?LCDPROG
+
+BL51 BANKED LINKER/LOCATER V6.05                                                      02/16/2018  11:38:03  PAGE 2
+
+
+?PR?_LCD_DATA?LCDPROG
+  +--> ?PR?_MY_DELAY?LCDPROG
+
+
+
+SYMBOL TABLE OF MODULE:  lcd (LCDPROG)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        LCDPROG
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  B:00B0H.0       PUBLIC        RS
+  C:088CH         PUBLIC        main
+  C:0938H         PUBLIC        _LCD_Data
+  B:00B0H.1       PUBLIC        E
+  C:0930H         PUBLIC        _LCD_Cmd
+  C:08D0H         PUBLIC        _my_delay
+  D:0008H         PUBLIC        a
+  D:0017H         PUBLIC        b
+  C:0914H         PUBLIC        LCD_init
+  -------         PROC          L?0024
+  -------         ENDPROC       L?0024
+  -------         PROC          _MY_DELAY
+  D:0006H         SYMBOL        i
+  -------         DO            
+  D:0004H         SYMBOL        j
+  -------         ENDDO         
+  C:08D0H         LINE#         6
+  C:08D0H         LINE#         7
+  C:08D0H         LINE#         8
+  C:08DBH         LINE#         9
+  C:08F0H         LINE#         10
+  -------         ENDPROC       _MY_DELAY
+  -------         PROC          _LCD_CMD
+  D:0006H         SYMBOL        i
+  C:0930H         LINE#         11
+  C:0930H         LINE#         12
+  C:0932H         LINE#         13
+  C:0937H         LINE#         14
+  -------         ENDPROC       _LCD_CMD
+  -------         PROC          _LCD_DATA
+  D:0006H         SYMBOL        i
+  C:0938H         LINE#         15
+  C:0938H         LINE#         16
+  C:093AH         LINE#         17
+  C:093FH         LINE#         18
+  -------         ENDPROC       _LCD_DATA
+  -------         PROC          LCD_INIT
+  C:0914H         LINE#         20
+  C:0914H         LINE#         21
+  C:0914H         LINE#         22
+  C:091BH         LINE#         23
+  C:0922H         LINE#         24
+  C:0929H         LINE#         25
+BL51 BANKED LINKER/LOCATER V6.05                                                      02/16/2018  11:38:03  PAGE 3
+
+
+  -------         ENDPROC       LCD_INIT
+  -------         PROC          MAIN
+  -------         DO            
+  D:0002H         SYMBOL        i
+  -------         ENDDO         
+  C:088CH         LINE#         29
+  C:088CH         LINE#         30
+  C:088CH         LINE#         31
+  C:088FH         LINE#         32
+  C:088FH         LINE#         33
+  C:089AH         LINE#         34
+  C:08A8H         LINE#         36
+  C:08AFH         LINE#         37
+  C:08BAH         LINE#         38
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        LCDPROG
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 00B3H BYTE ( 8%) *
+******************************************************************************
+
+Program Size: data=39.0 xdata=0 code=323
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
