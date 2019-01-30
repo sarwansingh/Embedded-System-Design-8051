@@ -1,0 +1,106 @@
+BL51 BANKED LINKER/LOCATER V6.05                                                        01/30/2019  12:45:48  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.05, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE prog4.obj TO button
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  prog4.obj (PROG4)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  button (PROG4)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     004DH     UNIT         ?PR?MAIN?PROG4
+            CODE    084DH     000FH     UNIT         ?PR?MYDELAY?PROG4
+            CODE    085CH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   button (PROG4)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?PROG4
+
+?PR?MAIN?PROG4
+  +--> ?PR?MYDELAY?PROG4
+
+
+
+SYMBOL TABLE OF MODULE:  button (PROG4)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        PROG4
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  C:0800H         PUBLIC        main
+  C:084DH         PUBLIC        mydelay
+  B:00B0H.0       PUBLIC        but1
+  -------         PROC          MYDELAY
+BL51 BANKED LINKER/LOCATER V6.05                                                      01/30/2019  12:45:48  PAGE 2
+
+
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:084DH         LINE#         4
+  C:084DH         LINE#         5
+  C:0850H         LINE#         6
+  C:085BH         LINE#         7
+  -------         ENDPROC       MYDELAY
+  -------         PROC          MAIN
+  -------         DO            
+  D:0004H         SYMBOL        butStatus
+  -------         ENDDO         
+  C:0800H         LINE#         8
+  C:0800H         LINE#         9
+  C:0803H         LINE#         10
+  C:0805H         LINE#         11
+  C:0805H         LINE#         12
+  C:0808H         LINE#         13
+  C:080BH         LINE#         14
+  C:0810H         LINE#         15
+  C:081FH         LINE#         16
+  C:081FH         LINE#         17
+  C:0825H         LINE#         19
+  C:082BH         LINE#         20
+  C:0831H         LINE#         21
+  C:0831H         LINE#         22
+  C:0837H         LINE#         24
+  C:083DH         LINE#         25
+  C:0843H         LINE#         26
+  C:0843H         LINE#         27
+  C:0849H         LINE#         29
+  C:084BH         LINE#         30
+  C:084BH         LINE#         33
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        PROG4
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 005CH BYTE ( 4%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=107
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

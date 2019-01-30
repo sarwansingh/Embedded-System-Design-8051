@@ -1,0 +1,111 @@
+BL51 BANKED LINKER/LOCATER V6.05                                                        01/29/2019  13:27:58  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.05, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE prog2.obj TO ledProj
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  prog2.obj (PROG2)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?SIDIV)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?UIDIV)
+
+
+LINK MAP OF MODULE:  ledProj (PROG2)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0004H     UNIT         _DATA_GROUP_
+            IDATA   000CH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     008BH     UNIT         ?C?LIB_CODE
+            CODE    088BH     0051H     UNIT         ?PR?MAIN?PROG2
+            CODE    08DCH     0020H     UNIT         ?PR?_MYDELAY?PROG2
+            CODE    08FCH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   ledProj (PROG2)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?PROG2
+
+?PR?MAIN?PROG2                 0008H    0004H
+  +--> ?PR?_MYDELAY?PROG2
+
+
+
+SYMBOL TABLE OF MODULE:  ledProj (PROG2)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        PROG2
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  C:088BH         PUBLIC        main
+BL51 BANKED LINKER/LOCATER V6.05                                                      01/29/2019  13:27:58  PAGE 2
+
+
+  C:08DCH         PUBLIC        _mydelay
+  -------         PROC          _MYDELAY
+  D:0006H         SYMBOL        d
+  -------         DO            
+  D:0002H         SYMBOL        i
+  D:0004H         SYMBOL        j
+  -------         ENDDO         
+  C:08DCH         LINE#         3
+  C:08DCH         LINE#         4
+  C:08DCH         LINE#         5
+  C:08E6H         LINE#         6
+  C:08F4H         LINE#         7
+  C:08FBH         LINE#         8
+  -------         ENDPROC       _MYDELAY
+  -------         PROC          MAIN
+  -------         DO            
+  D:0082H         SYMBOL        k
+  D:0008H         SYMBOL        h
+  D:000AH         SYMBOL        dd
+  -------         ENDDO         
+  C:088BH         LINE#         9
+  C:088BH         LINE#         10
+  C:0891H         LINE#         11
+  C:0891H         LINE#         12
+  C:0896H         LINE#         13
+  C:089BH         LINE#         14
+  C:08A5H         LINE#         15
+  C:08AFH         LINE#         16
+  C:08B8H         LINE#         17
+  C:08C7H         LINE#         18
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        PROG2
+
+  -------         MODULE        ?C?SIDIV
+  C:0800H         PUBLIC        ?C?SIDIV
+  -------         ENDMOD        ?C?SIDIV
+
+  -------         MODULE        ?C?UIDIV
+  C:0836H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0071H BYTE ( 5%) *
+******************************************************************************
+
+Program Size: data=13.0 xdata=0 code=267
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
