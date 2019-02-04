@@ -1,0 +1,48 @@
+C51 COMPILER V8.08   PROG3                                                                 01/30/2019 12:21:03 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE PROG3
+OBJECT MODULE PLACED IN prog3.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE prog3.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          sbit but1= P3^0;
+   3          sbit LED1= P2^0;
+   4          void mydelay(){
+   5   1              int i =0;
+   6   1              for (i=0;i<30000;i++);
+   7   1      }
+   8          void main()
+   9          {       int butStatus=0; 
+  10   1              P2=0x00; 
+  11   1              while (1){
+  12   2                if (but1 ==0 )        {        //button is pressed
+  13   3                       // toggle the value of a 
+  14   3                       if (butStatus==1) butStatus=0; 
+  15   3                       else butStatus=1;
+  16   3      
+  17   3                       while (but1 ==0 ); // wait here till button is released 
+  18   3      
+  19   3                       if (butStatus==1){LED1 =1; mydelay(); }
+  20   3                       else {LED1 =0; mydelay(); }
+  21   3                       
+  22   3                }
+  23   2      
+  24   2              }
+  25   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     60    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

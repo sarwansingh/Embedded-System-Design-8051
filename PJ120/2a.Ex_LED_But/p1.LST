@@ -1,0 +1,58 @@
+C51 COMPILER V8.08   P1                                                                    01/31/2019 11:40:18 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE P1
+OBJECT MODULE PLACED IN p1.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE p1.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1                                  #include<reg51.h>
+   2          sbit but1= P3^0;
+   3          sbit LED1= P2^0;
+   4          void mydelay(){
+   5   1              int i =0;
+   6   1              for (i=0;i<30000;i++);
+   7   1      }
+   8          void main()
+   9          {       int butStatus=0; 
+  10   1              P2=0x00; 
+  11   1       
+  12   1              while (1){
+  13   2                if (but1 ==0 )        {        //button is pressed
+  14   3                       while (but1 ==0 ); // wait here till button is released 
+  15   3                        butStatus++;  
+  16   3                        if (butStatus >3) butStatus =1;        
+  17   3                }
+  18   2                if (butStatus ==1){
+  19   3                      //pattern1 
+  20   3                        P2=0xff; mydelay(); 
+  21   3                        P2 =0x00; mydelay();  
+  22   3                }
+  23   2                 if (butStatus ==2){
+  24   3                        //pattern2
+  25   3                        P2 =0xaa; mydelay(); 
+  26   3                        P2 =0x55; mydelay(); 
+  27   3                      }
+  28   2                if (butStatus ==3){
+  29   3                        //pattern 3
+  30   3                        P2 = 0x00; 
+  31   3                      }
+  32   2                
+  33   2      
+  34   2              }
+  35   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     92    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
