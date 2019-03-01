@@ -1,0 +1,173 @@
+BL51 BANKED LINKER/LOCATER V6.05                                                        02/11/2019  11:10:38  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.05, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE P2_lcd_keypad.obj TO lcd-keypad
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  P2_lcd_keypad.obj (P2_LCD_KEYPAD)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?IMUL)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  lcd-keypad (P2_LCD_KEYPAD)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0006H     UNIT         ?DT?P2_LCD_KEYPAD
+            IDATA   000EH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0164H     UNIT         ?PR?MAIN?P2_LCD_KEYPAD
+            CODE    0964H     008CH     UNIT         ?C_C51STARTUP
+            CODE    09F0H     002BH     UNIT         ?PR?_MY_DELAY?P2_LCD_KEYPAD
+            CODE    0A1BH     0015H     UNIT         ?PR?_LCD_DATA?P2_LCD_KEYPAD
+            CODE    0A30H     0012H     UNIT         ?C?LIB_CODE
+            CODE    0A42H     000DH     UNIT         ?C_INITSEG
+            CODE    0A4FH     000CH     UNIT         ?PR?_LCD_CMD?P2_LCD_KEYPAD
+
+
+
+OVERLAY MAP OF MODULE:   lcd-keypad (P2_LCD_KEYPAD)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?P2_LCD_KEYPAD
+  +--> ?C_INITSEG
+
+?PR?MAIN?P2_LCD_KEYPAD
+  +--> ?PR?_LCD_CMD?P2_LCD_KEYPAD
+  +--> ?PR?_LCD_DATA?P2_LCD_KEYPAD
+  +--> ?PR?_MY_DELAY?P2_LCD_KEYPAD
+
+?PR?_LCD_CMD?P2_LCD_KEYPAD
+  +--> ?PR?_MY_DELAY?P2_LCD_KEYPAD
+
+?PR?_LCD_DATA?P2_LCD_KEYPAD
+  +--> ?PR?_MY_DELAY?P2_LCD_KEYPAD
+BL51 BANKED LINKER/LOCATER V6.05                                                      02/11/2019  11:10:38  PAGE 2
+
+
+
+
+
+SYMBOL TABLE OF MODULE:  lcd-keypad (P2_LCD_KEYPAD)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        P2_LCD_KEYPAD
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  B:00B0H.5       PUBLIC        R1
+  D:00B0H         PUBLIC        P3
+  B:00B0H.6       PUBLIC        R2
+  B:00B0H.7       PUBLIC        R3
+  D:0008H         PUBLIC        rishi
+  B:00B0H.0       PUBLIC        RS
+  C:0800H         PUBLIC        main
+  C:0A24H         PUBLIC        _LCD_Data
+  B:00B0H.1       PUBLIC        E
+  D:000AH         PUBLIC        cnt
+  C:0A4FH         PUBLIC        _LCD_Cmd
+  C:09FAH         PUBLIC        _my_delay
+  D:000CH         PUBLIC        n
+  B:00B0H.4       PUBLIC        C1
+  B:00B0H.3       PUBLIC        C2
+  B:00B0H.2       PUBLIC        C3
+  C:09F0H         SYMBOL        L?0033
+  C:09F6H         SYMBOL        L?0034
+  -------         PROC          L?0032
+  -------         ENDPROC       L?0032
+  C:09F0H         SYMBOL        L?0033
+  C:09F6H         SYMBOL        L?0034
+  -------         PROC          _MY_DELAY
+  D:0006H         SYMBOL        i
+  -------         DO            
+  D:0004H         SYMBOL        j
+  -------         ENDDO         
+  C:09FAH         LINE#         8
+  C:09FAH         LINE#         9
+  C:09FAH         LINE#         10
+  C:0A05H         LINE#         11
+  C:0A1AH         LINE#         12
+  -------         ENDPROC       _MY_DELAY
+  -------         PROC          _LCD_CMD
+  D:0006H         SYMBOL        i
+  C:0A4FH         LINE#         13
+  C:0A4FH         LINE#         14
+  C:0A53H         LINE#         15
+  C:0A5AH         LINE#         16
+  -------         ENDPROC       _LCD_CMD
+  -------         PROC          L?0035
+  -------         ENDPROC       L?0035
+  -------         PROC          _LCD_DATA
+  D:0006H         SYMBOL        i
+  C:0A24H         LINE#         17
+  C:0A24H         LINE#         18
+BL51 BANKED LINKER/LOCATER V6.05                                                      02/11/2019  11:10:38  PAGE 3
+
+
+  C:0A28H         LINE#         19
+  C:0A2FH         LINE#         20
+  -------         ENDPROC       _LCD_DATA
+  -------         PROC          MAIN
+  C:0800H         LINE#         22
+  C:0800H         LINE#         23
+  C:0800H         LINE#         24
+  C:0815H         LINE#         25
+  C:0821H         LINE#         26
+  C:082CH         LINE#         27
+  C:082EH         LINE#         28
+  C:084BH         LINE#         29
+  C:0866H         LINE#         30
+  C:0873H         LINE#         31
+  C:0877H         LINE#         32
+  C:0892H         LINE#         33
+  C:08ADH         LINE#         34
+  C:08C8H         LINE#         35
+  C:08CCH         LINE#         36
+  C:08E7H         LINE#         37
+  C:0902H         LINE#         38
+  C:090DH         LINE#         39
+  C:091AH         LINE#         40
+  C:0922H         LINE#         41
+  C:0922H         LINE#         42
+  C:092FH         LINE#         43
+  C:0932H         LINE#         44
+  C:0939H         LINE#         45
+  C:093EH         LINE#         46
+  C:094BH         LINE#         47
+  C:0950H         LINE#         48
+  C:095EH         LINE#         49
+  C:095EH         LINE#         50
+  C:095EH         LINE#         51
+  C:0960H         LINE#         52
+  C:0963H         LINE#         54
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        P2_LCD_KEYPAD
+
+  -------         MODULE        ?C?IMUL
+  C:0A30H         PUBLIC        ?C?IMUL
+  -------         ENDMOD        ?C?IMUL
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 01BCH BYTE (21%) *
+******************************************************************************
+
+Program Size: data=15.0 xdata=0 code=606
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
