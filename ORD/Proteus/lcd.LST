@@ -1,0 +1,63 @@
+C51 COMPILER V8.08   LCD                                                                   08/06/2019 14:58:50 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE LCD
+OBJECT MODULE PLACED IN lcd.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE lcd.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1            
+   2          #include <reg51.h>
+   3          #define LCDDATA P2
+   4          sbit RS =       P3^6;
+   5          sbit E  =       P3^7;
+   6          
+   7          void mydelay(int t){
+   8   1         int x=0,y=0;
+   9   1         for (x=0 ; x<t; x++)
+  10   1         {  for (y=0 ; y<20000; y++){                 }               
+  11   2         }
+  12   1      }
+  13          
+  14          void lcd_cmd(char d)
+  15          {
+  16   1              RS=0;
+  17   1              E=1;    LCDDATA= d;     mydelay(1); E=0;
+  18   1      }
+  19          
+  20          void lcd_data(char d)
+  21          {
+  22   1              RS=1;
+  23   1              E=1;    LCDDATA= d; mydelay(1); E=0;
+  24   1      }
+  25            
+  26          void main(){
+  27   1                while(1){
+  28   2                      lcd_cmd(0x38);
+  29   2                      lcd_cmd(0x0E);
+  30   2                      lcd_cmd(0x01);      
+  31   2                      lcd_data('N');
+  32   2                      lcd_data('I');
+  33   2                      lcd_data('E');
+  34   2                      lcd_data('L');
+  35   2                      lcd_data('I');
+  36   2                      lcd_data('T');
+  37   2               
+  38   2                      mydelay(100);
+  39   2                }
+  40   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    116    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
