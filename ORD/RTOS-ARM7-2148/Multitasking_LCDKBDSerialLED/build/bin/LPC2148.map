@@ -1,0 +1,1785 @@
+Archive member included because of file (symbol)
+
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+                              F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o (__errno)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o) (_impure_ptr)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+                              F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o (memset)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+                              F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o (putchar)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+                              F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o (sprintf)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o) (_svfprintf_r)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o) (_dtoa_r)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o) (_free_r)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o) (_localeconv_r)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o) (_malloc_r)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o) (memchr)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o) (memcpy)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o) (memmove)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o) (__malloc_lock)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o) (_Bfree)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o) (_putc_r)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o) (_realloc_r)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o) (__isinfd)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o) (__isnand)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o) (strcmp)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o) (strlen)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o) (__swbuf_r)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o) (__swsetup_r)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o) (_calloc_r)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o) (_fflush_r)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o) (__sinit)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o) (_fwalk_reent)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o) (__smakebuf_r)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o) (__sclose)
+C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o) (fclose)
+C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o) (__udivsi3)
+C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+                              C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o) (__div0)
+C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o) (__subdf3)
+C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o) (__muldf3)
+C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o) (__gtdf2)
+C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_fixdfsi.o)
+                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o) (__fixdfsi)
+
+Allocating common symbols
+Common symbol       size              file
+
+KBD_i32keydown      0x4               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+Task3Stk            0x1000            F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+Tmr_ReloadCnts      0x4               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+OSLockNesting       0x1               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSRunning           0x1               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSIdleCtr           0x4               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSPrioHighRdy       0x1               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSPrioCur           0x1               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTCBList           0x4               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTickStepState     0x1               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSCtxSwCtr          0x4               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTCBFreeList       0x4               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+KBD_i32the_sc       0x4               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+Task2Stk            0x1000            F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+OSTaskCtr           0x1               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTCBHighRdy        0x4               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSRdyGrp            0x1               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+Task1Stk            0x1000            F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+OSRdyTbl            0x8               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+i8ch                0x4               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+OSEventFreeList     0x4               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSIntNesting        0x1               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTCBCur            0x4               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTime              0x4               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskIdleStk       0x200             F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSEventTbl          0x208             F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTCBTbl            0x44c             F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTCBPrioTbl        0x100             F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+szTemp              0x10              F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+CODE             0x00000000         0x00080000         xr
+DATA             0x40000100         0x00008000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+LOAD F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+LOAD F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+LOAD F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+LOAD F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+LOAD F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+LOAD F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+LOAD C:\SCARM\GNUARM\arm-elf\lib\libm.a
+LOAD C:\SCARM\GNUARM\arm-elf\lib\libc.a
+LOAD C:\SCARM\GNUARM\arm-elf\lib\libc.a
+LOAD C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a
+LOAD C:\SCARM\GNUARM\arm-elf\lib\libstdc++.a
+START GROUP
+LOAD C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a
+LOAD C:\SCARM\GNUARM\arm-elf\lib\libc.a
+END GROUP
+
+.text           0x00000000     0xc098
+ *startup.o(.text)
+ .text          0x00000000       0xc4 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+                0x00000000                Vectors
+ *(.text)
+ .text          0x000000c4      0x22c F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+                0x000000ec                OSStartHighRdy
+                0x00000120                OSCtxSw
+                0x00000184                OSIntCtxSw
+                0x00000244                OS_CPU_FIQ_ISR
+                0x000000e4                OS_CPU_SR_Restore
+                0x000001c0                OS_CPU_IRQ_ISR
+                0x000000c4                OS_CPU_SR_Save
+ .text          0x000002f0      0x1a0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+                0x0000035c                App_Task1
+                0x000003d4                App_Task2
+                0x000002f0                main
+                0x00000404                App_Task3
+ .text          0x00000490      0x2e0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+                0x000004b8                OSTaskCreateHook
+                0x00000504                OSTaskStatHook
+                0x00000490                OSInitHookBegin
+                0x000004d4                OSTaskDelHook
+                0x0000075c                OSTimeTickHook
+                0x00000740                OSTCBInitHook
+                0x00000518                OSTaskStkInit
+                0x000004a4                OSInitHookEnd
+                0x0000072c                OSTaskSwHook
+                0x000004f0                OSTaskIdleHook
+ .text          0x00000770      0x22c F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+                0x00000974                _isatty_r
+                0x000007ac                _lseek_r
+                0x00000930                _fstat_r
+                0x00000890                _sbrk_r
+                0x00000770                _read_r
+                0x00000868                _close_r
+                0x000007dc                _write_r
+ .text          0x0000099c      0xd10 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+                0x000011e8                DelayMs
+                0x00000d2c                Tmr_TickISR_Handler
+                0x00001198                Delay250
+                0x00000d5c                InitUart0
+                0x00001274                LcdDat
+                0x0000099c                BSP_CPU_ClkFreq
+                0x00001230                LcdCmd
+                0x000013b0                DisplayRow
+                0x00001680                KBD_rdkbd
+                0x00001048                LcdDat1
+                0x00000e84                uart_getc
+                0x00000df0                uart_putc
+                0x00000b74                OS_CPU_IRQ_ISR_Handler
+                0x00000bc4                OS_CPU_FIQ_ISR_Handler
+                0x00000a14                BSP_CPU_ClkFreqPeripheral
+                0x000014ac                KBD_Init
+                0x00001470                KBD_cdelay
+                0x00000f10                LcdCmd1
+                0x00000b00                BSP_Init
+                0x000012b8                LcdInit
+                0x000014d0                KBD_kbhit
+                0x00000ed4                SmallDelay
+ .text          0x000016ac     0x35f8 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+                0x00004c60                OSTimeSet
+                0x00001820                OSIntEnter
+                0x00002868                OS_TCBInit
+                0x00003c84                OSTaskCreateExt
+                0x00003b38                OSTaskCreate
+                0x000037c4                OSTaskChangePrio
+                0x00003df8                OSTaskDel
+                0x000016ac                OSEventNameGet
+                0x00001874                OSIntExit
+                0x000024e0                OS_MemCopy
+                0x0000254c                OS_Sched
+                0x00003258                OSMboxQuery
+                0x00004354                OSTaskNameSet
+                0x000034a0                OSSemPend
+                0x00003094                OSMboxPost
+                0x00003334                OSSemAccept
+                0x00002488                OS_MemClr
+                0x00001c38                OS_EventTaskRdy
+                0x00004a0c                OSTimeDly
+                0x00004b00                OSTimeDlyHMSM
+                0x00003640                OSSemPost
+                0x00001c24                OS_Dummy
+                0x00001740                OSEventNameSet
+                0x00001e3c                OS_EventTaskWait
+                0x000027b0                OS_TaskStatStkChk
+                0x00004178                OSTaskDelReq
+                0x00001980                OSStart
+                0x00004464                OSTaskResume
+                0x00004260                OSTaskNameGet
+                0x000019f8                OSTimeTick
+                0x000033bc                OSSemCreate
+                0x00002688                OS_StrCopy
+                0x00002bac                OSMboxCreate
+                0x00002eb0                OSMboxPend
+                0x000045bc                OSTaskStkChk
+                0x00002b40                OSMboxAccept
+                0x000017f8                OSInit
+                0x000048c4                OSTaskQuery
+                0x00001f84                OS_EventTO
+                0x0000270c                OS_StrLen
+                0x0000314c                OSMboxPostOpt
+                0x00004c18                OSTimeGet
+                0x0000370c                OSSemSet
+                0x00002c8c                OSMboxDel
+                0x00001c04                OSVersion
+                0x0000498c                OS_TaskStkClr
+                0x0000208c                OS_EventWaitListInit
+                0x0000472c                OSTaskSuspend
+                0x00002764                OS_TaskIdle
+ .text          0x00004ca4       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+                0x00004ca4                __errno
+ .text          0x00004cb4        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+ .text          0x00004cb4       0xf8 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+                0x00004cb4                memset
+ .text          0x00004dac       0x24 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+                0x00004dac                putchar
+                0x00004dc8                _putchar_r
+ .text          0x00004dd0       0xdc C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+                0x00004e44                _sprintf_r
+                0x00004dd0                sprintf
+ .text          0x00004eac     0x1f68 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+                0x00005030                _svfprintf_r
+ .text          0x00006e14     0x17c4 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+                0x00006ff4                _dtoa_r
+ .text          0x000085d8      0x36c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+                0x000086d0                _free_r
+                0x000085d8                _malloc_trim_r
+ .text          0x00008944       0xa4 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+                0x0000896c                _setlocale_r
+                0x00008944                __locale_charset
+                0x00008954                _localeconv_r
+                0x000089cc                setlocale
+                0x00008960                localeconv
+ .text          0x000089e8      0x734 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                0x000089e8                _malloc_r
+ .text          0x0000911c       0xd4 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+                0x0000911c                memchr
+ .text          0x000091f0       0xf0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+                0x000091f0                memcpy
+ .text          0x000092e0      0x12c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+                0x000092e0                memmove
+ .text          0x0000940c        0x8 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+                0x00009410                __malloc_unlock
+                0x0000940c                __malloc_lock
+ .text          0x00009414      0xd5c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                0x00009748                _mprec_log10
+                0x00009810                __any_on
+                0x00009890                _Balloc
+                0x000096ac                __ratio
+                0x00009e94                __i2b
+                0x000095dc                __b2d
+                0x0000a08c                __s2b
+                0x0000951c                __mcmp
+                0x00009430                __hi0bits
+                0x00009f94                __pow5mult
+                0x00009b94                __lshift
+                0x00009ca4                __multiply
+                0x00009914                __d2b
+                0x00009794                __copybits
+                0x0000957c                __ulp
+                0x00009a20                __mdiff
+                0x00009488                __lo0bits
+                0x00009eb4                __multadd
+                0x00009414                _Bfree
+ .text          0x0000a170      0x160 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+                0x0000a228                _putc_r
+                0x0000a170                putc
+ .text          0x0000a2d0      0x4f4 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+                0x0000a2d0                _realloc_r
+ .text          0x0000a7c4       0x30 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+                0x0000a7c4                __isinfd
+ .text          0x0000a7f4       0x30 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+                0x0000a7f4                __isnand
+ .text          0x0000a824       0xd8 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+                0x0000a824                strcmp
+ .text          0x0000a8fc       0x9c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+                0x0000a8fc                strlen
+ .text          0x0000a998      0x158 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+                0x0000a998                __swbuf_r
+                0x0000aad4                __swbuf
+ .text          0x0000aaf0      0x148 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+                0x0000aaf0                __swsetup_r
+ .text          0x0000ac38       0x9c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+                0x0000ac38                _calloc_r
+ .text          0x0000acd4      0x1fc C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+                0x0000aea0                fflush
+                0x0000acd4                _fflush_r
+ .text          0x0000aed0      0x294 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+                0x0000afb4                __sinit
+                0x0000b030                __sfmoreglue
+                0x0000af2c                _cleanup
+                0x0000af20                _cleanup_r
+                0x0000af08                __fp_lock_all
+                0x0000aed0                __sfp_lock_acquire
+                0x0000b074                __sfp
+                0x0000aedc                __sinit_lock_release
+                0x0000aef0                __fp_unlock_all
+                0x0000aed4                __sfp_lock_release
+                0x0000aed8                __sinit_lock_acquire
+ .text          0x0000b164      0x104 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+                0x0000b1e8                _fwalk
+                0x0000b164                _fwalk_reent
+ .text          0x0000b268      0x160 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+                0x0000b268                __smakebuf_r
+ .text          0x0000b3c8       0xc0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+                0x0000b3d0                __sseek
+                0x0000b458                __sread
+                0x0000b3c8                __sclose
+                0x0000b404                __swrite
+ .text          0x0000b488      0x108 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+                0x0000b488                _fclose_r
+                0x0000b57c                fclose
+ .text          0x0000b590      0x110 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+                0x0000b590                __udivsi3
+                0x0000b590                __aeabi_uidiv
+                0x0000b688                __aeabi_uidivmod
+ .text          0x0000b6a0        0x4 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+                0x0000b6a0                __aeabi_ldiv0
+                0x0000b6a0                __div0
+                0x0000b6a0                __aeabi_idiv0
+ .text          0x0000b6a4      0x400 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+                0x0000ba38                __floatdidf
+                0x0000b9b8                __floatsidf
+                0x0000b990                __aeabi_ui2d
+                0x0000b6a4                __aeabi_drsub
+                0x0000b9e4                __extendsfdf2
+                0x0000b6b0                __adddf3
+                0x0000b990                __floatunsidf
+                0x0000b6b0                __aeabi_dadd
+                0x0000ba24                __aeabi_ul2d
+                0x0000b6ac                __aeabi_dsub
+                0x0000ba24                __floatundidf
+                0x0000b9b8                __aeabi_i2d
+                0x0000ba38                __aeabi_l2d
+                0x0000b9e4                __aeabi_f2d
+                0x0000b6ac                __subdf3
+ .text          0x0000baa4      0x470 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+                0x0000bd10                __aeabi_ddiv
+                0x0000baa4                __aeabi_dmul
+                0x0000bd10                __divdf3
+                0x0000baa4                __muldf3
+ .text          0x0000bf14      0x128 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+                0x0000c000                __aeabi_dcmple
+                0x0000bf24                __cmpdf2
+                0x0000bf24                __eqdf2
+                0x0000bf14                __gtdf2
+                0x0000bfc4                __aeabi_cdcmple
+                0x0000bfa8                __aeabi_cdrcmple
+                0x0000bf1c                __ltdf2
+                0x0000bfec                __aeabi_dcmplt
+                0x0000bf1c                __ledf2
+                0x0000c028                __aeabi_dcmpgt
+                0x0000c014                __aeabi_dcmpge
+                0x0000bf24                __nedf2
+                0x0000bfd8                __aeabi_dcmpeq
+                0x0000bfc4                __aeabi_cdcmpeq
+                0x0000bf14                __gedf2
+ .text          0x0000c03c       0x5c C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_fixdfsi.o)
+                0x0000c03c                __fixdfsi
+                0x0000c03c                __aeabi_d2iz
+ *(.glue_7t)
+ .glue_7t       0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+ .glue_7t       0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+ .glue_7t       0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+ .glue_7t       0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+ .glue_7t       0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+ .glue_7t       0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+ .glue_7t       0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+ .glue_7t       0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_fixdfsi.o)
+ *(.glue_7)
+ .glue_7        0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+ .glue_7        0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+ .glue_7        0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+ .glue_7        0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+ .glue_7        0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+ .glue_7        0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+ .glue_7        0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+ .glue_7        0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_fixdfsi.o)
+
+.vfp11_veneer   0x0000c098        0x0
+ .vfp11_veneer  0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+ .vfp11_veneer  0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+ .vfp11_veneer  0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+ .vfp11_veneer  0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+ .vfp11_veneer  0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+ .vfp11_veneer  0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+ .vfp11_veneer  0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+ .vfp11_veneer  0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_fixdfsi.o)
+
+.v4_bx          0x0000c098        0x0
+ .v4_bx         0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+ .v4_bx         0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+ .v4_bx         0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+ .v4_bx         0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+ .v4_bx         0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+ .v4_bx         0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+ .v4_bx         0x0000c098        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+ .v4_bx         0x0000c098        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_fixdfsi.o)
+                0x0000c098                . = ALIGN (0x4)
+
+.rodata         0x0000c098      0x2dc
+ *(.rodata)
+ .rodata        0x0000c098       0x30 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+ .rodata        0x0000c0c8       0x20 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+                0x0000c0c8                KBD_u32scanport1
+                0x0000c0d8                KBD_u32retport
+ .rodata        0x0000c0e8      0x110 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+                0x0000c0e8                OSUnMapTbl
+ .rodata        0x0000c1f8        0x4 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+                0x0000c1f8                _global_impure_ptr
+ .rodata        0x0000c1fc       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .rodata        0x0000c21c       0x34 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+ .rodata        0x0000c250      0x124 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                0x0000c34c                __mprec_tinytens
+                0x0000c250                __mprec_tens
+                0x0000c324                __mprec_bigtens
+
+.eh_frame       0x0000c374      0x8ac
+ .eh_frame      0x0000c374       0x28 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+ .eh_frame      0x0000c39c       0x1c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+                                 0x30 (size before relaxing)
+ .eh_frame      0x0000c3b8       0x28 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+                                 0x3c (size before relaxing)
+ .eh_frame      0x0000c3e0       0x50 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+                                 0x64 (size before relaxing)
+ .eh_frame      0x0000c430       0x58 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+                                 0x6c (size before relaxing)
+ .eh_frame      0x0000c488       0x54 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+                                 0x68 (size before relaxing)
+ .eh_frame      0x0000c4dc       0x44 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+                                 0x58 (size before relaxing)
+ .eh_frame      0x0000c520       0x70 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+                                 0x84 (size before relaxing)
+ .eh_frame      0x0000c590       0x2c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                                 0x40 (size before relaxing)
+ .eh_frame      0x0000c5bc       0x18 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+                                 0x2c (size before relaxing)
+ .eh_frame      0x0000c5d4       0x1c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+                                 0x30 (size before relaxing)
+ .eh_frame      0x0000c5f0       0x1c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+                                 0x30 (size before relaxing)
+ .eh_frame      0x0000c60c       0x28 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+                                 0x3c (size before relaxing)
+ .eh_frame      0x0000c634      0x240 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                0x254 (size before relaxing)
+ .eh_frame      0x0000c874       0x40 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+                                 0x54 (size before relaxing)
+ .eh_frame      0x0000c8b4       0x2c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+                                 0x40 (size before relaxing)
+ .eh_frame      0x0000c8e0       0x14 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+                                 0x28 (size before relaxing)
+ .eh_frame      0x0000c8f4       0x18 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+                                 0x2c (size before relaxing)
+ .eh_frame      0x0000c90c       0x14 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+                                 0x28 (size before relaxing)
+ .eh_frame      0x0000c920       0x14 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+                                 0x28 (size before relaxing)
+ .eh_frame      0x0000c934       0x34 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+                                 0x48 (size before relaxing)
+ .eh_frame      0x0000c968       0x1c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+                                 0x30 (size before relaxing)
+ .eh_frame      0x0000c984       0x1c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+                                 0x30 (size before relaxing)
+ .eh_frame      0x0000c9a0       0x34 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+                                 0x48 (size before relaxing)
+ .eh_frame      0x0000c9d4      0x140 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+                                0x154 (size before relaxing)
+ .eh_frame      0x0000cb14       0x48 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+                                 0x5c (size before relaxing)
+ .eh_frame      0x0000cb5c       0x24 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+                                 0x38 (size before relaxing)
+ .eh_frame      0x0000cb80       0x6c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+                                 0x80 (size before relaxing)
+ .eh_frame      0x0000cbec       0x34 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+                                 0x48 (size before relaxing)
+
+.rodata.str1.4  0x0000cc20       0x68
+ .rodata.str1.4
+                0x0000cc20        0x2 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+                                  0x4 (size before relaxing)
+ *fill*         0x0000cc22        0x2 00
+ .rodata.str1.4
+                0x0000cc24       0x42 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+                                 0x44 (size before relaxing)
+ *fill*         0x0000cc66        0x2 00
+ .rodata.str1.4
+                0x0000cc68       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+                                 0x14 (size before relaxing)
+ .rodata.str1.4
+                0x0000cc78       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+                                 0x18 (size before relaxing)
+                0x0000cc88                . = ALIGN (0x4)
+                0x0000cc88                _etext = .
+                0x0000cc88                PROVIDE (etext, .)
+
+.data           0x40000100      0x848 load address 0x0000cc88
+                0x40000100                _data = .
+ *(.data)
+ .data          0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+ .data          0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+ .data          0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+ .data          0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+ .data          0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+ .data          0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+ .data          0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+ .data          0x40000100        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+ .data          0x40000100      0x428 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+                0x40000100                _impure_ptr
+ .data          0x40000528        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+ .data          0x40000528        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+ .data          0x40000528        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+ .data          0x40000528        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .data          0x40000528        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+ .data          0x40000528        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+ .data          0x40000528       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+                0x40000528                __mb_cur_max
+                0x4000052c                __lc_ctype
+ .data          0x40000538      0x410 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                0x40000940                __malloc_sbrk_base
+                0x40000538                __malloc_av_
+                0x40000944                __malloc_trim_threshold
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+ .data          0x40000948        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_fixdfsi.o)
+                0x40000948                . = ALIGN (0x4)
+                0x40000948                _edata = .
+                0x40000948                PROVIDE (edata, .)
+
+.bss            0x40000948     0x39f8 load address 0x0000d4d0
+                0x40000948                __bss_start = .
+                0x40000948                __bss_start__ = .
+ *(.bss)
+ .bss           0x40000948        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+ .bss           0x40000948        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+ .bss           0x40000948        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+ .bss           0x40000948        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+ .bss           0x40000948        0x4 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+ .bss           0x4000094c        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+ .bss           0x4000094c        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+ .bss           0x4000094c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+ .bss           0x4000094c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+ .bss           0x4000094c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+ .bss           0x4000094c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+ .bss           0x4000094c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+ .bss           0x4000094c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .bss           0x4000094c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+ .bss           0x4000094c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+ .bss           0x4000094c        0xc C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+                0x4000094c                __nlocale_changed
+                0x40000950                __mlocale_changed
+                0x40000954                _PathLocale
+ .bss           0x40000958       0x34 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                0x40000958                __malloc_top_pad
+                0x40000984                __malloc_max_sbrked_mem
+                0x4000095c                __malloc_current_mallinfo
+                0x40000988                __malloc_max_total_mem
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+ .bss           0x4000098c        0x0 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_fixdfsi.o)
+ *(COMMON)
+ COMMON         0x4000098c     0x3014 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+                0x4000098c                Task3Stk
+                0x4000198c                Task2Stk
+                0x4000298c                Task1Stk
+                0x4000398c                i8ch
+                0x40003990                szTemp
+ COMMON         0x400039a0        0xc F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+                0x400039a0                KBD_i32keydown
+                0x400039a4                Tmr_ReloadCnts
+                0x400039a8                KBD_i32the_sc
+ COMMON         0x400039ac      0x994 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+                0x400039ac                OSLockNesting
+                0x400039ad                OSRunning
+                0x400039b0                OSIdleCtr
+                0x400039b4                OSPrioHighRdy
+                0x400039b5                OSPrioCur
+                0x400039b8                OSTCBList
+                0x400039bc                OSTickStepState
+                0x400039c0                OSCtxSwCtr
+                0x400039c4                OSTCBFreeList
+                0x400039c8                OSTaskCtr
+                0x400039cc                OSTCBHighRdy
+                0x400039d0                OSRdyGrp
+                0x400039d4                OSRdyTbl
+                0x400039dc                OSEventFreeList
+                0x400039e0                OSIntNesting
+                0x400039e4                OSTCBCur
+                0x400039e8                OSTime
+                0x400039ec                OSTaskIdleStk
+                0x40003bec                OSEventTbl
+                0x40003df4                OSTCBTbl
+                0x40004240                OSTCBPrioTbl
+                0x40004340                . = ALIGN (0x4)
+                0x40004340                __bss_end__ = .
+                0x40004340                __bss_end__ = .
+                0x40004340                _end = .
+                0x40004340                PROVIDE (end, .)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000      0x276
+ *(.comment)
+ .comment       0x00000000       0x12 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+ .comment       0x00000012       0x12 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+ .comment       0x00000024       0x12 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+ .comment       0x00000036       0x12 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+ .comment       0x00000048       0x12 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+ .comment       0x0000005a       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+ .comment       0x0000006c       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+ .comment       0x0000007e       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+ .comment       0x00000090       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+ .comment       0x000000a2       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+ .comment       0x000000b4       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .comment       0x000000c6       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+ .comment       0x000000d8       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+ .comment       0x000000ea       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+ .comment       0x000000fc       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+ .comment       0x0000010e       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+ .comment       0x00000120       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+ .comment       0x00000132       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+ .comment       0x00000144       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+ .comment       0x00000156       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+ .comment       0x00000168       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+ .comment       0x0000017a       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+ .comment       0x0000018c       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+ .comment       0x0000019e       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+ .comment       0x000001b0       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+ .comment       0x000001c2       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+ .comment       0x000001d4       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+ .comment       0x000001e6       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+ .comment       0x000001f8       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+ .comment       0x0000020a       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+ .comment       0x0000021c       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+ .comment       0x0000022e       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+ .comment       0x00000240       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+ .comment       0x00000252       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+ .comment       0x00000264       0x12 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x460
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+ .debug_aranges
+                0x00000020       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+ .debug_aranges
+                0x00000040       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+ .debug_aranges
+                0x00000060       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+ .debug_aranges
+                0x00000080       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .debug_aranges
+                0x000000a0       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+ .debug_aranges
+                0x000000c0       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+ .debug_aranges
+                0x000000e0       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+ .debug_aranges
+                0x00000100       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+ .debug_aranges
+                0x00000120       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+ .debug_aranges
+                0x00000140       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x00000160       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+ .debug_aranges
+                0x00000180       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+ .debug_aranges
+                0x000001a0       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+ .debug_aranges
+                0x000001c0       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+ .debug_aranges
+                0x000001e0       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+ .debug_aranges
+                0x00000200       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+ .debug_aranges
+                0x00000220       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+ .debug_aranges
+                0x00000240       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+ .debug_aranges
+                0x00000260       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x00000280       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+ .debug_aranges
+                0x000002a0       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+ .debug_aranges
+                0x000002c0       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+ .debug_aranges
+                0x000002e0       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+ .debug_aranges
+                0x00000300       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+ .debug_aranges
+                0x00000320       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+ .debug_aranges
+                0x00000340       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+ .debug_aranges
+                0x00000360       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+ .debug_aranges
+                0x00000380       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+ .debug_aranges
+                0x000003a0       0x20 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+ .debug_aranges
+                0x000003c0       0x20 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+ .debug_aranges
+                0x000003e0       0x20 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+ .debug_aranges
+                0x00000400       0x20 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+ .debug_aranges
+                0x00000420       0x20 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+ .debug_aranges
+                0x00000440       0x20 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_fixdfsi.o)
+
+.debug_pubnames
+                0x00000000      0x78f
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x1e C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+ .debug_pubnames
+                0x0000001e       0x39 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+ .debug_pubnames
+                0x00000057       0x1d C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+ .debug_pubnames
+                0x00000074       0x2d C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+ .debug_pubnames
+                0x000000a1       0x2d C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+ .debug_pubnames
+                0x000000ce       0x23 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .debug_pubnames
+                0x000000f1       0x1e C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+ .debug_pubnames
+                0x0000010f       0x31 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+ .debug_pubnames
+                0x00000140       0xc3 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+ .debug_pubnames
+                0x00000203       0xce C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+ .debug_pubnames
+                0x000002d1       0x1d C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+ .debug_pubnames
+                0x000002ee       0x1d C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+ .debug_pubnames
+                0x0000030b       0x1e C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+ .debug_pubnames
+                0x00000329       0x38 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+ .debug_pubnames
+                0x00000361      0x13a C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+ .debug_pubnames
+                0x0000049b       0x27 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+ .debug_pubnames
+                0x000004c2       0x21 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+ .debug_pubnames
+                0x000004e3       0x1f C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+ .debug_pubnames
+                0x00000502       0x1f C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+ .debug_pubnames
+                0x00000521       0x1d C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+ .debug_pubnames
+                0x0000053e       0x1d C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+ .debug_pubnames
+                0x0000055b       0x2c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+ .debug_pubnames
+                0x00000587       0x22 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+ .debug_pubnames
+                0x000005a9       0x20 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+ .debug_pubnames
+                0x000005c9       0x2b C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+ .debug_pubnames
+                0x000005f4       0xdb C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+ .debug_pubnames
+                0x000006cf       0x2e C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+ .debug_pubnames
+                0x000006fd       0x23 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+ .debug_pubnames
+                0x00000720       0x44 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+ .debug_pubnames
+                0x00000764       0x2b C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+
+.debug_info     0x00000000    0x1086d
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x956 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+ .debug_info    0x00000956      0x967 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+ .debug_info    0x000012bd      0x113 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+ .debug_info    0x000013d0      0x99b C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+ .debug_info    0x00001d6b      0xa3f C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+ .debug_info    0x000027aa     0x103a C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .debug_info    0x000037e4      0xd90 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+ .debug_info    0x00004574      0xbf1 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+ .debug_info    0x00005165      0xbd2 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+ .debug_info    0x00005d37      0xcfc C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+ .debug_info    0x00006a33      0x125 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+ .debug_info    0x00006b58      0x142 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+ .debug_info    0x00006c9a      0x142 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+ .debug_info    0x00006ddc      0x97f C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+ .debug_info    0x0000775b     0x1526 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+ .debug_info    0x00008c81      0x9ea C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+ .debug_info    0x0000966b      0xbdf C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+ .debug_info    0x0000a24a      0x14d C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+ .debug_info    0x0000a397      0x147 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+ .debug_info    0x0000a4de       0xd9 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+ .debug_info    0x0000a5b7       0xd7 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+ .debug_info    0x0000a68e      0x9d7 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+ .debug_info    0x0000b065      0x985 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+ .debug_info    0x0000b9ea      0xa41 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+ .debug_info    0x0000c42b      0xa23 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+ .debug_info    0x0000ce4e      0xbbd C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+ .debug_info    0x0000da0b      0xb15 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+ .debug_info    0x0000e520      0xb46 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+ .debug_info    0x0000f066      0xad6 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+ .debug_info    0x0000fb3c      0x9bd C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+ .debug_info    0x000104f9       0x94 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+ .debug_info    0x0001058d       0x94 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+ .debug_info    0x00010621       0x93 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x000106b4       0x93 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+ .debug_info    0x00010747       0x93 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+ .debug_info    0x000107da       0x93 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_fixdfsi.o)
+
+.debug_abbrev   0x00000000     0x302f
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x168 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+ .debug_abbrev  0x00000168      0x160 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+ .debug_abbrev  0x000002c8       0xb2 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+ .debug_abbrev  0x0000037a      0x192 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+ .debug_abbrev  0x0000050c      0x1cb C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+ .debug_abbrev  0x000006d7      0x336 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .debug_abbrev  0x00000a0d      0x23b C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+ .debug_abbrev  0x00000c48      0x1e2 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+ .debug_abbrev  0x00000e2a      0x241 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+ .debug_abbrev  0x0000106b      0x221 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+ .debug_abbrev  0x0000128c       0xcd C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+ .debug_abbrev  0x00001359       0xa2 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x000013fb       0xa2 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+ .debug_abbrev  0x0000149d      0x173 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+ .debug_abbrev  0x00001610      0x331 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+ .debug_abbrev  0x00001941      0x1a1 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+ .debug_abbrev  0x00001ae2      0x1ef C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+ .debug_abbrev  0x00001cd1       0xdd C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+ .debug_abbrev  0x00001dae       0xcc C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+ .debug_abbrev  0x00001e7a       0x89 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+ .debug_abbrev  0x00001f03       0x94 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+ .debug_abbrev  0x00001f97      0x1a1 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+ .debug_abbrev  0x00002138      0x179 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+ .debug_abbrev  0x000022b1      0x1d0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+ .debug_abbrev  0x00002481      0x1cd C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+ .debug_abbrev  0x0000264e      0x273 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+ .debug_abbrev  0x000028c1      0x1f0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+ .debug_abbrev  0x00002ab1      0x193 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+ .debug_abbrev  0x00002c44      0x1c3 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+ .debug_abbrev  0x00002e07      0x1b0 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+ .debug_abbrev  0x00002fb7       0x14 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x00002fcb       0x14 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x00002fdf       0x14 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x00002ff3       0x14 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+ .debug_abbrev  0x00003007       0x14 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+ .debug_abbrev  0x0000301b       0x14 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_fixdfsi.o)
+
+.debug_line     0x00000000     0x3cd7
+ *(.debug_line)
+ .debug_line    0x00000000      0x125 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+ .debug_line    0x00000125      0x10a C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+ .debug_line    0x0000022f      0x157 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+ .debug_line    0x00000386      0x16c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+ .debug_line    0x000004f2      0x1ad C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+ .debug_line    0x0000069f      0x5a2 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .debug_line    0x00000c41      0x4df C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+ .debug_line    0x00001120      0x1a8 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+ .debug_line    0x000012c8      0x188 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+ .debug_line    0x00001450      0x264 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+ .debug_line    0x000016b4      0x12a C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+ .debug_line    0x000017de      0x168 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+ .debug_line    0x00001946      0x176 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+ .debug_line    0x00001abc      0x11c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+ .debug_line    0x00001bd8      0x49e C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+ .debug_line    0x00002076      0x183 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+ .debug_line    0x000021f9      0x1d4 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+ .debug_line    0x000023cd      0x116 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+ .debug_line    0x000024e3      0x119 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+ .debug_line    0x000025fc       0xc4 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+ .debug_line    0x000026c0      0x112 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+ .debug_line    0x000027d2      0x19f C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+ .debug_line    0x00002971      0x18f C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+ .debug_line    0x00002b00      0x128 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+ .debug_line    0x00002c28      0x1d5 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+ .debug_line    0x00002dfd      0x208 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+ .debug_line    0x00003005      0x184 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+ .debug_line    0x00003189      0x1c4 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+ .debug_line    0x0000334d      0x191 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+ .debug_line    0x000034de      0x183 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+ .debug_line    0x00003661       0x96 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+ .debug_line    0x000036f7       0x6a C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00003761      0x1f5 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x00003956      0x206 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+ .debug_line    0x00003b5c       0xfc C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+ .debug_line    0x00003c58       0x7f C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_fixdfsi.o)
+
+.debug_frame    0x00000000       0x28
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x28 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+
+.debug_str      0x00000000     0x161f
+ *(.debug_str)
+ .debug_str     0x00000000      0x44f C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+                                0x4cf (size before relaxing)
+ .debug_str     0x0000044f       0x97 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+                                0x4e7 (size before relaxing)
+ .debug_str     0x000004e6       0x9c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+                                0x131 (size before relaxing)
+ .debug_str     0x00000582       0x8c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+                                0x4dc (size before relaxing)
+ .debug_str     0x0000060e       0x6d C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+                                0x50a (size before relaxing)
+ .debug_str     0x0000067b      0x1a1 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+                                0x6a0 (size before relaxing)
+ .debug_str     0x0000081c      0x141 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+                                0x5ce (size before relaxing)
+ .debug_str     0x0000095d      0x159 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+                                0x610 (size before relaxing)
+ .debug_str     0x00000ab6      0x1d8 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+                                0x676 (size before relaxing)
+ .debug_str     0x00000c8e       0xef C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                                0x6be (size before relaxing)
+ .debug_str     0x00000d7d       0x53 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+                                0x137 (size before relaxing)
+ .debug_str     0x00000dd0       0x67 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+                                0x144 (size before relaxing)
+ .debug_str     0x00000e37       0x4b C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+                                0x150 (size before relaxing)
+ .debug_str     0x00000e82       0x6b C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+                                0x4f0 (size before relaxing)
+ .debug_str     0x00000eed       0xf6 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                0x5db (size before relaxing)
+ .debug_str     0x00000fe3       0x43 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+                                0x4df (size before relaxing)
+ .debug_str     0x00001026       0x59 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+                                0x590 (size before relaxing)
+ .debug_str     0x0000107f       0xb1 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+                                0x170 (size before relaxing)
+ .debug_str     0x00001130       0x44 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+                                0x170 (size before relaxing)
+ .debug_str     0x00001174       0x40 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+                                0x116 (size before relaxing)
+ .debug_str     0x000011b4       0x46 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+                                0x130 (size before relaxing)
+ .debug_str     0x000011fa       0x48 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+                                0x4dd (size before relaxing)
+ .debug_str     0x00001242       0x44 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+                                0x4d9 (size before relaxing)
+ .debug_str     0x00001286       0x19 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+                                0x50f (size before relaxing)
+ .debug_str     0x0000129f       0x50 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+                                0x4ff (size before relaxing)
+ .debug_str     0x000012ef      0x100 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+                                0x5c1 (size before relaxing)
+ .debug_str     0x000013ef       0x5c C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+                                0x502 (size before relaxing)
+ .debug_str     0x0000144b      0x126 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+                                0x5d3 (size before relaxing)
+ .debug_str     0x00001571       0x60 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+                                0x4fe (size before relaxing)
+ .debug_str     0x000015d1       0x4e C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+                                0x4e3 (size before relaxing)
+
+.debug_loc      0x00000000     0x57d8
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xff C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+ .debug_loc     0x000000ff       0x44 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+ .debug_loc     0x00000143       0xbf C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+ .debug_loc     0x00000202     0x10e1 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .debug_loc     0x000012e3     0x1118 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+ .debug_loc     0x000023fb      0x389 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+ .debug_loc     0x00002784       0xc8 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+ .debug_loc     0x0000284c      0x7b3 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+ .debug_loc     0x00002fff      0x10a C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+ .debug_loc     0x00003109      0x10f C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+ .debug_loc     0x00003218      0x172 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+ .debug_loc     0x0000338a     0x10f6 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+ .debug_loc     0x00004480      0x110 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+ .debug_loc     0x00004590      0x736 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+ .debug_loc     0x00004cc6       0x43 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+ .debug_loc     0x00004d09       0x4f C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+ .debug_loc     0x00004d58       0x91 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+ .debug_loc     0x00004de9       0x52 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+ .debug_loc     0x00004e3b       0xc8 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+ .debug_loc     0x00004f03       0x5b C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+ .debug_loc     0x00004f5e       0xcb C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+ .debug_loc     0x00005029      0x172 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+ .debug_loc     0x0000519b      0x233 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+ .debug_loc     0x000053ce       0xb6 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+ .debug_loc     0x00005484       0xe3 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+ .debug_loc     0x00005567      0x1cf C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+ .debug_loc     0x00005736       0xa2 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+OUTPUT(F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/bin\LPC2148.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x10
+ .ARM.attributes
+                0x00000000       0x10 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+ .ARM.attributes
+                0x00000010       0x10 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+ .ARM.attributes
+                0x00000020       0x10 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+ .ARM.attributes
+                0x00000030       0x10 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+ .ARM.attributes
+                0x00000040       0x10 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+ .ARM.attributes
+                0x00000050       0x10 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+ .ARM.attributes
+                0x00000060       0x10 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+ .ARM.attributes
+                0x00000070       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000080       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000090       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000000a0       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+ .ARM.attributes
+                0x000000b0       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+ .ARM.attributes
+                0x000000c0       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .ARM.attributes
+                0x000000d0       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+ .ARM.attributes
+                0x000000e0       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+ .ARM.attributes
+                0x000000f0       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+ .ARM.attributes
+                0x00000100       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+ .ARM.attributes
+                0x00000110       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+ .ARM.attributes
+                0x00000120       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x00000130       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x00000140       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x00000150       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+ .ARM.attributes
+                0x00000160       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+ .ARM.attributes
+                0x00000170       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+ .ARM.attributes
+                0x00000180       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+ .ARM.attributes
+                0x00000190       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+ .ARM.attributes
+                0x000001a0       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+ .ARM.attributes
+                0x000001b0       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x000001c0       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+ .ARM.attributes
+                0x000001d0       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+ .ARM.attributes
+                0x000001e0       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+ .ARM.attributes
+                0x000001f0       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+ .ARM.attributes
+                0x00000200       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+ .ARM.attributes
+                0x00000210       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+ .ARM.attributes
+                0x00000220       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+ .ARM.attributes
+                0x00000230       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+ .ARM.attributes
+                0x00000240       0x10 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+ .ARM.attributes
+                0x00000250       0x10 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000260       0x10 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000270       0x10 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000280       0x10 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000290       0x10 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x000002a0       0x10 C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_fixdfsi.o)
+
+.debug_ranges   0x00000000      0x290
+ .debug_ranges  0x00000000      0x128 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+ .debug_ranges  0x00000128       0x40 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+ .debug_ranges  0x00000168       0x88 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+ .debug_ranges  0x000001f0       0x58 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+ .debug_ranges  0x00000248       0x18 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+ .debug_ranges  0x00000260       0x18 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+ .debug_ranges  0x00000278       0x18 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+
+Cross Reference Table
+
+Symbol                                            File
+App_Task1                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+App_Task2                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+App_Task3                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+BSP_CPU_ClkFreq                                   F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+BSP_CPU_ClkFreqPeripheral                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+BSP_Init                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+Delay250                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+DelayMs                                           F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+DisplayRow                                        F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+InitUart0                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+KBD_Init                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+KBD_cdelay                                        F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+KBD_i32keydown                                    F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+KBD_i32the_sc                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+KBD_kbhit                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+KBD_rdkbd                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+KBD_u32retport                                    F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+KBD_u32scanport1                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+LcdCmd                                            F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+LcdCmd1                                           F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+LcdDat                                            F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+LcdDat1                                           F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+LcdInit                                           F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+OSCtxSw                                           F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSCtxSwCtr                                        F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSEventFreeList                                   F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSEventNameGet                                    F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSEventNameSet                                    F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSEventTbl                                        F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSIdleCtr                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSInit                                            F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+OSInitHookBegin                                   F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSInitHookEnd                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSIntCtxSw                                        F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSIntEnter                                        F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSIntExit                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+OSIntNesting                                      F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+OSLockNesting                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSMboxAccept                                      F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSMboxCreate                                      F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSMboxDel                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSMboxPend                                        F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSMboxPost                                        F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSMboxPostOpt                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSMboxQuery                                       F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSPrioCur                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+OSPrioHighRdy                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+OSRdyGrp                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSRdyTbl                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSRunning                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+OSSemAccept                                       F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSSemCreate                                       F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSSemPend                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSSemPost                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSSemSet                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSStart                                           F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+OSStartHighRdy                                    F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTCBCur                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+OSTCBFreeList                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTCBHighRdy                                      F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+OSTCBInitHook                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTCBList                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTCBPrioTbl                                      F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTCBTbl                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskChangePrio                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskCreate                                      F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+OSTaskCreateExt                                   F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskCreateHook                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskCtr                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskDel                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskDelHook                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskDelReq                                      F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskIdleHook                                    F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskIdleStk                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskNameGet                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskNameSet                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskQuery                                       F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskResume                                      F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskStatHook                                    F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+OSTaskStkChk                                      F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskStkInit                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskSuspend                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTaskSwHook                                      F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+OSTickStepState                                   F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTime                                            F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTimeDly                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTimeDlyHMSM                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+OSTimeGet                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTimeSet                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSTimeTick                                        F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+OSTimeTickHook                                    F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSUnMapTbl                                        F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OSVersion                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_CPU_FIQ_ISR                                    F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+OS_CPU_FIQ_ISR_Handler                            F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+OS_CPU_IRQ_ISR                                    F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+OS_CPU_IRQ_ISR_Handler                            F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+OS_CPU_SR_Restore                                 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_CPU_SR_Save                                    F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/os_cpu_a.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_Dummy                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_EventTO                                        F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_EventTaskRdy                                   F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_EventTaskWait                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_EventWaitListInit                              F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_MemClr                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_MemCopy                                        F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_Sched                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_StrCopy                                        F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_StrLen                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_TCBInit                                        F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_TaskIdle                                       F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_TaskStatStkChk                                 F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+OS_TaskStkClr                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/ucos_ii.o
+SmallDelay                                        F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+Task1Stk                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+Task2Stk                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+Task3Stk                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+Tmr_ReloadCnts                                    F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+Tmr_TickISR_Handler                               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+Vectors                                           F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+_Balloc                                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+_Bfree                                            C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+_PathLocale                                       C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+__adddf3                                          C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__aeabi_cdcmpeq                                   C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+__aeabi_cdcmple                                   C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+__aeabi_cdrcmple                                  C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+__aeabi_d2iz                                      C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_fixdfsi.o)
+__aeabi_dadd                                      C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+__aeabi_dcmpeq                                    C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+__aeabi_dcmpge                                    C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+__aeabi_dcmpgt                                    C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+__aeabi_dcmple                                    C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+__aeabi_dcmplt                                    C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+__aeabi_ddiv                                      C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+__aeabi_dmul                                      C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+__aeabi_drsub                                     C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+__aeabi_dsub                                      C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+__aeabi_f2d                                       C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+__aeabi_i2d                                       C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+__aeabi_idiv0                                     C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+__aeabi_l2d                                       C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+__aeabi_ldiv0                                     C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+__aeabi_ui2d                                      C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+__aeabi_uidiv                                     C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+__aeabi_uidivmod                                  C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+__aeabi_ul2d                                      C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+__any_on                                          C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+__b2d                                             C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+__bss_end__                                       F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+__bss_start__                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+__cmpdf2                                          C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+__copybits                                        C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+__d2b                                             C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__div0                                            C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_dvmd_tls.o)
+                                                  C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+__divdf3                                          C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__eqdf2                                           C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+__errno                                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+__extendsfdf2                                     C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+__fixdfsi                                         C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_fixdfsi.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__floatdidf                                       C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+__floatsidf                                       C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__floatundidf                                     C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+__floatunsidf                                     C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__fp_lock_all                                     C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+__fp_unlock_all                                   C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+__gedf2                                           C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__gtdf2                                           C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__hi0bits                                         C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__i2b                                             C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__isinfd                                          C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isinfd.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+__isnand                                          C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-s_isnand.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+__lc_ctype                                        C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+__ledf2                                           C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+__lo0bits                                         C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+__locale_charset                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+__lshift                                          C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__ltdf2                                           C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+__malloc_av_                                      C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+__malloc_current_mallinfo                         C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+__malloc_lock                                     C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+__malloc_max_sbrked_mem                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+__malloc_max_total_mem                            C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+__malloc_sbrk_base                                C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+__malloc_top_pad                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+__malloc_trim_threshold                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+__malloc_unlock                                   C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mlock.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+__mb_cur_max                                      C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+__mcmp                                            C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__mdiff                                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__mlocale_changed                                 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+__mprec_bigtens                                   C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__mprec_tens                                      C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__mprec_tinytens                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+__muldf3                                          C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_muldivdf3.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__multadd                                         C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__multiply                                        C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__nedf2                                           C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_cmpdf2.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+__nlocale_changed                                 C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+__pow5mult                                        C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__ratio                                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+__s2b                                             C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+__sclose                                          C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+__sfmoreglue                                      C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+__sfp                                             C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+__sfp_lock_acquire                                C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+__sfp_lock_release                                C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+__sinit                                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+__sinit_lock_acquire                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+__sinit_lock_release                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+__smakebuf_r                                      C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+__sread                                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+__sseek                                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+__subdf3                                          C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_arm_addsubdf3.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__swbuf                                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+__swbuf_r                                         C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+__swrite                                          C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+__swsetup_r                                       C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+__udivsi3                                         C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a(_udivsi3.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+__ulp                                             C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+_calloc_r                                         C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+_cleanup                                          C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+_cleanup_r                                        C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+_close_r                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+_data                                             F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+_dtoa_r                                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+_edata                                            F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+_etext                                            F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+_fclose_r                                         C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+_fflush_r                                         C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+_free_r                                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+_fstat_r                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+_fwalk                                            C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+_fwalk_reent                                      C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fwalk.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+_global_impure_ptr                                C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+_impure_ptr                                       C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-impure.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wsetup.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-wbuf.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-errno.o)
+_isatty_r                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+_localeconv_r                                     C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+_lseek_r                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+_malloc_r                                         C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-makebuf.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+_malloc_trim_r                                    C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+_mprec_log10                                      C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+_putc_r                                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+_putchar_r                                        C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+_read_r                                           F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+_realloc_r                                        C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+_sbrk_r                                           F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-freer.o)
+_setlocale_r                                      C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+_sprintf_r                                        C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+_svfprintf_r                                      C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+_write_r                                          F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-stdio.o)
+end                                               F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+fclose                                            C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fclose.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+fflush                                            C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-fflush.o)
+i8ch                                              F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+localeconv                                        C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+main                                              F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+memchr                                            C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memchr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+memcpy                                            C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memcpy.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-mprec.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-dtoa.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+memmove                                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memmove.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-reallocr.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+memset                                            C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-memset.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-findfp.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-callocr.o)
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+prefetch_handler                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+putc                                              C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putc.o)
+putchar                                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-putchar.o)
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+setlocale                                         C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+sprintf                                           C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-sprintf.o)
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+strcmp                                            C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strcmp.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-locale.o)
+strlen                                            C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-strlen.o)
+                                                  C:\SCARM\GNUARM\arm-elf\lib\libc.a(lib_a-svfprintf.o)
+swi_handler                                       F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o
+szTemp                                            F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/app.o
+uart_getc                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+uart_putc                                         F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/bsp.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/Syscalls.o
+undef_handler                                     F:\DRDO-embedded\RTOS\Multitasking_LCDKBDSerialLED/build/obj/startup.o

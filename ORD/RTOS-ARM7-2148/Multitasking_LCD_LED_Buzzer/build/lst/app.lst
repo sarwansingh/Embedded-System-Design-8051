@@ -1,0 +1,588 @@
+   1              		.file	"app.c"
+   2              		.text
+   3              		.align	2
+   4              		.global	SmallDelay
+   6              	SmallDelay:
+   7              		@ args = 0, pretend = 0, frame = 4
+   8              		@ frame_needed = 1, uses_anonymous_args = 0
+   9              		@ link register save eliminated.
+  10 0000 04B02DE5 		str	fp, [sp, #-4]!
+  11 0004 00B08DE2 		add	fp, sp, #0
+  12 0008 04D04DE2 		sub	sp, sp, #4
+  13 000c 0030A0E3 		mov	r3, #0
+  14 0010 04300BE5 		str	r3, [fp, #-4]
+  15 0014 020000EA 		b	.L2
+  16              	.L3:
+  17 0018 04301BE5 		ldr	r3, [fp, #-4]
+  18 001c 013083E2 		add	r3, r3, #1
+  19 0020 04300BE5 		str	r3, [fp, #-4]
+  20              	.L2:
+  21 0024 04301BE5 		ldr	r3, [fp, #-4]
+  22 0028 630053E3 		cmp	r3, #99
+  23 002c F9FFFFDA 		ble	.L3
+  24 0030 00D08BE2 		add	sp, fp, #0
+  25 0034 0008BDE8 		ldmfd	sp!, {fp}
+  26 0038 1EFF2FE1 		bx	lr
+  28              		.align	2
+  29              		.global	LcdCmd1
+  31              	LcdCmd1:
+  32              		@ args = 0, pretend = 0, frame = 4
+  33              		@ frame_needed = 1, uses_anonymous_args = 0
+  34 003c 00482DE9 		stmfd	sp!, {fp, lr}
+  35 0040 04B08DE2 		add	fp, sp, #4
+  36 0044 04D04DE2 		sub	sp, sp, #4
+  37 0048 0030A0E1 		mov	r3, r0
+  38 004c 08304BE5 		strb	r3, [fp, #-8]
+  39 0050 08305BE5 		ldrb	r3, [fp, #-8]	@ zero_extendqisi2
+  40 0054 013003E2 		and	r3, r3, #1
+  41 0058 FF3003E2 		and	r3, r3, #255
+  42 005c 000053E3 		cmp	r3, #0
+  43 0060 0400000A 		beq	.L6
+  44 0064 4E32A0E3 		mov	r3, #-536870908
+  45 0068 0A3983E2 		add	r3, r3, #163840
+  46 006c 0229A0E3 		mov	r2, #32768
+  47 0070 002083E5 		str	r2, [r3, #0]
+  48 0074 030000EA 		b	.L7
+  49              	.L6:
+  50 0078 CE32A0E3 		mov	r3, #-536870900
+  51 007c 0A3983E2 		add	r3, r3, #163840
+  52 0080 0229A0E3 		mov	r2, #32768
+  53 0084 002083E5 		str	r2, [r3, #0]
+  54              	.L7:
+  55 0088 08305BE5 		ldrb	r3, [fp, #-8]	@ zero_extendqisi2
+  56 008c 023003E2 		and	r3, r3, #2
+  57 0090 000053E3 		cmp	r3, #0
+  58 0094 0400000A 		beq	.L8
+  59 0098 4E32A0E3 		mov	r3, #-536870908
+  60 009c 0A3983E2 		add	r3, r3, #163840
+  61 00a0 0228A0E3 		mov	r2, #131072
+  62 00a4 002083E5 		str	r2, [r3, #0]
+  63 00a8 030000EA 		b	.L9
+  64              	.L8:
+  65 00ac CE32A0E3 		mov	r3, #-536870900
+  66 00b0 0A3983E2 		add	r3, r3, #163840
+  67 00b4 0228A0E3 		mov	r2, #131072
+  68 00b8 002083E5 		str	r2, [r3, #0]
+  69              	.L9:
+  70 00bc 08305BE5 		ldrb	r3, [fp, #-8]	@ zero_extendqisi2
+  71 00c0 043003E2 		and	r3, r3, #4
+  72 00c4 000053E3 		cmp	r3, #0
+  73 00c8 0400000A 		beq	.L10
+  74 00cc 4E32A0E3 		mov	r3, #-536870908
+  75 00d0 0A3983E2 		add	r3, r3, #163840
+  76 00d4 0125A0E3 		mov	r2, #4194304
+  77 00d8 002083E5 		str	r2, [r3, #0]
+  78 00dc 030000EA 		b	.L11
+  79              	.L10:
+  80 00e0 CE32A0E3 		mov	r3, #-536870900
+  81 00e4 0A3983E2 		add	r3, r3, #163840
+  82 00e8 0125A0E3 		mov	r2, #4194304
+  83 00ec 002083E5 		str	r2, [r3, #0]
+  84              	.L11:
+  85 00f0 08305BE5 		ldrb	r3, [fp, #-8]	@ zero_extendqisi2
+  86 00f4 083003E2 		and	r3, r3, #8
+  87 00f8 000053E3 		cmp	r3, #0
+  88 00fc 0400000A 		beq	.L12
+  89 0100 4E32A0E3 		mov	r3, #-536870908
+  90 0104 0A3983E2 		add	r3, r3, #163840
+  91 0108 0121A0E3 		mov	r2, #1073741824
+  92 010c 002083E5 		str	r2, [r3, #0]
+  93 0110 030000EA 		b	.L13
+  94              	.L12:
+  95 0114 CE32A0E3 		mov	r3, #-536870900
+  96 0118 0A3983E2 		add	r3, r3, #163840
+  97 011c 0121A0E3 		mov	r2, #1073741824
+  98 0120 002083E5 		str	r2, [r3, #0]
+  99              	.L13:
+ 100 0124 0E32A0E3 		mov	r3, #-536870912
+ 101 0128 0A3983E2 		add	r3, r3, #163840
+ 102 012c 1C3083E2 		add	r3, r3, #28
+ 103 0130 0324A0E3 		mov	r2, #50331648
+ 104 0134 002083E5 		str	r2, [r3, #0]
+ 105 0138 FEFFFFEB 		bl	SmallDelay
+ 106 013c 0E32A0E3 		mov	r3, #-536870912
+ 107 0140 0A3983E2 		add	r3, r3, #163840
+ 108 0144 143083E2 		add	r3, r3, #20
+ 109 0148 0124A0E3 		mov	r2, #16777216
+ 110 014c 002083E5 		str	r2, [r3, #0]
+ 111 0150 FEFFFFEB 		bl	SmallDelay
+ 112 0154 0E32A0E3 		mov	r3, #-536870912
+ 113 0158 0A3983E2 		add	r3, r3, #163840
+ 114 015c 1C3083E2 		add	r3, r3, #28
+ 115 0160 0124A0E3 		mov	r2, #16777216
+ 116 0164 002083E5 		str	r2, [r3, #0]
+ 117 0168 FEFFFFEB 		bl	SmallDelay
+ 118 016c 04D04BE2 		sub	sp, fp, #4
+ 119 0170 0088BDE8 		ldmfd	sp!, {fp, pc}
+ 121              		.align	2
+ 122              		.global	LcdDat1
+ 124              	LcdDat1:
+ 125              		@ args = 0, pretend = 0, frame = 4
+ 126              		@ frame_needed = 1, uses_anonymous_args = 0
+ 127 0174 00482DE9 		stmfd	sp!, {fp, lr}
+ 128 0178 04B08DE2 		add	fp, sp, #4
+ 129 017c 04D04DE2 		sub	sp, sp, #4
+ 130 0180 0030A0E1 		mov	r3, r0
+ 131 0184 08304BE5 		strb	r3, [fp, #-8]
+ 132 0188 08305BE5 		ldrb	r3, [fp, #-8]	@ zero_extendqisi2
+ 133 018c 013003E2 		and	r3, r3, #1
+ 134 0190 FF3003E2 		and	r3, r3, #255
+ 135 0194 000053E3 		cmp	r3, #0
+ 136 0198 0400000A 		beq	.L16
+ 137 019c 4E32A0E3 		mov	r3, #-536870908
+ 138 01a0 0A3983E2 		add	r3, r3, #163840
+ 139 01a4 0229A0E3 		mov	r2, #32768
+ 140 01a8 002083E5 		str	r2, [r3, #0]
+ 141 01ac 030000EA 		b	.L17
+ 142              	.L16:
+ 143 01b0 CE32A0E3 		mov	r3, #-536870900
+ 144 01b4 0A3983E2 		add	r3, r3, #163840
+ 145 01b8 0229A0E3 		mov	r2, #32768
+ 146 01bc 002083E5 		str	r2, [r3, #0]
+ 147              	.L17:
+ 148 01c0 08305BE5 		ldrb	r3, [fp, #-8]	@ zero_extendqisi2
+ 149 01c4 023003E2 		and	r3, r3, #2
+ 150 01c8 000053E3 		cmp	r3, #0
+ 151 01cc 0400000A 		beq	.L18
+ 152 01d0 4E32A0E3 		mov	r3, #-536870908
+ 153 01d4 0A3983E2 		add	r3, r3, #163840
+ 154 01d8 0228A0E3 		mov	r2, #131072
+ 155 01dc 002083E5 		str	r2, [r3, #0]
+ 156 01e0 030000EA 		b	.L19
+ 157              	.L18:
+ 158 01e4 CE32A0E3 		mov	r3, #-536870900
+ 159 01e8 0A3983E2 		add	r3, r3, #163840
+ 160 01ec 0228A0E3 		mov	r2, #131072
+ 161 01f0 002083E5 		str	r2, [r3, #0]
+ 162              	.L19:
+ 163 01f4 08305BE5 		ldrb	r3, [fp, #-8]	@ zero_extendqisi2
+ 164 01f8 043003E2 		and	r3, r3, #4
+ 165 01fc 000053E3 		cmp	r3, #0
+ 166 0200 0400000A 		beq	.L20
+ 167 0204 4E32A0E3 		mov	r3, #-536870908
+ 168 0208 0A3983E2 		add	r3, r3, #163840
+ 169 020c 0125A0E3 		mov	r2, #4194304
+ 170 0210 002083E5 		str	r2, [r3, #0]
+ 171 0214 030000EA 		b	.L21
+ 172              	.L20:
+ 173 0218 CE32A0E3 		mov	r3, #-536870900
+ 174 021c 0A3983E2 		add	r3, r3, #163840
+ 175 0220 0125A0E3 		mov	r2, #4194304
+ 176 0224 002083E5 		str	r2, [r3, #0]
+ 177              	.L21:
+ 178 0228 08305BE5 		ldrb	r3, [fp, #-8]	@ zero_extendqisi2
+ 179 022c 083003E2 		and	r3, r3, #8
+ 180 0230 000053E3 		cmp	r3, #0
+ 181 0234 0400000A 		beq	.L22
+ 182 0238 4E32A0E3 		mov	r3, #-536870908
+ 183 023c 0A3983E2 		add	r3, r3, #163840
+ 184 0240 0121A0E3 		mov	r2, #1073741824
+ 185 0244 002083E5 		str	r2, [r3, #0]
+ 186 0248 030000EA 		b	.L23
+ 187              	.L22:
+ 188 024c CE32A0E3 		mov	r3, #-536870900
+ 189 0250 0A3983E2 		add	r3, r3, #163840
+ 190 0254 0121A0E3 		mov	r2, #1073741824
+ 191 0258 002083E5 		str	r2, [r3, #0]
+ 192              	.L23:
+ 193 025c 0E32A0E3 		mov	r3, #-536870912
+ 194 0260 0A3983E2 		add	r3, r3, #163840
+ 195 0264 143083E2 		add	r3, r3, #20
+ 196 0268 0224A0E3 		mov	r2, #33554432
+ 197 026c 002083E5 		str	r2, [r3, #0]
+ 198 0270 FEFFFFEB 		bl	SmallDelay
+ 199 0274 0E32A0E3 		mov	r3, #-536870912
+ 200 0278 0A3983E2 		add	r3, r3, #163840
+ 201 027c 1C3083E2 		add	r3, r3, #28
+ 202 0280 0124A0E3 		mov	r2, #16777216
+ 203 0284 002083E5 		str	r2, [r3, #0]
+ 204 0288 FEFFFFEB 		bl	SmallDelay
+ 205 028c 0E32A0E3 		mov	r3, #-536870912
+ 206 0290 0A3983E2 		add	r3, r3, #163840
+ 207 0294 143083E2 		add	r3, r3, #20
+ 208 0298 0124A0E3 		mov	r2, #16777216
+ 209 029c 002083E5 		str	r2, [r3, #0]
+ 210 02a0 FEFFFFEB 		bl	SmallDelay
+ 211 02a4 0E32A0E3 		mov	r3, #-536870912
+ 212 02a8 0A3983E2 		add	r3, r3, #163840
+ 213 02ac 1C3083E2 		add	r3, r3, #28
+ 214 02b0 0124A0E3 		mov	r2, #16777216
+ 215 02b4 002083E5 		str	r2, [r3, #0]
+ 216 02b8 FEFFFFEB 		bl	SmallDelay
+ 217 02bc 04D04BE2 		sub	sp, fp, #4
+ 218 02c0 0088BDE8 		ldmfd	sp!, {fp, pc}
+ 220              		.align	2
+ 221              		.global	Delay250
+ 223              	Delay250:
+ 224              		@ args = 0, pretend = 0, frame = 8
+ 225              		@ frame_needed = 1, uses_anonymous_args = 0
+ 226              		@ link register save eliminated.
+ 227 02c4 04B02DE5 		str	fp, [sp, #-4]!
+ 228 02c8 00B08DE2 		add	fp, sp, #0
+ 229 02cc 08D04DE2 		sub	sp, sp, #8
+ 230 02d0 C830A0E3 		mov	r3, #200
+ 231 02d4 04300BE5 		str	r3, [fp, #-4]
+ 232 02d8 0030A0E3 		mov	r3, #0
+ 233 02dc 08300BE5 		str	r3, [fp, #-8]
+ 234 02e0 050000EA 		b	.L26
+ 235              	.L27:
+ 236 02e4 04301BE5 		ldr	r3, [fp, #-4]
+ 237 02e8 013043E2 		sub	r3, r3, #1
+ 238 02ec 04300BE5 		str	r3, [fp, #-4]
+ 239 02f0 08301BE5 		ldr	r3, [fp, #-8]
+ 240 02f4 013083E2 		add	r3, r3, #1
+ 241 02f8 08300BE5 		str	r3, [fp, #-8]
+ 242              	.L26:
+ 243 02fc 08301BE5 		ldr	r3, [fp, #-8]
+ 244 0300 630053E3 		cmp	r3, #99
+ 245 0304 F6FFFFDA 		ble	.L27
+ 246 0308 00D08BE2 		add	sp, fp, #0
+ 247 030c 0008BDE8 		ldmfd	sp!, {fp}
+ 248 0310 1EFF2FE1 		bx	lr
+ 250              		.align	2
+ 251              		.global	DelayMs
+ 253              	DelayMs:
+ 254              		@ args = 0, pretend = 0, frame = 12
+ 255              		@ frame_needed = 1, uses_anonymous_args = 0
+ 256              		@ link register save eliminated.
+ 257 0314 04B02DE5 		str	fp, [sp, #-4]!
+ 258 0318 00B08DE2 		add	fp, sp, #0
+ 259 031c 0CD04DE2 		sub	sp, sp, #12
+ 260 0320 0C000BE5 		str	r0, [fp, #-12]
+ 261 0324 0030A0E3 		mov	r3, #0
+ 262 0328 08300BE5 		str	r3, [fp, #-8]
+ 263 032c 0D0000EA 		b	.L30
+ 264              	.L33:
+ 265 0330 0030A0E3 		mov	r3, #0
+ 266 0334 04300BE5 		str	r3, [fp, #-4]
+ 267 0338 020000EA 		b	.L31
+ 268              	.L32:
+ 269 033c 04301BE5 		ldr	r3, [fp, #-4]
+ 270 0340 013083E2 		add	r3, r3, #1
+ 271 0344 04300BE5 		str	r3, [fp, #-4]
+ 272              	.L31:
+ 273 0348 04201BE5 		ldr	r2, [fp, #-4]
+ 274 034c F93FA0E3 		mov	r3, #996
+ 275 0350 033083E2 		add	r3, r3, #3
+ 276 0354 030052E1 		cmp	r2, r3
+ 277 0358 F7FFFFDA 		ble	.L32
+ 278 035c 08301BE5 		ldr	r3, [fp, #-8]
+ 279 0360 013083E2 		add	r3, r3, #1
+ 280 0364 08300BE5 		str	r3, [fp, #-8]
+ 281              	.L30:
+ 282 0368 08201BE5 		ldr	r2, [fp, #-8]
+ 283 036c 0C301BE5 		ldr	r3, [fp, #-12]
+ 284 0370 030052E1 		cmp	r2, r3
+ 285 0374 EDFFFFBA 		blt	.L33
+ 286 0378 00D08BE2 		add	sp, fp, #0
+ 287 037c 0008BDE8 		ldmfd	sp!, {fp}
+ 288 0380 1EFF2FE1 		bx	lr
+ 290              		.align	2
+ 291              		.global	LcdCmd
+ 293              	LcdCmd:
+ 294              		@ args = 0, pretend = 0, frame = 4
+ 295              		@ frame_needed = 1, uses_anonymous_args = 0
+ 296 0384 00482DE9 		stmfd	sp!, {fp, lr}
+ 297 0388 04B08DE2 		add	fp, sp, #4
+ 298 038c 04D04DE2 		sub	sp, sp, #4
+ 299 0390 0030A0E1 		mov	r3, r0
+ 300 0394 08304BE5 		strb	r3, [fp, #-8]
+ 301 0398 08305BE5 		ldrb	r3, [fp, #-8]	@ zero_extendqisi2
+ 302 039c 2332A0E1 		mov	r3, r3, lsr #4
+ 303 03a0 FF3003E2 		and	r3, r3, #255
+ 304 03a4 0300A0E1 		mov	r0, r3
+ 305 03a8 FEFFFFEB 		bl	LcdCmd1
+ 306 03ac 08305BE5 		ldrb	r3, [fp, #-8]	@ zero_extendqisi2
+ 307 03b0 0300A0E1 		mov	r0, r3
+ 308 03b4 FEFFFFEB 		bl	LcdCmd1
+ 309 03b8 FEFFFFEB 		bl	Delay250
+ 310 03bc FEFFFFEB 		bl	Delay250
+ 311 03c0 04D04BE2 		sub	sp, fp, #4
+ 312 03c4 0088BDE8 		ldmfd	sp!, {fp, pc}
+ 314              		.align	2
+ 315              		.global	LcdDat
+ 317              	LcdDat:
+ 318              		@ args = 0, pretend = 0, frame = 4
+ 319              		@ frame_needed = 1, uses_anonymous_args = 0
+ 320 03c8 00482DE9 		stmfd	sp!, {fp, lr}
+ 321 03cc 04B08DE2 		add	fp, sp, #4
+ 322 03d0 04D04DE2 		sub	sp, sp, #4
+ 323 03d4 0030A0E1 		mov	r3, r0
+ 324 03d8 08304BE5 		strb	r3, [fp, #-8]
+ 325 03dc 08305BE5 		ldrb	r3, [fp, #-8]	@ zero_extendqisi2
+ 326 03e0 2332A0E1 		mov	r3, r3, lsr #4
+ 327 03e4 FF3003E2 		and	r3, r3, #255
+ 328 03e8 0300A0E1 		mov	r0, r3
+ 329 03ec FEFFFFEB 		bl	LcdDat1
+ 330 03f0 08305BE5 		ldrb	r3, [fp, #-8]	@ zero_extendqisi2
+ 331 03f4 0300A0E1 		mov	r0, r3
+ 332 03f8 FEFFFFEB 		bl	LcdDat1
+ 333 03fc FEFFFFEB 		bl	Delay250
+ 334 0400 FEFFFFEB 		bl	Delay250
+ 335 0404 04D04BE2 		sub	sp, fp, #4
+ 336 0408 0088BDE8 		ldmfd	sp!, {fp, pc}
+ 338              		.align	2
+ 339              		.global	LcdInit
+ 341              	LcdInit:
+ 342              		@ args = 0, pretend = 0, frame = 0
+ 343              		@ frame_needed = 1, uses_anonymous_args = 0
+ 344 040c 00482DE9 		stmfd	sp!, {fp, lr}
+ 345 0410 04B08DE2 		add	fp, sp, #4
+ 346 0414 0E32A0E3 		mov	r3, #-536870912
+ 347 0418 0A3983E2 		add	r3, r3, #163840
+ 348 041c 183083E2 		add	r3, r3, #24
+ 349 0420 0324A0E3 		mov	r2, #50331648
+ 350 0424 002083E5 		str	r2, [r3, #0]
+ 351 0428 0E32A0E3 		mov	r3, #-536870912
+ 352 042c 0A3983E2 		add	r3, r3, #163840
+ 353 0430 1C3083E2 		add	r3, r3, #28
+ 354 0434 0324A0E3 		mov	r2, #50331648
+ 355 0438 002083E5 		str	r2, [r3, #0]
+ 356 043c 8E22A0E3 		mov	r2, #-536870904
+ 357 0440 0A2982E2 		add	r2, r2, #163840
+ 358 0444 0131A0E3 		mov	r3, #1073741824
+ 359 0448 423883E2 		add	r3, r3, #4325376
+ 360 044c 023983E2 		add	r3, r3, #32768
+ 361 0450 003082E5 		str	r3, [r2, #0]
+ 362 0454 CE22A0E3 		mov	r2, #-536870900
+ 363 0458 0A2982E2 		add	r2, r2, #163840
+ 364 045c 0131A0E3 		mov	r3, #1073741824
+ 365 0460 423883E2 		add	r3, r3, #4325376
+ 366 0464 023983E2 		add	r3, r3, #32768
+ 367 0468 003082E5 		str	r3, [r2, #0]
+ 368 046c 0600A0E3 		mov	r0, #6
+ 369 0470 FEFFFFEB 		bl	DelayMs
+ 370 0474 0300A0E3 		mov	r0, #3
+ 371 0478 FEFFFFEB 		bl	LcdCmd1
+ 372 047c 0600A0E3 		mov	r0, #6
+ 373 0480 FEFFFFEB 		bl	DelayMs
+ 374 0484 0300A0E3 		mov	r0, #3
+ 375 0488 FEFFFFEB 		bl	LcdCmd1
+ 376 048c FEFFFFEB 		bl	Delay250
+ 377 0490 0300A0E3 		mov	r0, #3
+ 378 0494 FEFFFFEB 		bl	LcdCmd1
+ 379 0498 FEFFFFEB 		bl	Delay250
+ 380 049c 0200A0E3 		mov	r0, #2
+ 381 04a0 FEFFFFEB 		bl	LcdCmd1
+ 382 04a4 FEFFFFEB 		bl	Delay250
+ 383 04a8 2800A0E3 		mov	r0, #40
+ 384 04ac FEFFFFEB 		bl	LcdCmd
+ 385 04b0 0800A0E3 		mov	r0, #8
+ 386 04b4 FEFFFFEB 		bl	LcdCmd
+ 387 04b8 0C00A0E3 		mov	r0, #12
+ 388 04bc FEFFFFEB 		bl	LcdCmd
+ 389 04c0 0600A0E3 		mov	r0, #6
+ 390 04c4 FEFFFFEB 		bl	LcdCmd
+ 391 04c8 0088BDE8 		ldmfd	sp!, {fp, pc}
+ 393              		.comm	Task1Stk,4096,4
+ 394              		.comm	Task2Stk,4096,4
+ 395              		.comm	Task3Stk,4096,4
+ 396              		.align	2
+ 397              		.global	main
+ 399              	main:
+ 400              		@ args = 0, pretend = 0, frame = 0
+ 401              		@ frame_needed = 1, uses_anonymous_args = 0
+ 402 04cc 00482DE9 		stmfd	sp!, {fp, lr}
+ 403 04d0 04B08DE2 		add	fp, sp, #4
+ 404 04d4 FEFFFFEB 		bl	BSP_Init
+ 405 04d8 FEFFFFEB 		bl	LcdInit
+ 406 04dc 8E32A0E3 		mov	r3, #-536870904
+ 407 04e0 0A3983E2 		add	r3, r3, #163840
+ 408 04e4 8E22A0E3 		mov	r2, #-536870904
+ 409 04e8 0A2982E2 		add	r2, r2, #163840
+ 410 04ec 002092E5 		ldr	r2, [r2, #0]
+ 411 04f0 0F2782E3 		orr	r2, r2, #3932160
+ 412 04f4 0F2B82E3 		orr	r2, r2, #15360
+ 413 04f8 002083E5 		str	r2, [r3, #0]
+ 414 04fc 4E32A0E3 		mov	r3, #-536870908
+ 415 0500 0A3983E2 		add	r3, r3, #163840
+ 416 0504 0F27A0E3 		mov	r2, #3932160
+ 417 0508 0F2B82E2 		add	r2, r2, #15360
+ 418 050c 002083E5 		str	r2, [r3, #0]
+ 419 0510 8E32A0E3 		mov	r3, #-536870904
+ 420 0514 0A3983E2 		add	r3, r3, #163840
+ 421 0518 8E22A0E3 		mov	r2, #-536870904
+ 422 051c 0A2982E2 		add	r2, r2, #163840
+ 423 0520 002092E5 		ldr	r2, [r2, #0]
+ 424 0524 022482E3 		orr	r2, r2, #33554432
+ 425 0528 002083E5 		str	r2, [r3, #0]
+ 426 052c FEFFFFEB 		bl	OSInit
+ 427 0530 3C009FE5 		ldr	r0, .L44
+ 428 0534 0010A0E3 		mov	r1, #0
+ 429 0538 38209FE5 		ldr	r2, .L44+4
+ 430 053c 0630A0E3 		mov	r3, #6
+ 431 0540 FEFFFFEB 		bl	OSTaskCreate
+ 432 0544 30009FE5 		ldr	r0, .L44+8
+ 433 0548 0010A0E3 		mov	r1, #0
+ 434 054c 2C209FE5 		ldr	r2, .L44+12
+ 435 0550 0730A0E3 		mov	r3, #7
+ 436 0554 FEFFFFEB 		bl	OSTaskCreate
+ 437 0558 24009FE5 		ldr	r0, .L44+16
+ 438 055c 0010A0E3 		mov	r1, #0
+ 439 0560 20209FE5 		ldr	r2, .L44+20
+ 440 0564 0830A0E3 		mov	r3, #8
+ 441 0568 FEFFFFEB 		bl	OSTaskCreate
+ 442 056c FEFFFFEB 		bl	OSStart
+ 443              	.L42:
+ 444 0570 FEFFFFEA 		b	.L42
+ 445              	.L45:
+ 446              		.align	2
+ 447              	.L44:
+ 448 0574 00000000 		.word	App_Task1
+ 449 0578 FC0F0000 		.word	Task1Stk+4092
+ 450 057c 00000000 		.word	App_Task2
+ 451 0580 FC0F0000 		.word	Task2Stk+4092
+ 452 0584 00000000 		.word	App_Task3
+ 453 0588 FC0F0000 		.word	Task3Stk+4092
+ 455              		.align	2
+ 456              		.global	App_Task1
+ 458              	App_Task1:
+ 459              		@ args = 0, pretend = 0, frame = 4
+ 460              		@ frame_needed = 1, uses_anonymous_args = 0
+ 461 058c 00482DE9 		stmfd	sp!, {fp, lr}
+ 462 0590 04B08DE2 		add	fp, sp, #4
+ 463 0594 04D04DE2 		sub	sp, sp, #4
+ 464 0598 08000BE5 		str	r0, [fp, #-8]
+ 465              	.L47:
+ 466 059c CE32A0E3 		mov	r3, #-536870900
+ 467 05a0 0A3983E2 		add	r3, r3, #163840
+ 468 05a4 0F27A0E3 		mov	r2, #3932160
+ 469 05a8 0F2B82E2 		add	r2, r2, #15360
+ 470 05ac 002083E5 		str	r2, [r3, #0]
+ 471 05b0 0000A0E3 		mov	r0, #0
+ 472 05b4 0010A0E3 		mov	r1, #0
+ 473 05b8 0020A0E3 		mov	r2, #0
+ 474 05bc 7D3FA0E3 		mov	r3, #500
+ 475 05c0 FEFFFFEB 		bl	OSTimeDlyHMSM
+ 476 05c4 4E32A0E3 		mov	r3, #-536870908
+ 477 05c8 0A3983E2 		add	r3, r3, #163840
+ 478 05cc 0F27A0E3 		mov	r2, #3932160
+ 479 05d0 0F2B82E2 		add	r2, r2, #15360
+ 480 05d4 002083E5 		str	r2, [r3, #0]
+ 481 05d8 0000A0E3 		mov	r0, #0
+ 482 05dc 0010A0E3 		mov	r1, #0
+ 483 05e0 0020A0E3 		mov	r2, #0
+ 484 05e4 7D3FA0E3 		mov	r3, #500
+ 485 05e8 FEFFFFEB 		bl	OSTimeDlyHMSM
+ 486 05ec EAFFFFEA 		b	.L47
+ 488              		.section	.rodata
+ 489              		.align	2
+ 490              	.LC0:
+ 491 0000 4E49454C 		.ascii	"NIELIT Chandigarh\000"
+ 491      49542043 
+ 491      68616E64 
+ 491      69676172 
+ 491      6800
+ 492 0012 0000     		.text
+ 493              		.align	2
+ 494              		.global	App_Task2
+ 496              	App_Task2:
+ 497              		@ args = 0, pretend = 0, frame = 28
+ 498              		@ frame_needed = 1, uses_anonymous_args = 0
+ 499 05f0 00482DE9 		stmfd	sp!, {fp, lr}
+ 500 05f4 04B08DE2 		add	fp, sp, #4
+ 501 05f8 1CD04DE2 		sub	sp, sp, #28
+ 502 05fc 20000BE5 		str	r0, [fp, #-32]
+ 503 0600 8C309FE5 		ldr	r3, .L54
+ 504 0604 1CC04BE2 		sub	ip, fp, #28
+ 505 0608 03E0A0E1 		mov	lr, r3
+ 506 060c 0F00BEE8 		ldmia	lr!, {r0, r1, r2, r3}
+ 507 0610 0F00ACE8 		stmia	ip!, {r0, r1, r2, r3}
+ 508 0614 00309EE5 		ldr	r3, [lr, #0]
+ 509 0618 B030CCE1 		strh	r3, [ip, #0]	@ movhi
+ 510              	.L52:
+ 511 061c 0100A0E3 		mov	r0, #1
+ 512 0620 FEFFFFEB 		bl	LcdCmd
+ 513 0624 0030A0E3 		mov	r3, #0
+ 514 0628 08300BE5 		str	r3, [fp, #-8]
+ 515 062c 0F0000EA 		b	.L50
+ 516              	.L51:
+ 517 0630 08201BE5 		ldr	r2, [fp, #-8]
+ 518 0634 1730E0E3 		mvn	r3, #23
+ 519 0638 04104BE2 		sub	r1, fp, #4
+ 520 063c 022081E0 		add	r2, r1, r2
+ 521 0640 033082E0 		add	r3, r2, r3
+ 522 0644 0030D3E5 		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 523 0648 0300A0E1 		mov	r0, r3
+ 524 064c FEFFFFEB 		bl	LcdDat
+ 525 0650 0000A0E3 		mov	r0, #0
+ 526 0654 0010A0E3 		mov	r1, #0
+ 527 0658 0420A0E3 		mov	r2, #4
+ 528 065c 0030A0E3 		mov	r3, #0
+ 529 0660 FEFFFFEB 		bl	OSTimeDlyHMSM
+ 530 0664 08301BE5 		ldr	r3, [fp, #-8]
+ 531 0668 013083E2 		add	r3, r3, #1
+ 532 066c 08300BE5 		str	r3, [fp, #-8]
+ 533              	.L50:
+ 534 0670 08201BE5 		ldr	r2, [fp, #-8]
+ 535 0674 1730E0E3 		mvn	r3, #23
+ 536 0678 04104BE2 		sub	r1, fp, #4
+ 537 067c 022081E0 		add	r2, r1, r2
+ 538 0680 033082E0 		add	r3, r2, r3
+ 539 0684 0030D3E5 		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 540 0688 000053E3 		cmp	r3, #0
+ 541 068c E7FFFF1A 		bne	.L51
+ 542 0690 E1FFFFEA 		b	.L52
+ 543              	.L55:
+ 544              		.align	2
+ 545              	.L54:
+ 546 0694 00000000 		.word	.LC0
+ 548              		.align	2
+ 549              		.global	App_Task3
+ 551              	App_Task3:
+ 552              		@ args = 0, pretend = 0, frame = 4
+ 553              		@ frame_needed = 1, uses_anonymous_args = 0
+ 554 0698 00482DE9 		stmfd	sp!, {fp, lr}
+ 555 069c 04B08DE2 		add	fp, sp, #4
+ 556 06a0 04D04DE2 		sub	sp, sp, #4
+ 557 06a4 08000BE5 		str	r0, [fp, #-8]
+ 558              	.L57:
+ 559 06a8 CE32A0E3 		mov	r3, #-536870900
+ 560 06ac 0A3983E2 		add	r3, r3, #163840
+ 561 06b0 0224A0E3 		mov	r2, #33554432
+ 562 06b4 002083E5 		str	r2, [r3, #0]
+ 563 06b8 0000A0E3 		mov	r0, #0
+ 564 06bc 0010A0E3 		mov	r1, #0
+ 565 06c0 0020A0E3 		mov	r2, #0
+ 566 06c4 FA30A0E3 		mov	r3, #250
+ 567 06c8 FEFFFFEB 		bl	OSTimeDlyHMSM
+ 568 06cc 4E32A0E3 		mov	r3, #-536870908
+ 569 06d0 0A3983E2 		add	r3, r3, #163840
+ 570 06d4 0224A0E3 		mov	r2, #33554432
+ 571 06d8 002083E5 		str	r2, [r3, #0]
+ 572 06dc 0000A0E3 		mov	r0, #0
+ 573 06e0 0010A0E3 		mov	r1, #0
+ 574 06e4 0020A0E3 		mov	r2, #0
+ 575 06e8 FA30A0E3 		mov	r3, #250
+ 576 06ec FEFFFFEB 		bl	OSTimeDlyHMSM
+ 577 06f0 ECFFFFEA 		b	.L57
+ 579              		.ident	"GCC: (GNU) 4.4.1"
+DEFINED SYMBOLS
+                            *ABS*:00000000 app.c
+C:\WINDOWS\ccu9RJ3R.s:6      .text:00000000 SmallDelay
+C:\WINDOWS\ccu9RJ3R.s:10     .text:00000000 $a
+C:\WINDOWS\ccu9RJ3R.s:31     .text:0000003c LcdCmd1
+C:\WINDOWS\ccu9RJ3R.s:124    .text:00000174 LcdDat1
+C:\WINDOWS\ccu9RJ3R.s:223    .text:000002c4 Delay250
+C:\WINDOWS\ccu9RJ3R.s:253    .text:00000314 DelayMs
+C:\WINDOWS\ccu9RJ3R.s:293    .text:00000384 LcdCmd
+C:\WINDOWS\ccu9RJ3R.s:317    .text:000003c8 LcdDat
+C:\WINDOWS\ccu9RJ3R.s:341    .text:0000040c LcdInit
+                            *COM*:00001000 Task1Stk
+                            *COM*:00001000 Task2Stk
+                            *COM*:00001000 Task3Stk
+C:\WINDOWS\ccu9RJ3R.s:399    .text:000004cc main
+C:\WINDOWS\ccu9RJ3R.s:448    .text:00000574 $d
+C:\WINDOWS\ccu9RJ3R.s:458    .text:0000058c App_Task1
+C:\WINDOWS\ccu9RJ3R.s:496    .text:000005f0 App_Task2
+C:\WINDOWS\ccu9RJ3R.s:551    .text:00000698 App_Task3
+C:\WINDOWS\ccu9RJ3R.s:461    .text:0000058c $a
+C:\WINDOWS\ccu9RJ3R.s:546    .text:00000694 $d
+C:\WINDOWS\ccu9RJ3R.s:554    .text:00000698 $a
+
+UNDEFINED SYMBOLS
+BSP_Init
+OSInit
+OSTaskCreate
+OSStart
+OSTimeDlyHMSM

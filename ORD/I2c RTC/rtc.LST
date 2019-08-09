@@ -1,0 +1,276 @@
+C51 COMPILER V8.08   RTC                                                                   08/07/2019 09:44:45 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE RTC
+OBJECT MODULE PLACED IN rtc.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE rtc.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          // interfacing ds1307 with AT89C51
+   2          #include<reg51.h>
+   3          void _nop_(void);
+   4          #define delay_us _nop_(); //generates 1 microsecond
+   5          
+   6          #define LCD P2
+   7          
+   8          sbit RS=P3^0;  
+   9          sbit EN=P3^2;  
+  10          sbit RW=P1^1;  
+  11          
+  12          sbit SCK=P3^4; //serial clock pin
+  13          sbit SDA=P3^5; //serial data pin
+  14          sbit BUZZER = P3^7;
+  15          #define SCKHIGH  SCK=1;
+  16          #define SCKLOW   SCK=0;
+  17          #define SDAHIGH  SDA=1;
+  18          #define SDALOW   SDA=0;
+  19          
+  20          void integer_lcd(int);
+  21          void init_lcd(void);
+  22          void cmd_lcd(unsigned char);
+  23          void write_lcd(unsigned char);
+  24          void display_lcd(unsigned char *);
+  25          void delay_ms(unsigned int);
+  26          
+  27          void start(void);
+  28          void stop(void);
+  29          void send_byte(unsigned char);
+  30          unsigned char receive_byte(unsigned char);
+  31          void write_i2c(unsigned char,unsigned char,unsigned char);
+  32          unsigned char read_i2c(unsigned char,unsigned char);
+  33          
+  34          //clock[]={seconds,minutes,hours,day_of_week,date,month,year};
+  35          //unsigned char clock[]={0x00,0x40,0x17,0x06,0x24,0x03,0x06};
+  36          unsigned char clock[]={0x00,0x03,0x06,0x01,0x07,0x07,0x0e};
+  37          unsigned char *s[]={"SUN","MON","TUE","WED","THU","FRI","SAT"};
+  38          unsigned char slave_ack,add=0,c,k;
+  39          unsigned int num;
+  40                      // Real Time Clock Mode
+  41          
+  42          void main(void)
+  43          {
+  44   1              init_lcd();
+  45   1              BUZZER =0; add=0;
+  46   1      //      while(add<=6)   //update real time clock
+  47   1      //      {    write_i2c(0xd0,add,clock[add]);
+  48   1      //           add++;
+  49   1      //    }
+  50   1              // stop();
+  51   1      
+  52   1              while(1)
+  53   1              {
+  54   2                 c=read_i2c(0xd0,0x02);//read hours register and display on LCD
+  55   2             write_lcd((c/16)+48);            //      18-       0001 0010       bcd 12
+C51 COMPILER V8.08   RTC                                                                   08/07/2019 09:44:45 PAGE 2   
+
+  56   2             write_lcd((c%16)+48);
+  57   2             write_lcd(':');
+  58   2      
+  59   2                 c=read_i2c(0xd0,0x01);//read minutes register and display on LCD
+  60   2             write_lcd((c/16)+48);
+  61   2             write_lcd((c%16)+48);
+  62   2             write_lcd(':');
+  63   2                          
+  64   2      
+  65   2             delay_ms(10);
+  66   2      
+  67   2             c=read_i2c(0xd0,0x00);//read seconds register and display on LCD
+  68   2                 write_lcd((c/16)+48);
+  69   2                 write_lcd((c%16)+48);
+  70   2                 write_lcd(' ');
+  71   2                 
+  72   2                 display_lcd(s[read_i2c(0xd0,0x03 )]);//read day register and display
+  73   2      
+  74   2                 cmd_lcd(0xc0);  // go to second line 
+  75   2                 
+  76   2                 c=read_i2c(0xd0,0x04);//read date register and display on LCD
+  77   2                 write_lcd((c/16)+48);
+  78   2                 write_lcd((c%16)+48);
+  79   2      
+  80   2             write_lcd('/');
+  81   2               
+  82   2                 c=read_i2c(0xd0,0x05);//read month register and display on LCD
+  83   2             write_lcd((c/16)+48);
+  84   2             write_lcd((c%16)+48);
+  85   2             write_lcd('/');
+  86   2             write_lcd('2');
+  87   2             write_lcd('0');
+  88   2      
+  89   2             c=read_i2c(0xd0,0x06);//read year register and display on LCD
+  90   2             write_lcd((c/16)+48);
+  91   2             write_lcd((c%16)+48);
+  92   2                 /**/
+  93   2      
+  94   2             delay_ms(100);
+  95   2                 cmd_lcd(0x01);  // clear the screen 
+  96   2              }
+  97   1      }
+  98          //starts i2c, if both SCK & SDA are idle
+  99          void start(void)
+ 100          { 
+ 101   1          //check SCK. if SCK busy, return else SCK idle
+ 102   1              if(SCK==0)   return;
+ 103   1      
+ 104   1          //check SDA. if SDA busy, return else SDA idle
+ 105   1              if(SDA==0)  return;
+ 106   1      
+ 107   1              SDALOW //data low
+ 108   1              delay_us
+ 109   1              SCKLOW  //clock low   
+ 110   1              delay_us
+ 111   1      }          
+ 112          //stops i2c, releasing the bus
+ 113          void stop(void)
+ 114          {        
+ 115   1              SDALOW //data low
+ 116   1              SCKHIGH //clock high
+ 117   1              delay_us
+C51 COMPILER V8.08   RTC                                                                   08/07/2019 09:44:45 PAGE 3   
+
+ 118   1              SDAHIGH //data high
+ 119   1              delay_us
+ 120   1      }
+ 121          //transmits one byte of data to i2c bus
+ 122          void send_byte(unsigned char c)
+ 123          {
+ 124   1              unsigned mask=0x80;
+ 125   1          do  //transmits 8 bits
+ 126   1          {
+ 127   2              //set data line accordingly(0 or 1)
+ 128   2                      if(c&mask)  SDAHIGH //data high
+ 129   2              else        SDALOW //data low
+ 130   2      
+ 131   2              SCKHIGH   //clock high
+ 132   2              delay_us
+ 133   2              SCKLOW   //clock low
+ 134   2              delay_us
+ 135   2              mask/=2;  //shift mask
+ 136   2          }while(mask>0);
+ 137   1              SDAHIGH  //release data line for acknowledge
+ 138   1              SCKHIGH  //send clock for acknowledge
+ 139   1              delay_us
+ 140   1              slave_ack=SDA; //read data pin for acknowledge
+ 141   1              SCKLOW  //clock low
+ 142   1              delay_us
+ 143   1      }      
+ 144          //receives one byte of data from i2c bus
+ 145          unsigned char receive_byte(unsigned char master_ack)
+ 146          {
+ 147   1              unsigned char c=0,mask=0x80;
+ 148   1          do  //receive 8 bits
+ 149   1          {
+ 150   2                      SCKHIGH //clock high
+ 151   2                      delay_us
+ 152   2                      if(SDA==1) //read data
+ 153   2                              c|=mask;  //store data
+ 154   2                          SCKLOW  //clock low
+ 155   2                          delay_us
+ 156   2                          mask/=2; //shift mask
+ 157   2              }while(mask>0);
+ 158   1              if(master_ack==1)   SDAHIGH //don't acknowledge
+ 159   1              else                SDALOW //acknowledge
+ 160   1      
+ 161   1              SCKHIGH //clock high
+ 162   1              delay_us
+ 163   1              SCKLOW //clock low
+ 164   1              delay_us
+ 165   1              SDAHIGH //data high
+ 166   1              return c;
+ 167   1      }
+ 168          //writes one byte of data(c) to slave device(device_id) at given address(location)
+ 169          void write_i2c(unsigned char device_id,unsigned char location,unsigned char c)
+ 170          {
+ 171   1          do
+ 172   1          {     start();      //starts i2c bus
+ 173   2                send_byte(device_id); //select slave device
+ 174   2                if(slave_ack==1)  //if acknowledge not received, stop i2c bus
+ 175   2                        stop();
+ 176   2          }while(slave_ack==1); //loop until acknowledge is received
+ 177   1      
+ 178   1              send_byte(location); //send address location
+ 179   1              send_byte(c); //send data to i2c bus
+C51 COMPILER V8.08   RTC                                                                   08/07/2019 09:44:45 PAGE 4   
+
+ 180   1              stop(); //stop i2c bus
+ 181   1              delay_ms(4);
+ 182   1      }      
+ 183          //reads one byte of data(c) from slave device(device_id) at given address(location)
+ 184          unsigned char read_i2c(unsigned char device_id,unsigned char location)
+ 185          {
+ 186   1              unsigned char c;
+ 187   1          do
+ 188   1          {
+ 189   2                      start();   //starts i2c bus  
+ 190   2              send_byte(device_id); //select slave device
+ 191   2              if(slave_ack==1) //if acknowledge not received, stop i2c bus
+ 192   2                 stop();
+ 193   2          }while(slave_ack==1); //loop until acknowledge is received
+ 194   1      
+ 195   1              send_byte(location);  //send address location     
+ 196   1              stop(); //stop i2c bus
+ 197   1              start(); //starts i2c bus  
+ 198   1              send_byte(device_id+1); //select slave device in read mode
+ 199   1              c=receive_byte(1); //receive data from i2c bus
+ 200   1              stop(); //stop i2c bus
+ 201   1              return c;
+ 202   1      }      
+ 203          //initialize lcd
+ 204          void init_lcd(void)
+ 205          {                           
+ 206   1              delay_ms(10); //delay 10 milliseconds
+ 207   1              cmd_lcd(0x0e); //lcd on, cursor on
+ 208   1              delay_ms(10);
+ 209   1              cmd_lcd(0x38); //8 bit initialize, 5x7 character font, 16x2 display
+ 210   1              delay_ms(10);
+ 211   1              cmd_lcd(0x06); //right shift cursor automatically after each character is displayed
+ 212   1              delay_ms(10);
+ 213   1              cmd_lcd(0x01); //clear lcd
+ 214   1              delay_ms(10);
+ 215   1              cmd_lcd (0x80);
+ 216   1      }
+ 217          //transmit command or instruction to lcd
+ 218          void cmd_lcd(unsigned char c)
+ 219          {       EN=1;   RW=0;//set enable pin
+ 220   1              RS=0; //clear register select pin
+ 221   1              LCD=c; //load 8 bit data
+ 222   1              EN=0; //clear enable pin
+ 223   1              delay_ms(2); //delay 2 milliseconds
+ 224   1      }
+ 225          //transmit a character to be displayed on lcd
+ 226          void write_lcd(unsigned char c)
+ 227          {       EN=1; //set enable pin
+ 228   1              RW=0;   RS=1; //set register select pin
+ 229   1              LCD=c;  //load 8 bit data
+ 230   1              EN=0; //clear enable pin
+ 231   1              delay_ms(2); //delay 2 milliseconds
+ 232   1      }
+ 233          //transmit a string to be displayed on lcd
+ 234          void display_lcd(unsigned char *s)
+ 235          {
+ 236   1              while(*s)write_lcd(*s++);
+ 237   1      }
+ 238          //generates delay in milli seconds
+ 239          void delay_ms(unsigned int i)
+ 240          {
+ 241   1              unsigned int j;
+C51 COMPILER V8.08   RTC                                                                   08/07/2019 09:44:45 PAGE 5   
+
+ 242   1              while(i-->0)
+ 243   1              {   for(j=0;j<500;j++); }
+ 244   1      
+ 245   1      }   
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    563    ----
+   CONSTANT SIZE    =     28    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     34       3
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,496 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+Task3Stk            0x1000            F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+Tmr_ReloadCnts      0x4               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+OSLockNesting       0x1               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSRunning           0x1               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSIdleCtr           0x4               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSPrioHighRdy       0x1               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSPrioCur           0x1               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTCBList           0x4               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTickStepState     0x1               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSCtxSwCtr          0x4               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTCBFreeList       0x4               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+Task2Stk            0x1000            F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+OSTaskCtr           0x1               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTCBHighRdy        0x4               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSRdyGrp            0x1               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+Task1Stk            0x1000            F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+OSRdyTbl            0x8               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSEventFreeList     0x4               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSIntNesting        0x1               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTCBCur            0x4               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTime              0x4               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskIdleStk       0x200             F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSEventTbl          0x208             F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTCBTbl            0x44c             F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTCBPrioTbl        0x100             F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+CODE             0x00000000         0x00080000         xr
+DATA             0x40000100         0x00008000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+LOAD F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+LOAD F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+LOAD F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+LOAD F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+LOAD F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+LOAD C:\SCARM\GNUARM\arm-elf\lib\libm.a
+LOAD C:\SCARM\GNUARM\arm-elf\lib\libc.a
+LOAD C:\SCARM\GNUARM\arm-elf\lib\libc.a
+LOAD C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a
+LOAD C:\SCARM\GNUARM\arm-elf\lib\libstdc++.a
+START GROUP
+LOAD C:\SCARM\GNUARM\lib\gcc\arm-elf\4.4.1\libgcc.a
+LOAD C:\SCARM\GNUARM\arm-elf\lib\libc.a
+END GROUP
+
+.text           0x00000000     0x4674
+ *startup.o(.text)
+ .text          0x00000000       0xc4 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+                0x00000000                Vectors
+ *(.text)
+ .text          0x000000c4      0x22c F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+                0x000000ec                OSStartHighRdy
+                0x00000120                OSCtxSw
+                0x00000184                OSIntCtxSw
+                0x00000244                OS_CPU_FIQ_ISR
+                0x000000e4                OS_CPU_SR_Restore
+                0x000001c0                OS_CPU_IRQ_ISR
+                0x000000c4                OS_CPU_SR_Save
+ .text          0x000002f0      0x6f4 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+                0x00000604                DelayMs
+                0x000005b4                Delay250
+                0x000006b8                LcdDat
+                0x00000674                LcdCmd
+                0x00000464                LcdDat1
+                0x0000087c                App_Task1
+                0x000008e0                App_Task2
+                0x000007bc                main
+                0x00000988                App_Task3
+                0x0000032c                LcdCmd1
+                0x000006fc                LcdInit
+                0x000002f0                SmallDelay
+ .text          0x000009e4      0x2e0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+                0x00000a0c                OSTaskCreateHook
+                0x00000a58                OSTaskStatHook
+                0x000009e4                OSInitHookBegin
+                0x00000a28                OSTaskDelHook
+                0x00000cb0                OSTimeTickHook
+                0x00000c94                OSTCBInitHook
+                0x00000a6c                OSTaskStkInit
+                0x000009f8                OSInitHookEnd
+                0x00000c80                OSTaskSwHook
+                0x00000a44                OSTaskIdleHook
+ .text          0x00000cc4      0x3b8 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+                0x0000104c                Tmr_TickISR_Handler
+                0x00000cc4                BSP_CPU_ClkFreq
+                0x00000e94                OS_CPU_IRQ_ISR_Handler
+                0x00000ee4                OS_CPU_FIQ_ISR_Handler
+                0x00000d3c                BSP_CPU_ClkFreqPeripheral
+                0x00000e28                BSP_Init
+ .text          0x0000107c     0x35f8 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                0x00004630                OSTimeSet
+                0x000011f0                OSIntEnter
+                0x00002238                OS_TCBInit
+                0x00003654                OSTaskCreateExt
+                0x00003508                OSTaskCreate
+                0x00003194                OSTaskChangePrio
+                0x000037c8                OSTaskDel
+                0x0000107c                OSEventNameGet
+                0x00001244                OSIntExit
+                0x00001eb0                OS_MemCopy
+                0x00001f1c                OS_Sched
+                0x00002c28                OSMboxQuery
+                0x00003d24                OSTaskNameSet
+                0x00002e70                OSSemPend
+                0x00002a64                OSMboxPost
+                0x00002d04                OSSemAccept
+                0x00001e58                OS_MemClr
+                0x00001608                OS_EventTaskRdy
+                0x000043dc                OSTimeDly
+                0x000044d0                OSTimeDlyHMSM
+                0x00003010                OSSemPost
+                0x000015f4                OS_Dummy
+                0x00001110                OSEventNameSet
+                0x0000180c                OS_EventTaskWait
+                0x00002180                OS_TaskStatStkChk
+                0x00003b48                OSTaskDelReq
+                0x00001350                OSStart
+                0x00003e34                OSTaskResume
+                0x00003c30                OSTaskNameGet
+                0x000013c8                OSTimeTick
+                0x00002d8c                OSSemCreate
+                0x00002058                OS_StrCopy
+                0x0000257c                OSMboxCreate
+                0x00002880                OSMboxPend
+                0x00003f8c                OSTaskStkChk
+                0x00002510                OSMboxAccept
+                0x000011c8                OSInit
+                0x00004294                OSTaskQuery
+                0x00001954                OS_EventTO
+                0x000020dc                OS_StrLen
+                0x00002b1c                OSMboxPostOpt
+                0x000045e8                OSTimeGet
+                0x000030dc                OSSemSet
+                0x0000265c                OSMboxDel
+                0x000015d4                OSVersion
+                0x0000435c                OS_TaskStkClr
+                0x00001a5c                OS_EventWaitListInit
+                0x000040fc                OSTaskSuspend
+                0x00002134                OS_TaskIdle
+ *(.glue_7t)
+ .glue_7t       0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+ .glue_7t       0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+ .glue_7t       0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+ .glue_7t       0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+ .glue_7t       0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+ .glue_7t       0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+ *(.glue_7)
+ .glue_7        0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+ .glue_7        0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+ .glue_7        0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+ .glue_7        0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+ .glue_7        0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+ .glue_7        0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+
+.vfp11_veneer   0x00004674        0x0
+ .vfp11_veneer  0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+ .vfp11_veneer  0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+ .vfp11_veneer  0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+ .vfp11_veneer  0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+ .vfp11_veneer  0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+ .vfp11_veneer  0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+
+.v4_bx          0x00004674        0x0
+ .v4_bx         0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+ .v4_bx         0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+ .v4_bx         0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+ .v4_bx         0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+ .v4_bx         0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+ .v4_bx         0x00004674        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                0x00004674                . = ALIGN (0x4)
+
+.rodata         0x00004674      0x124
+ *(.rodata)
+ .rodata        0x00004674       0x14 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+ .rodata        0x00004688      0x110 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                0x00004688                OSUnMapTbl
+                0x00004798                . = ALIGN (0x4)
+                0x00004798                _etext = .
+                0x00004798                PROVIDE (etext, .)
+
+.data           0x40000100        0x0 load address 0x00004798
+                0x40000100                _data = .
+ *(.data)
+ .data          0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+ .data          0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+ .data          0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+ .data          0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+ .data          0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+ .data          0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                0x40000100                . = ALIGN (0x4)
+                0x40000100                _edata = .
+                0x40000100                PROVIDE (edata, .)
+
+.bss            0x40000100     0x3998 load address 0x00004798
+                0x40000100                __bss_start = .
+                0x40000100                __bss_start__ = .
+ *(.bss)
+ .bss           0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+ .bss           0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+ .bss           0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+ .bss           0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+ .bss           0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+ .bss           0x40000100        0x0 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+ *(COMMON)
+ COMMON         0x40000100     0x3000 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+                0x40000100                Task3Stk
+                0x40001100                Task2Stk
+                0x40002100                Task1Stk
+ COMMON         0x40003100        0x4 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+                0x40003100                Tmr_ReloadCnts
+ COMMON         0x40003104      0x994 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                0x40003104                OSLockNesting
+                0x40003105                OSRunning
+                0x40003108                OSIdleCtr
+                0x4000310c                OSPrioHighRdy
+                0x4000310d                OSPrioCur
+                0x40003110                OSTCBList
+                0x40003114                OSTickStepState
+                0x40003118                OSCtxSwCtr
+                0x4000311c                OSTCBFreeList
+                0x40003120                OSTaskCtr
+                0x40003124                OSTCBHighRdy
+                0x40003128                OSRdyGrp
+                0x4000312c                OSRdyTbl
+                0x40003134                OSEventFreeList
+                0x40003138                OSIntNesting
+                0x4000313c                OSTCBCur
+                0x40003140                OSTime
+                0x40003144                OSTaskIdleStk
+                0x40003344                OSEventTbl
+                0x4000354c                OSTCBTbl
+                0x40003998                OSTCBPrioTbl
+                0x40003a98                . = ALIGN (0x4)
+                0x40003a98                __bss_end__ = .
+                0x40003a98                __bss_end__ = .
+                0x40003a98                _end = .
+                0x40003a98                PROVIDE (end, .)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x48
+ *(.comment)
+ .comment       0x00000000       0x12 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+ .comment       0x00000012       0x12 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+ .comment       0x00000024       0x12 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+ .comment       0x00000036       0x12 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+OUTPUT(F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/bin\LPC2148.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x10
+ .ARM.attributes
+                0x00000000       0x10 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+ .ARM.attributes
+                0x00000010       0x10 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+ .ARM.attributes
+                0x00000020       0x10 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+ .ARM.attributes
+                0x00000030       0x10 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+ .ARM.attributes
+                0x00000040       0x10 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+ .ARM.attributes
+                0x00000050       0x10 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+
+Cross Reference Table
+
+Symbol                                            File
+App_Task1                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+App_Task2                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+App_Task3                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+BSP_CPU_ClkFreq                                   F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+BSP_CPU_ClkFreqPeripheral                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+BSP_Init                                          F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+Delay250                                          F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+DelayMs                                           F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+LcdCmd                                            F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+LcdCmd1                                           F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+LcdDat                                            F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+LcdDat1                                           F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+LcdInit                                           F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+OSCtxSw                                           F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSCtxSwCtr                                        F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSEventFreeList                                   F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSEventNameGet                                    F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSEventNameSet                                    F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSEventTbl                                        F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSIdleCtr                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSInit                                            F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+OSInitHookBegin                                   F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSInitHookEnd                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSIntCtxSw                                        F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSIntEnter                                        F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSIntExit                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+OSIntNesting                                      F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+OSLockNesting                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSMboxAccept                                      F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSMboxCreate                                      F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSMboxDel                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSMboxPend                                        F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSMboxPost                                        F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSMboxPostOpt                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSMboxQuery                                       F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSPrioCur                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+OSPrioHighRdy                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+OSRdyGrp                                          F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSRdyTbl                                          F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSRunning                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+OSSemAccept                                       F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSSemCreate                                       F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSSemPend                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSSemPost                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSSemSet                                          F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSStart                                           F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+OSStartHighRdy                                    F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTCBCur                                          F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+OSTCBFreeList                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTCBHighRdy                                      F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+OSTCBInitHook                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTCBList                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTCBPrioTbl                                      F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTCBTbl                                          F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskChangePrio                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskCreate                                      F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+OSTaskCreateExt                                   F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskCreateHook                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskCtr                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskDel                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskDelHook                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskDelReq                                      F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskIdleHook                                    F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskIdleStk                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskNameGet                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskNameSet                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskQuery                                       F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskResume                                      F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskStatHook                                    F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+OSTaskStkChk                                      F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskStkInit                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskSuspend                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTaskSwHook                                      F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+OSTickStepState                                   F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTime                                            F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTimeDly                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTimeDlyHMSM                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+OSTimeGet                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTimeSet                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSTimeTick                                        F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+OSTimeTickHook                                    F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_c.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSUnMapTbl                                        F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OSVersion                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_CPU_FIQ_ISR                                    F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+OS_CPU_FIQ_ISR_Handler                            F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+OS_CPU_IRQ_ISR                                    F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+OS_CPU_IRQ_ISR_Handler                            F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+OS_CPU_SR_Restore                                 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_CPU_SR_Save                                    F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/os_cpu_a.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_Dummy                                          F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_EventTO                                        F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_EventTaskRdy                                   F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_EventTaskWait                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_EventWaitListInit                              F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_MemClr                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_MemCopy                                        F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_Sched                                          F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_StrCopy                                        F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_StrLen                                         F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_TCBInit                                        F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_TaskIdle                                       F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_TaskStatStkChk                                 F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+OS_TaskStkClr                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/ucos_ii.o
+SmallDelay                                        F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+Task1Stk                                          F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+Task2Stk                                          F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+Task3Stk                                          F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+Tmr_ReloadCnts                                    F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+Tmr_TickISR_Handler                               F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/bsp.o
+Vectors                                           F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+__bss_end__                                       F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+__bss_start__                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+_data                                             F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+_edata                                            F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+_etext                                            F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+main                                              F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/app.o
+                                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+prefetch_handler                                  F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+swi_handler                                       F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o
+undef_handler                                     F:\DRDO-embedded\RTOS\Multitasking_LCD_LED_Buzzer/build/obj/startup.o

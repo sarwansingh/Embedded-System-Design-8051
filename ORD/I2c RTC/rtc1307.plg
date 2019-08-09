@@ -1,0 +1,17 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+F:\DRDO-embedded\8051-nano\I2c RTC\rtc1307.uv2
+Project File Date:  07/07/2014
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling rtc.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_WRITE_I2C?RTC
+Program Size: data=46.0 xdata=0 code=795
+creating hex file from "rtc1307"...
+"rtc1307" - 0 Error(s), 1 Warning(s).
