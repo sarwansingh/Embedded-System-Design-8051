@@ -1,0 +1,100 @@
+BL51 BANKED LINKER/LOCATER V6.05                                                        07/08/2014  11:25:30  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.05, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE prog.obj TO ledproj
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  prog.obj (PROG)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  ledproj (PROG)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0034H     UNIT         ?PR?MAIN?PROG
+            CODE    0834H     001DH     UNIT         ?PR?MYDELAY?PROG
+            CODE    0851H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   ledproj (PROG)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?PROG
+
+?PR?MAIN?PROG
+  +--> ?PR?MYDELAY?PROG
+
+
+
+SYMBOL TABLE OF MODULE:  ledproj (PROG)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        PROG
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  C:0800H         PUBLIC        main
+  B:00B0H.7       PUBLIC        BUZZER
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/08/2014  11:25:30  PAGE 2
+
+
+  C:0834H         PUBLIC        mydelay
+  -------         PROC          MYDELAY
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0006H         SYMBOL        j
+  -------         ENDDO         
+  C:0834H         LINE#         3
+  C:0834H         LINE#         4
+  C:0834H         LINE#         5
+  C:0837H         LINE#         6
+  C:0845H         LINE#         7
+  C:0850H         LINE#         8
+  -------         ENDPROC       MYDELAY
+  -------         PROC          MAIN
+  C:0800H         LINE#         9
+  C:0800H         LINE#         10
+  C:0802H         LINE#         11
+  C:0802H         LINE#         12
+  C:0802H         LINE#         13
+  C:0808H         LINE#         14
+  C:080EH         LINE#         16
+  C:0814H         LINE#         17
+  C:081AH         LINE#         19
+  C:0820H         LINE#         20
+  C:0826H         LINE#         22
+  C:082CH         LINE#         23
+  C:0832H         LINE#         24
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        PROG
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0051H BYTE ( 3%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=96
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

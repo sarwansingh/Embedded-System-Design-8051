@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://learn.sparkfun.com/tutorials/i2c/all -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile mode if small screen device -->
+    
+    <title>I2C - Learn.SFE</title>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Roboto+Slab:400,300" rel="stylesheet">
+    <link href="https://learn.sparkfun.com/css/bootstrap.css?rev=1404227058" rel="stylesheet">
+    <link href="https://learn.sparkfun.com/css/bootstrap-responsive.css?rev=1404227058" rel="stylesheet">
+    <link rel="stylesheet" href="./I2C - Learn.SFE_files/theme.github.css" type="text/css" media="screen">    <link rel="alternate" type="application/atom+xml" title="Education Blog" href="https://learn.sparkfun.com/feeds/blog">
+    <link rel="alternate" type="application/atom+xml" title="Tutorials" href="https://learn.sparkfun.com/feeds/tutorials">
+    <link rel="alternate" type="application/atom+xml" title="Education Blog Comments" href="https://learn.sparkfun.com/feeds/blog_comments">
+    <link rel="alternate" type="application/atom+xml" title="Tutorial Comments" href="https://learn.sparkfun.com/feeds/tutorial_comments">
+
+    <script type="text/javascript" async="" src="./I2C - Learn.SFE_files/ga.js"></script><script type="text/javascript">
+      var SFECONFIG = {
+        http_server: 'http://www.sparkfun.com',
+        https_server: 'https://www.sparkfun.com',
+        http_static: 'https://cdn.sparkfun.com',
+        base_url: '/',
+        url: '/',
+        controller: 'tutorials',
+        action: 'view',
+        entity_id: '',
+        auth: false,
+        sparkrev: '1404227058',
+        search_key: 'qLqN6uVRKXnjHd2QapGm'      };
+    </script>
+    <script src="./I2C - Learn.SFE_files/learn-built.js"></script>
+    <script type="text/javascript">
+      require.config({
+        paths: {
+          'jqueryui': 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min'
+        },
+        baseUrl: '/js/',
+        urlArgs: "sparkrev=" + SFECONFIG.sparkrev
+      });
+      require(['jqueryui'], function() {
+        $('#learn').learn();
+        $('#learn').trigger('loaded');
+        $('#learn').sfeutil();
+      });
+      $(document).ready(function() {
+        $("img.unveil").unveil(100);
+      });
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3404365-7']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jqueryui" src="./I2C - Learn.SFE_files/jquery-ui.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tutorial" src="./I2C - Learn.SFE_files/tutorial.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.imagesloaded" src="./I2C - Learn.SFE_files/jquery.imagesloaded.js"></script></head>
+
+  <body id="learn" class="no-type no-touch" ontouchstart="">
+    <div class="wrapper">
+      <div class="wrapper-inner">
+
+    <div class="header">
+  <div class="container">
+
+<!-- Mobile Nav Button -->
+<div class="mobile-menu-container left">
+  <a id="nav_toggle" class="mobile-menu-button nav_toggle" href="https://learn.sparkfun.com/tutorials/i2c/all#"><span>≡</span></a>
+  <a id="search_toggle" class="mobile-menu-button" href="https://learn.sparkfun.com/tutorials/i2c/all#"><span class="glyphicon glyphicon-search"></span></a>
+</div>
+
+<!-- Logo -->
+<div class="logo-container">
+  <a class="logo" href="https://www.sparkfun.com/">
+    <span class="sfe-icon-flame"></span>
+    <span class="sfe-icon-sparkfun" data-icon="🔥">
+      <span class="visuallyhidden">sparkfun.com</span>
+    </span>
+  </a>
+</div>
+
+<!-- Shop / Learn Tabs -->
+<nav class="tabs-container">
+  <ul>
+    <li class="shop"><a href="https://www.sparkfun.com/">Shop</a></li>
+    <li class="learn"><a href="https://learn.sparkfun.com/">Learn</a></li>
+    <li class="avc"><a href="https://avc.sparkfun.com/"><span class="sfe-icon-avc"><span class="visuallyhidden">AVC</span></span></a></li>
+  </ul>
+</nav>
+
+<!-- User -->
+<div class="user-container mobile-menu-container right">
+  <a id="account_toggle" class="mobile-menu-button" href="https://learn.sparkfun.com/tutorials/i2c/all#"><span class="glyphicon glyphicon-user"></span></a>
+
+    <nav class="user">
+    <span>You are <strong>not</strong> logged in.<br></span>
+    <!-- login form -->
+    <span class="dropdown">
+      <a data-toggle="dropdown" id="login-dropdown-toggle" href="https://www.sparkfun.com/account/login">log in</a>
+
+      <ul class="dropdown-menu pull-right">
+        <li class="login">
+          <form role="form" action="https://www.sparkfun.com/account/login" method="post">
+            <div class="form-group">
+              <label for="login-username">Email</label>
+              <input type="email" tabindex="1" name="user" id="login-username" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input tabindex="2" type="password" name="passwd" id="login-password" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <input type="submit" value="Log In" tabindex="3" class="btn btn-default">
+            </div>
+          </form>
+
+          <p>
+            <a href="https://www.sparkfun.com/account/forgot_password">Forgot your password</a>?
+            <br>
+            No account? <a id="btn_register_account" href="https://www.sparkfun.com/account/make">Register one</a>!
+          </p>
+        </li>
+      </ul>
+    </span>
+    / <a href="https://www.sparkfun.com/account/make">register</a>  </nav>
+</div>
+
+<!-- Navigation / Search -->
+<div class="main-nav-container">
+  <nav class="main-nav">
+    <ul>
+      <li class="shop">
+        <a href="https://www.sparkfun.com/">Shop</a>      </li>
+      <li class="learn">
+        <a href="https://learn.sparkfun.com/">Learn</a>      </li>
+      <li class="avc">
+        <a href="https://avc.sparkfun.com/"><span class="sfe-icon-avc"><span class="visuallyhidden">AVC</span></span></a>      </li>
+      <li><a href="https://learn.sparkfun.com/blog">EDU Blog</a></li>
+      <li><a href="https://learn.sparkfun.com/resources">Resources</a></li>
+      <li class="active"><a href="https://learn.sparkfun.com/tutorials">Tutorials</a></li>
+      <li><a href="https://learn.sparkfun.com/events">Classes</a></li>
+      <li><a href="https://learn.sparkfun.com/calendar">Calendar</a></li>
+      <li><a href="https://learn.sparkfun.com/workshops">Workshops</a></li>
+      <li class="desktop-toggle">
+        <a href="https://www.sparkfun.com/account/mobile_toggle">Desktop Site</a>      </li>
+    </ul>
+  </nav>
+  <form id="search_form" class="search" action="https://learn.sparkfun.com/search/results">
+    <div>
+      <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="search" name="term" autocomplete="off" class="search-query input-medium ui-autocomplete-input" value="" placeholder="Search">
+    </div>
+  </form>
+</div>
+
+</div>
+</div><!-- end .header -->
+
+    
+    <div class="content">
+      <div class="container">
+
+        
+        <div class="main-title">
+  <ul class="breadcrumb">
+    <li><a href="https://learn.sparkfun.com/">Home</a> <span class="divider">/</span></li>
+    <li><a href="https://learn.sparkfun.com/tutorials">Tutorials</a> <span class="divider">/</span></li>
+    <li>I2C</li>
+      </ul>
+
+  <h1>
+    I2C  </h1>
+
+</div>
+
+
+<a id="nav_toggle_pages" class="nav_toggle" href="https://learn.sparkfun.com/tutorials/i2c/all#"><span>≡</span> Pages</a>
+
+<div id="tutorial" class="row-fluid">
+
+  <div class="span9" id="sections">
+
+    <p class="contributors">
+                      Contributors:
+                <a href="https://www.sparkfun.com/users/236377"><img src="./I2C - Learn.SFE_files/f4e195a7becacb6d86238db8c87e90f0"> SFUptownMaker</a>            
+<span class="share-link-inline">
+
+  <a class="share-link-toggle" href="https://learn.sparkfun.com/tutorials/i2c/all#">
+    <span class="glyphicon glyphicon-new-window"></span>
+    <span class="share-title">Share</span>
+  </a>
+
+  <span class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t82" onclick="$(this).select();">
+
+    </span>
+  
+  <a rel="nofollow" onclick="return $(this).sfeutil(&#39;track_link&#39;,this,&#39;Share&#39;,&#39;clicked&#39;,&#39;twitter&#39;);" href="https://twitter.com/intent/tweet?text=I2C&url=http%3A%2F%2Fsfe.io%2Ft82&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+  <a rel="nofollow" onclick="return $(this).sfeutil(&#39;track_link&#39;,this,&#39;Share&#39;,&#39;clicked&#39;,&#39;facebook&#39;);" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft82&t=I2C" title="Share on Facebook"><span class="sfe-icon-facebook hidetext"><span>Share on Facebook</span></span></a>
+
+  <a rel="nofollow" onclick="return $(this).sfeutil(&#39;track_link&#39;,this,&#39;Share&#39;,&#39;clicked&#39;,&#39;googleplus&#39;);" href="https://plus.google.com/share?url=http%3A%2F%2Fsfe.io%2Ft82" title="Share on Google+"><span class="sfe-icon-google-plus hidetext"><span>Share on Google+</span></span></a>
+
+  
+</span>
+    </p>
+
+          <div class="section tutorial-page">
+        <h2 id="introduction">Introduction</h2>
+        <p>In this tutorial, you will learn all about the I<sup>2</sup>C communication protocol, why you would want to use it, and how it’s implemented.</p>
+
+<p>The Inter-integrated Circuit  (I<sup>2</sup>C) Protocol is a protocol intended to allow multiple “slave” digital integrated circuits (“chips”) to communicate with one or more “master” chips. Like the Serial Peripheral Interface (SPI), it is only intended for short distance communications within a single device. Like Asynchronous Serial Interfaces (such as RS-232 or UARTs), it only requires two signal wires to exchange information.</p>
+
+<h3>Suggested Reading</h3>
+
+<p>Stuff that would be helpful to know before reading this tutorial:</p>
+
+<ul>
+<li><a href="https://learn.sparkfun.com/tutorials/binary">Binary</a></li>
+<li><a href="https://learn.sparkfun.com/tutorials/serial-communication">Serial Communication</a></li>
+<li><a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi">Serial Peripheral Interface</a></li>
+<li><a href="https://learn.sparkfun.com/tutorials/shift-registers">Shift registers</a></li>
+<li><a href="https://learn.sparkfun.com/tutorials/logic-levels">Logic Levels</a></li>
+</ul>
+      </div>
+          <div class="section tutorial-page">
+        <h2 id="why-use-i2c">Why Use I2C?</h2>
+        <p>To figure out why one might want to communicate over I<sup>2</sup>C, you must first compare it to the other available options to see how it differs.</p>
+
+<h3>What’s Wrong with Serial Ports?</h3>
+
+<p style="text-align:center;"> <a href="https://dlnmh9ip6v2uc.cloudfront.net/assets/5/c/a/3/0/51adfda8ce395f935d000000.png"><img src="./I2C - Learn.SFE_files/51adfda8ce395f935d000000.png" alt="Block diagram of an asynchronous serial system."></a></p>
+
+<p>Because serial ports are <strong>asynchronous</strong> (no clock data is transmitted), devices using them must agree ahead of time on a data rate. The two devices must also have clocks that are close to the same rate, and will remain so–excessive differences between clock rates on either end will cause garbled data.</p>
+
+<p>Asynchronous serial ports require hardware overhead–the UART at either end is relatively complex and difficult to accurately implement in software if necessary. At least one start and stop bit is a part of each frame of data, meaning that 10 bits of transmission time are required for each 8 bits of data sent, which eats into the data rate.</p>
+
+<p>Another core fault in asynchronous serial ports is that they are inherently suited to communications between two, and only two, devices. While it is <em>possible</em> to connect multiple devices to a single serial port, <strong>bus contention</strong> (where two devices attempt to drive the same line at the same time) is always an issue and must be dealt with carefully to prevent damage to the devices in question, usually through external hardware.</p>
+
+<p>Finally, data rate is an issue. While there is no <em>theoretical</em> limit to asynchronous serial communications, most UART devices only support a certain set of fixed baud rates, and the highest of these is usually around 230400 bits per second.</p>
+
+<h3>What’s Wrong with SPI?</h3>
+
+<p style="text-align:center;"> <a href="https://dlnmh9ip6v2uc.cloudfront.net/assets/e/b/d/5/8/51adfda8ce395f9d5d000000.png"><img src="./I2C - Learn.SFE_files/51adfda8ce395f9d5d000000.png" alt="Block diagram of an SPI system."></a></p>
+
+<p>The most obvious drawback of SPI is the number of pins required. Connecting a single master to a single slave with an SPI bus requires four lines; each additional slave requires one additional chip select I/O pin on the master. The rapid proliferation of pin connections makes it undesirable in situations where lots of devices must be slaved to one master. Also, the large number of connections for each device can make routing signals more difficult in tight PCB layout situations.
+SPI only allows one master on the bus, but it does support an arbitrary number of slaves (subject only to the drive capability of the devices connected to the bus and the number of chip select pins available).</p>
+
+<p>SPI is good for high data rate <strong>full-duplex</strong> (simultaneous sending and receiving of data) connections, supporting clock rates upwards of 10MHz (and thus, 10 million bits per second) for some devices, and the speed scales nicely. The hardware at either end is usually a very simple shift register, allowing easy implementation in software.</p>
+
+<h3>Enter I<sup>2</sup>C - The Best of Both Worlds!</h3>
+
+<p style="text-align:center;"> <a href="https://dlnmh9ip6v2uc.cloudfront.net/assets/3/d/1/b/6/51adfda8ce395f151b000000.png"><img src="./I2C - Learn.SFE_files/51adfda8ce395f151b000000.png" alt="Block diagram of an I2C system"></a></p>
+
+<p>I<sup>2</sup>C requires a mere two wires, like asynchronous serial, but those two wires can support up to 1008 slave devices. Also, unlike SPI, I<sup>2</sup>C can support a multi-master system, allowing more than one master to communicate with all devices on the bus (although the master devices can’t talk to each other over the bus and must take turns using the bus lines).</p>
+
+<p>Data rates fall between asynchronous serial and SPI; most I<sup>2</sup>C devices can communicate at 100kHz or 400kHz. There is some overhead with I<sup>2</sup>C; for every 8 bits of data to be sent, one extra bit of meta data (the “ACK/NACK” bit, which we’ll discuss later) must be transmitted.</p>
+
+<p>The hardware required to implement I<sup>2</sup>C is more complex than SPI, but less than asynchronous serial. It can be fairly trivially implemented in software.</p>
+
+<h3>I<sup>2</sup>C - A Brief History</h3>
+
+<p>I<sup>2</sup>C was originally developed in 1982 by Philips for various Philips chips. The original spec allowed for only 100kHz communications, and provided only for 7-bit addresses, limiting the number of devices on the bus to 112 (there are several reserved addresses, which will never be used for valid I<sup>2</sup>C addresses). In 1992, the first public specification was published, adding a 400kHz fast-mode as well as an expanded 10-bit address space. Much of the time (for instance, in the ATMega328 device on many Arduino-compatible boards) , device support for I<sup>2</sup>C ends at this point. There are three additional modes specified: fast-mode plus, at 1MHz; high-speed mode, at 3.4MHz; and ultra-fast mode, at 5MHz.</p>
+
+<p>In addition to “vanilla” I<sup>2</sup>C, Intel introduced a variant in 1995 call “System Management Bus” (SMBus). SMBus is a more tightly controlled format, intended to maximize predictability of communications between support ICs on PC motherboards. The most significant difference between SMBus is that it limits speeds from 10kHz to 100kHz, while I<sup>2</sup>C can support devices from 0kHz to 5MHz. SMBus includes a clock timeout mode which makes low-speed operations illegal, although many SMBus devices will support it anyway to maximize interoperability with embedded I<sup>2</sup>C systems.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="i2c-at-the-hardware-level">I2C at the Hardware Level</h2>
+        <h3>Signals</h3>
+
+<p>Each I<sup>2</sup>C bus consists of two signals: SCL and SDA. SCL is the clock signal, and SDA is the data signal. The clock signal is always generated by the current bus master; some slave devices may force the clock low at times to delay the master sending more data (or to require more time to prepare data before the master attempts to clock it out). This is called “clock stretching” and is described on the protocol page.</p>
+
+<p>Unlike UART or SPI connections, the I<sup>2</sup>C bus drivers are <a href="http://en.wikipedia.org/wiki/Open_collector">“open drain”</a>, meaning that they can pull the corresponding signal line low, but cannot drive it high. Thus, there can be no bus contention where one device is trying to drive the line high while another tries to pull it low, eliminating the potential for damage to the drivers or excessive power dissipation in the system. Each signal line has a <a href="https://learn.sparkfun.com/tutorials/pull-up-resistors">pull-up resistor</a> on it, to restore the signal to high when no device is asserting it low.</p>
+
+<p style="text-align:center;"> <a href="https://dlnmh9ip6v2uc.cloudfront.net/assets/5/f/5/a/1/51adff65ce395ff71a000000.png"><img src="./I2C - Learn.SFE_files/51adff65ce395ff71a000000.png" alt="Equivalent internal circuit diagram of an I2C system."></a></p>
+
+<p style="text-align:center;"><em>Notice the two pull-up resistors on the two communication lines.</em></p>
+
+<p>Resistor selection varies with devices on the bus, but a good rule of thumb is to start with 4.7k and adjust down if necessary. I<sup>2</sup>C is a fairly robust protocol, and can be used with short runs of wire (2-3m). For long runs, or systems with lots of devices, smaller resistors are better.</p>
+
+<h3>Signal Levels</h3>
+
+<p>Since the devices on the bus don’t actually drive the signals high, I<sup>2</sup>C allows for some flexibility in connecting devices with different I/O voltages. In general, in a system where one device is at a higher voltage than another, it may be possible to connect the two devices via I<sup>2</sup>C without any level shifting circuitry in between them. The trick is to connect the pull-up resistors to the lower of the two voltages. This only works in some cases, where the lower of the two system voltages exceeds the high-level input voltage of the the higher voltage system–for example, a 5V Arduino and a 3.3V accelerometer.</p>
+
+<p>If the voltage difference between the two systems is too great (say, 5V and 2.5V), SparkFun offers a <a href="https://www.sparkfun.com/products/10403">simple I<sup>2</sup>C level shifter board</a>. Since the board also includes an enable line, it can be used to disable communications to selected devices. This is useful in cases where more than one device with the same address is to be connected to a single master–Wii Nunchucks are a good example.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="protocol">Protocol</h2>
+        <p>Communication via I<sup>2</sup>C is more complex than with a UART or SPI solution. The signalling must adhere to a certain protocol for the devices on the bus to recognize it as valid I<sup>2</sup>C communications. Fortunately, most devices take care of all the fiddly details for you, allowing you to concentrate on the data you wish to exchange.</p>
+
+<h3>Basics</h3>
+
+<p style="text-align:center;"> <a href="https://dlnmh9ip6v2uc.cloudfront.net/assets/6/4/7/1/e/51ae0000ce395f645d000000.png"><img src="./I2C - Learn.SFE_files/51ae0000ce395f645d000000.png" alt="Standard 7-bit address transfer message."></a></p>
+
+<p>Messages are broken up into two types of frame: an address frame, where the master indicates the slave to which the message is being sent, and one or more data frames, which are 8-bit data messages passed from master to slave or vice versa. Data is placed on the SDA line after SCL goes low, and is sampled after the SCL line goes high. The time between clock edge and data read/write is defined by the devices on the bus and will vary from chip to chip.</p>
+
+<h4>Start Condition</h4>
+
+<p>To initiate the address frame, the master device leaves SCL high and pulls SDA low. This puts all slave devices on notice that a transmission is about to start. If two master devices wish to take ownership of the bus at one time, whichever device pulls SDA low first wins the race and gains control of the bus. It is possible to issue repeated starts, initiating a new communication sequence without relinquishing control of the bus to other masters; we’ll talk about that later.</p>
+
+<h4>Address Frame</h4>
+
+<p>The address frame is always first in any new communication sequence. For a 7-bit address, the address is clocked out most significant bit (MSB) first, followed by a R/W bit indicating whether this is a read (1) or write (0) operation.</p>
+
+<p>The 9th bit of the frame is the NACK/ACK bit. This is the case for all frames (data or address). Once the first 8 bits of the frame are sent, the receiving device is given control over SDA. If the receiving device does not pull the SDA line low before the 9th clock pulse, it can be inferred that the receiving device either did not receive the data or did not know how to parse the message. In that case, the exchange halts, and it’s up to the master of the system to decide how to proceed.</p>
+
+<h4>Data Frames</h4>
+
+<p>After the address frame has been sent, data can begin being transmitted. The master will simply continue generating clock pulses at a regular interval, and the data will be placed on SDA by either the master or the slave, depending on whether the R/W bit indicated a read or write operation. The number of data frames is arbitrary, and most slave devices will auto-increment the internal register, meaning that subsequent reads or writes will come from the next register in line.</p>
+
+<h4>Stop condition</h4>
+
+<p>Once all the data frames have been sent, the master will generate a stop condition. Stop conditions are defined by a 0-&gt;1 (low to high) transition on SDA <em>after</em> a 0-&gt;1 transition on SCL, with SCL remaining high. During normal data writing operation, the value on SDA should <strong>not</strong> change when SCL is high, to avoid false stop conditions.</p>
+
+<h3>Advanced Protocol Topics</h3>
+
+<h4>10-bit Addresses</h4>
+
+<p style="text-align:center;"> <a href="https://dlnmh9ip6v2uc.cloudfront.net/assets/1/2/b/e/4/51ae005dce395ff21a000003.png"><img src="./I2C - Learn.SFE_files/51ae005dce395ff21a000003.png" alt="10-bit address frames example."></a></p>
+
+<p>In a 10-bit addressing system, two frames are required to transmit the slave address. The first frame will consist of the code b11110xyz, where ‘x’ is the MSB of the slave address, y is bit 8 of the slave address, and z is the read/write bit as described above. The first frame’s ACK bit will be asserted by all slaves which match the first two bits of the address. As with a normal 7-bit transfer, another transfer begins immediately, and this transfer contains bits 7:0 of the address. At this point, the addressed slave should respond with an ACK bit. If it doesn’t, the failure mode is the same as a 7-bit system.</p>
+
+<p>Note that 10-bit address devices can coexist with 7-bit address devices, since the leading ‘11110’ part of the address is not a part of any valid 7-bit addresses.</p>
+
+<h4>Repeated Start Conditions</h4>
+
+<p style="text-align:center;"> <a href="https://dlnmh9ip6v2uc.cloudfront.net/assets/c/6/f/d/f/51ae0000ce395fae1b000000.png"><img src="./I2C - Learn.SFE_files/51ae0000ce395fae1b000000.png" alt="A repeated start condition."></a></p>
+
+<p>Sometimes, it is important that a master device be allowed to exchange several messages in one go, without allowing other master devices on the bus to interfere. For this reason, the repeated start condition has been defined.</p>
+
+<p>To perform a repeated start, SDA is allowed to go high while SCL is low, SCL is allowed to go high, and then SDA is brought low again while SCL is high. Because there was no stop condition on the bus, the previous communication wasn’t truly completed and the current master maintains control of the bus.</p>
+
+<p>At this point, the next message can begin transmission. The syntax of this new message is the same as any other message–an address frame followed by data frames. Any number of repeated starts is allowed, and the master will maintain control of the bus until it issues a stop condition.</p>
+
+<h4>Clock stretching</h4>
+
+<p style="text-align:center;"> <a href="https://dlnmh9ip6v2uc.cloudfront.net/assets/8/2/8/8/5/51ae0000ce395f331b000000.png"><img src="./I2C - Learn.SFE_files/51ae0000ce395f331b000000.png" alt="A slave using clock stretching to delay the next data frame."></a></p>
+
+<p>At times, the master’s data rate will exceed the slave’s ability to provide that data. This can be because the data isn’t ready yet (for instance, the slave hasn’t completed an analog-to-digital conversion yet) or because a previous operation hasn’t yet completed (say, an EEPROM which hasn’t completed writing to non-volatile memory yet and needs to finish that before it can service other requests).</p>
+
+<p>In this case, some slave devices will execute what is referred to as “clock stretching”. Nominally, <strong>all</strong> clocking is driven by the master device–slaves simply put data on the bus or take data off the bus in response to the master’s clock pulses. At any point in the data transfer process, an addressed slave can hold the SCL line low after the master releases it. The master is required to refrain from additional clock pulses or data transfer until such time as the slave releases the SCL line.</p>      </div>
+          <div class="section tutorial-page">
+        <h2 id="res">Resources and Going Further</h2>
+        <p>I<sup>2</sup>C is a relatively complex interface, and there are many resources out there to help you deal with it. Below are some of the more informative ones.</p>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/I%C2%B2C">Wikipedia article on I<sup>2</sup>C</a> - Not great, but not a terrible place to start.</li>
+<li><a href="http://www.nxp.com/documents/user_manual/UM10204.pdf">Standards doc</a> - Phillips Semiconductor became NXP a few years back; this is the official standards doc for I<sup>2</sup>C.</li>
+<li><a href="http://www.i2c-bus.org/i2c-bus/">I<sup>2</sup>C primer</a> - The official primer on I<sup>2</sup>C and related technologies.</li>
+<li><a href="http://www.lm-sensors.org/wiki/I2CTools">Linux tools for I<sup>2</sup>C</a> - A nice set of tools for working with I<sup>2</sup>C and related buses in embedded Linux environments, like pcDuino or Raspberry Pi.</li>
+</ul>
+      </div>
+    
+        
+<span class="share-link-inline">
+
+  <a class="share-link-toggle" href="https://learn.sparkfun.com/tutorials/i2c/all#">
+    <span class="glyphicon glyphicon-new-window"></span>
+    <span class="share-title">Share</span>
+  </a>
+
+  <span class="share-link-inner dialog">
+    Use this URL to share:<br>
+    <input class="form-control input-sm" type="text" value="http://sfe.io/t82" onclick="$(this).select();">
+
+    </span>
+  
+  <a rel="nofollow" onclick="return $(this).sfeutil(&#39;track_link&#39;,this,&#39;Share (end of content)&#39;,&#39;clicked&#39;,&#39;twitter&#39;);" href="https://twitter.com/intent/tweet?text=I2C&url=http%3A%2F%2Fsfe.io%2Ft82&via=sparkfun" title="Share on Twitter"><span class="sfe-icon-twitter hidetext"><span>Share on Twitter</span></span></a>
+
+  <a rel="nofollow" onclick="return $(this).sfeutil(&#39;track_link&#39;,this,&#39;Share (end of content)&#39;,&#39;clicked&#39;,&#39;facebook&#39;);" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fsfe.io%2Ft82&t=I2C" title="Share on Facebook"><span class="sfe-icon-facebook hidetext"><span>Share on Facebook</span></span></a>
+
+  <a rel="nofollow" onclick="return $(this).sfeutil(&#39;track_link&#39;,this,&#39;Share (end of content)&#39;,&#39;clicked&#39;,&#39;googleplus&#39;);" href="https://plus.google.com/share?url=http%3A%2F%2Fsfe.io%2Ft82" title="Share on Google+"><span class="sfe-icon-google-plus hidetext"><span>Share on Google+</span></span></a>
+
+  
+</span>
+
+  </div>
+
+  <div class="span3" id="nav-pages">
+    <div data-spy="affix" data-offset-top="115" class="well pages-nav hidden-phone affix">
+      <ul id="pages" class="nav nav-list">
+        <li class="nav-header" id="pages-header">Sections</li>
+                          <li data-pagename="introduction" data-pageid="493" class="page">
+            <a href="https://learn.sparkfun.com/tutorials/i2c/all#introduction">Introduction</a>
+          </li>
+                  <li data-pagename="why-use-i2c" data-pageid="594" class="page 1 active">
+            <a href="https://learn.sparkfun.com/tutorials/i2c/all#why-use-i2c">Why Use I2C?</a>
+          </li>
+                  <li data-pagename="i2c-at-the-hardware-level" data-pageid="517" class="page 1">
+            <a href="https://learn.sparkfun.com/tutorials/i2c/all#i2c-at-the-hardware-level">I2C at the Hardware Level</a>
+          </li>
+                  <li data-pagename="protocol" data-pageid="518" class="page 1">
+            <a href="https://learn.sparkfun.com/tutorials/i2c/all#protocol">Protocol</a>
+          </li>
+                  <li data-pagename="res" data-pageid="519" class="page 1">
+            <a href="https://learn.sparkfun.com/tutorials/i2c/all#res">Resources and Going Further</a>
+          </li>
+              </ul>
+    </div>
+
+    <div class="well pages-nav">
+      <ul class="nav nav-list">
+        <li><a href="https://learn.sparkfun.com/tutorials/i2c/discuss">Comments (0)</a></li>
+        <li class="divider"></li>
+        <li><a href="https://learn.sparkfun.com/tutorials/i2c/">View Paginated</a></li>
+        <li><a rel="nofollow" href="https://learn.sparkfun.com/tutorials/i2c/all?print=1">Print</a></li>
+        <!-- <li><a rel="nofollow" href="https://learn.sparkfun.com/tutorials/i2c/all.pdf">PDF</a></li> -->
+      </ul>
+    </div>
+
+    <div class="well pages-nav">
+      <ul class="nav nav-list">
+        <li class="nav-header">Tags</li>
+      </ul>
+      <ul class="tags-list">
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/communication">Communication</a>  </li>
+  <li>
+    <a class="tag" href="https://learn.sparkfun.com/tutorials/tags/concepts">Concepts</a>  </li>
+</ul>
+    </div>
+
+    <div class="well pages-nav">
+      <ul class="nav nav-list">
+        <li class="nav-header">License</li>
+        <li>
+          <img src="./I2C - Learn.SFE_files/cc.png">
+          <small>tutorials are <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="new">CC BY-NC-SA 3.0</a></small>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+
+<script type="text/javascript">
+  require(['tutorial', 'jquery.imagesloaded'], function() {
+    $('#tutorial').tutorial();
+  });
+</script>
+
+      </div> <!-- /container -->
+    </div> <!-- /content -->
+
+    <footer class="footer">
+<div class="container">
+  <div class="row-fluid">
+    <div class="span4">
+      <p>
+        Want more information about SparkFun's classes? Interested in
+        getting involved with teaching electronics? Just want to talk?
+        <a href="https://learn.sparkfun.com/learn_newsletter" data-toggle="modal" data-target="#modal-newsletter">Sign up</a>
+        for our newsletter, or
+        <a href="https://learn.sparkfun.com/contact">contact</a> our education department.
+      </p>
+    </div>
+    <div class="span4">
+      <p>
+        SparkFun is a company built around one core idea – sharing ingenuity. We think
+        everyone should have the hardware and resources to learn and play with cool
+        electronic gadgetry.
+      </p>
+      <p><a href="https://learn.sparkfun.com/license" data-toggle="modal" data-target="#modal">Share, give, learn, SparkFun.</a></p>
+    </div>
+    <div class="span4">
+      <p>
+        Do you regularly instruct classes and workshops in a formal
+        or informal learning environment? SparkFun offers Educator
+        Discounts to people teaching and sharing electronics.
+      </p>
+      <p>
+        <a href="https://learn.sparkfun.com/educator_discount">
+          Find out more.
+        </a>
+      </p>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span4 offset4 text-center sfe-logo-footer">
+      <a href="https://www.sparkfun.com/">
+        <span class="sfe-icon-flame"></span>
+      </a>
+      <h3>
+        <a href="https://www.sparkfun.com/">
+          SparkFun Electronics
+        </a>
+      </h3>
+      <span class="desktop-toggle">
+                  <a href="https://www.sparkfun.com/account/mobile_toggle">Desktop Site</a>              </span>
+    </div>
+  </div>
+</div>
+</footer>
+
+<!-- Newsletter Modal -->
+<div id="modal-newsletter" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div class="modal-body">
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div class="modal-body">
+  </div>
+</div>
+
+    <div class="nav-account">
+  <ul class="nav nav-tabs">
+    <li class="visible-xs">
+      <a class="nav-toggle-account back" href="https://learn.sparkfun.com/tutorials/i2c/all#">Your Account</a>
+    </li>
+          <li class="">
+        <a href="https://www.sparkfun.com/account/login">Log In</a>
+      </li>
+      </ul>
+</div>
+
+      </div><!-- end .wrapper-inner -->
+    </div><!-- end .wrapper -->
+  
+
+
+<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul></body></html>

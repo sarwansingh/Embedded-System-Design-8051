@@ -1,0 +1,61 @@
+C51 COMPILER V8.08   CHABBI                                                                07/10/2014 17:34:38 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE CHABBI
+OBJECT MODULE PLACED IN chabbi.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE chabbi.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          sbit BUZZER=P3^7;
+   3          sbit But1 = P2^7;
+   4          sbit But2 = P2^6;
+   5          sbit But3 = P2^5;
+   6          sbit But4 = P2^4;
+   7          void mydelay()
+   8          {         int i,j;
+   9   1              for(j=0;j<2;j++){
+  10   2                              for (i=0;i<30000;i++);  
+  11   2                      }
+  12   1      }
+  13          void main()
+  14          {               BUZZER=0;                                        
+  15   1              while(1)
+  16   1              {       
+  17   2                      if (But1 ==0 ) 
+  18   2                      { 
+  19   3                              P1 = 0xaa  ;   mydelay();
+  20   3                              P1 = 0x55 ;     mydelay();
+  21   3                      }
+  22   2                      if (But2 ==0 ) 
+  23   2                      { 
+  24   3                              P1 = 0x00  ;   mydelay();
+  25   3                              P1 = 0xff ;     mydelay();
+  26   3                      }
+  27   2                      if (But3 ==0 ) 
+  28   2                      { 
+  29   3                              P1 = 0xcc  ;   mydelay();
+  30   3                              P1 = 0x33 ;     mydelay();
+  31   3                      }
+  32   2                      if (But4 ==0 ) 
+  33   2                      { 
+  34   3                              P1 = 0x66  ;   mydelay();
+  35   3                              P1 = 0x99 ;     mydelay();
+  36   3                      }
+  37   2              }
+  38   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     93    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

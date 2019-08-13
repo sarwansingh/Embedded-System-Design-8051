@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+C:\Ekam Kit\Programs on kit\EEPROM i2c\eeprom.uv2
+Project File Date:  07/07/2014
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling p.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_WRITE_I2C?P
+Program Size: data=19.1 xdata=0 code=447
+creating hex file from "eeprom"...
+"eeprom" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling p.c...
+P.C(61): warning C280: 'a': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_WRITE_I2C?P
+Program Size: data=20.1 xdata=0 code=447
+creating hex file from "eeprom"...
+"eeprom" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling p.c...
+P.C(61): warning C280: 'a': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_WRITE_I2C?P
+Program Size: data=20.1 xdata=0 code=447
+creating hex file from "eeprom"...
+"eeprom" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling p.c...
+linking...
+Program Size: data=19.1 xdata=0 code=452
+creating hex file from "eeprom"...
+"eeprom" - 0 Error(s), 0 Warning(s).

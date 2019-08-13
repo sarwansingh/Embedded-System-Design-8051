@@ -1,0 +1,66 @@
+C51 COMPILER V8.08   P                                                                     07/10/2014 17:49:55 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE P
+OBJECT MODULE PLACED IN p.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE p.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          #define LCDDATA P0
+   3          sbit RS = P1^0;
+   4          sbit RW = P1^1;
+   5          sbit E  = P1^2; 
+   6          sbit BUZZER = P3^7;
+   7          
+   8          void mydelay()
+   9          {                  int i;
+  10   1              for(i=0;i<30000;i++);
+  11   1      }
+  12          void lcd_data(char x)
+  13          {       RS = 1;         E=1;
+  14   1              LCDDATA =x;     mydelay();
+  15   1              //BUZZER = 0;
+  16   1              E=0;    
+  17   1      }
+  18          void lcd_cmd(char x)
+  19          {       RS =0 ;         E=1;
+  20   1              LCDDATA =x;     mydelay();
+  21   1              E=0;    
+  22   1      }
+  23          char name[] = "India is great country" ; 
+  24          void main()
+  25          {               int i;
+  26   1                      RW = 0; 
+  27   1                      BUZZER=1; // on 
+  28   1                      mydelay();mydelay();mydelay();
+  29   1                      BUZZER = 0;     //off
+  30   1                      lcd_cmd(0x38);
+  31   1                      lcd_cmd(0x01);
+  32   1                      lcd_cmd(0x0e);
+  33   1              while(1)
+  34   1              {
+  35   2                      for (i=0;name[i] != '\0' ;i++ ){
+  36   3                              lcd_data(name[i]); 
+  37   3                              if (i==15)       lcd_cmd(0xc0);    // move to next line 
+  38   3                      }       
+  39   2                      lcd_cmd(0x01);
+  40   2                      //lcd_data(name[1]); mydelay();
+  41   2              }
+  42   1      
+  43   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    108    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     23    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

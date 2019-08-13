@@ -1,0 +1,203 @@
+C51 COMPILER V8.08   P                                                                     07/08/2014 10:44:31 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE P
+OBJECT MODULE PLACED IN p.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE p.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          #include<intrins.h>  // pata karo ji 
+   3          sbit RS = P1^0;
+   4          sbit E  = P1^2;
+   5          sbit RW = P1^1; 
+   6          
+   7          sbit sda= P1^4;
+   8          sbit scl= P1^3;
+   9          sbit BUZZER = P3^7;
+  10          
+  11          sbit R1 = P2^4;
+  12          sbit R2 = P2^5;
+  13          sbit R3 = P2^6;
+  14          sbit R4 = P2^7;
+  15          
+  16          sbit C1=  P2^3;
+  17          sbit C2=  P2^2;
+  18          sbit C3=  P2^1;
+  19          sbit C4=  P2^0;
+  20          
+  21          bit ack; 
+  22          void mydelay()
+  23          {                  int i;
+  24   1              for(i=0;i<30000;i++);
+  25   1      }
+  26          void lcd_data(char x)
+  27          {       RS = 1;         E=1;
+  28   1              P0 =x;  mydelay();
+  29   1              E=0;    
+  30   1      }
+  31          void lcd_cmd(char x)
+  32          {       RS =0 ;         E=1;
+  33   1              P0 =x;  mydelay();
+  34   1              E=0;    
+  35   1      }
+  36          void lcd_init()
+  37          {
+  38   1              lcd_cmd(0x38);
+  39   1              lcd_cmd(0x01);
+  40   1              lcd_cmd(0x0e);
+  41   1      }
+  42          void lcd_str(char s[])
+  43          {       int i=0;
+  44   1              for (i=0;s[i] != '\0' ;i++) lcd_data(s[i]);     
+  45   1      }
+  46          ///////////////// i2c wala kaaam
+  47          void aknowledge()         //acknowledge condition
+  48          {       scl=1;  _nop_();        _nop_();        scl=0;}
+  49          
+  50          void start()            //start condition
+  51          {       
+  52   1              sda=1;  scl=1;  
+  53   1              _nop_();    _nop_();         //No operation
+  54   1              sda=0;  scl=0;
+  55   1      }
+C51 COMPILER V8.08   P                                                                     07/08/2014 10:44:31 PAGE 2   
+
+  56          void stop()                     //stop condition
+  57          {       
+  58   1              sda=0;  scl=1;  
+  59   1              _nop_();  _nop_();      
+  60   1              sda=1;  scl=0;
+  61   1      }
+  62          
+  63          
+  64          void send_byte(unsigned char x)
+  65          {       int i ;
+  66   1              for (i=0;i<8;i++)
+  67   1              {       sda = x/128;                             
+  68   2                      x=x<<1; 
+  69   2                      scl=1;          _nop_();                _nop_();        
+  70   2                      scl=0;  
+  71   2              }  
+  72   1               ack=sda;                                       //reading acknowledge  
+  73   1               sda=0;
+  74   1      }
+  75          void write_i2c(unsigned char a)
+  76          {
+  77   1               start();
+  78   1               send_byte(0xA0);       aknowledge();   // address of device 
+  79   1               send_byte(0x00);       aknowledge();// device location 
+  80   1               send_byte(a);          aknowledge();// write data at that location  
+  81   1               stop();  
+  82   1               if(ack==0)             // data written successfully 
+  83   1               {      lcd_data('o');
+  84   2                              lcd_data('k');  
+  85   2               }  
+  86   1               aknowledge();
+  87   1      }
+  88          unsigned char read_byte()                       //reading from EEPROM serially
+  89          {       unsigned char reead=0;  
+  90   1              unsigned int i; sda=1;
+  91   1              for(i=0;i<8;i++)        {               
+  92   2                      reead=reead<<1;         
+  93   2                      scl=1;          _nop_();        _nop_();        
+  94   2                      if(sda==1)                      reead++;                
+  95   2                      scl=0;  
+  96   2              }                                                                //0101 0001
+  97   1              sda=0;  return reead;                           //Returns 8 bit data here
+  98   1      }                                         // reead =001010001     =81
+  99          int  read_i2c()
+ 100          {               unsigned  char j; 
+ 101   1              start();        
+ 102   1                      send_byte(0xA0);        aknowledge();           //device address
+ 103   1                      send_byte(0x00);        aknowledge();           //word address
+ 104   1              start();        
+ 105   1                      send_byte(0xA1);        //device address        
+ 106   1                      aknowledge();   
+ 107   1                                                                                 
+ 108   1              j=read_byte();  aknowledge();   //lcd_data(j);
+ 109   1              stop(); return(j);
+ 110   1      }
+ 111          
+ 112          /////////////////// kaaam khatam
+ 113          char name[] = "Do google..." ; 
+ 114          void main()
+ 115          {               int pass=251,i ,n=0; 
+ 116   1                      RW = 0;  
+ 117   1                      BUZZER = 0; 
+C51 COMPILER V8.08   P                                                                     07/08/2014 10:44:31 PAGE 3   
+
+ 118   1                       lcd_init()     ;
+ 119   1                       lcd_str("  welcome  " ) ;      
+ 120   1                      lcd_cmd(0x01);
+ 121   1              
+ 122   1                      //lcd_str(" Writing...  " ) ;   
+ 123   1                  //write_i2c(pass);
+ 124   1                       
+ 125   1                      lcd_cmd(0xc0);
+ 126   1                      //lcd_str(" Reading...  " ) ; 
+ 127   1                      i=read_i2c() ;
+ 128   1      
+ 129   1                      // extracting digits  
+ 130   1      //              lcd_data(i/100+48); 
+ 131   1      //              lcd_data((i/10)%10+48);
+ 132   1      //              lcd_data(i%10+48);
+ 133   1              lcd_cmd(0x01); lcd_str(" Enter password" ) ;
+ 134   1              lcd_cmd(0xc0); 
+ 135   1              R1=R2=R3=R4=1;  C1=C2=C3=C4=1; 
+ 136   1              while(1){
+ 137   2                       R1=0; 
+ 138   2                       if (C1==0){ lcd_data('4') ; n=n*10+4; while(C1==0);} 
+ 139   2                       if (C2==0){ lcd_data('3') ; n=n*10+3;while(C2==0);} 
+ 140   2                       if (C3==0){ lcd_data('2') ; n=n*10+2;while(C3==0);} 
+ 141   2                       if (C4==0){ BUZZER = 1; mydelay();mydelay(); BUZZER = 0;
+ 142   3                                      lcd_data('1') ; n=n*10+1;       while(C4==0);   } 
+ 143   2                       R1=1; R2=0; 
+ 144   2                      if (C1==0){ lcd_data('8') ; n=n*10+8; while(C1==0);} 
+ 145   2                      if (C2==0){ lcd_data('7') ; n=n*10+7; while(C2==0);} 
+ 146   2                      if (C3==0){ lcd_data('6') ; n=n*10+6; while(C3==0);} 
+ 147   2                      if (C4==0){ lcd_data('5') ;     n=n*10+5; while(C4==0);} 
+ 148   2      
+ 149   2                      R2=1; R3=0; 
+ 150   2                      if (C1==0){ lcd_data('c') ; ; while(C1==0);} 
+ 151   2                      if (C2==0){ lcd_data('b') ; while(C2==0);} 
+ 152   2                      if (C3==0){ lcd_data('a') ; while(C3==0);} 
+ 153   2                      if (C4==0){ lcd_data('9') ;n=n*10+9;    while(C4==0);} 
+ 154   2      
+ 155   2                       R3=1; R4=0; 
+ 156   2                      if (C1==0){  //enter is pressed 
+ 157   3                                                lcd_cmd(0x01);
+ 158   3                                      if (n==i){ lcd_str("pass correct"); } 
+ 159   3                                      else { lcd_str(" Incorrect  "); } 
+ 160   3                                              n=0;  while(C1==0);
+ 161   3                      } 
+ 162   2                      if (C2==0){ 
+ 163   3                              write_i2c(72);
+ 164   3                              lcd_str("pass changed "); 
+ 165   3                              while(C2==0);
+ 166   3                              i=read_i2c() ;
+ 167   3                      } 
+ 168   2                      if (C3==0){ lcd_data('e') ; while(C3==0);} 
+ 169   2                      if (C4==0){ lcd_data('d') ;     while(C4==0);} 
+ 170   2      
+ 171   2                      R1=R2=R3=R4=1; 
+ 172   2              }
+ 173   1      
+ 174   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    787    ----
+   CONSTANT SIZE    =     68    ----
+C51 COMPILER V8.08   P                                                                     07/08/2014 10:44:31 PAGE 4   
+
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     13       9
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      1    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

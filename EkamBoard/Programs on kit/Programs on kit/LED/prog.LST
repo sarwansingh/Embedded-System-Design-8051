@@ -1,0 +1,54 @@
+C51 COMPILER V8.08   PROG                                                                  07/08/2014 11:25:30 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE PROG
+OBJECT MODULE PLACED IN prog.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE prog.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          sbit BUZZER=P3^7;
+   3          void mydelay()
+   4          {         int i,j;
+   5   1              for(j=0;j<2;j++){
+   6   2                              for (i=0;i<30000;i++);  
+   7   2                      }
+   8   1      }
+   9          void main()
+  10          {               BUZZER=0;                                        
+  11   1              while(1)
+  12   1              {
+  13   2                      P2 = 0x00  ;   mydelay();
+  14   2                      P2 = 0xff ;     mydelay();
+  15   2      
+  16   2                      P1 = 0xaa  ;   mydelay();
+  17   2                      P1 = 0x55 ;     mydelay();
+  18   2                      
+  19   2                      P3 = 0xcc  ;   mydelay();
+  20   2                      P3 = 0x33 ;     mydelay();
+  21   2              
+  22   2                      P0 = 0x66  ;   mydelay();
+  23   2                      P0 = 0x99 ;     mydelay();
+  24   2              }
+  25   1      }
+  26          /*
+  27                  P1 = 0xaa; 
+  28                          for (i=0;i<30000;i++);
+  29                          P1 = 0x55;
+  30                          for (i=0;i<30000;i++);
+  31          */
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     81    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

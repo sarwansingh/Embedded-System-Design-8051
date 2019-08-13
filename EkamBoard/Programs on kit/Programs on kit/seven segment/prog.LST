@@ -1,0 +1,62 @@
+C51 COMPILER V8.08   PROG                                                                  07/07/2014 17:22:21 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE PROG
+OBJECT MODULE PLACED IN prog.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE prog.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          void mydelay()
+   3          {
+   4   1              int i,j; 
+   5   1              for (i=0 ; i<3;i++)
+   6   1                      for(j=0;j<30000;j++) ;
+   7   1      }
+   8          void display7( int n)
+   9          {
+  10   1      
+  11   1                      if (n==0){ P2= 0xc0;    }       //0
+  12   1                      if (n==1){ P2= 0xf9;    }        //1
+  13   1                      if (n==2){P2= 0xa4;     }                //2
+  14   1                      
+  15   1                      if (n==3){P2= 0xb0; }            //3
+  16   1                      if (n==4){P2= 0x99; }            //4
+  17   1                      if (n==5){P2= 0x92; }            //5
+  18   1                      if (n==6){P2= 0x82; }            //6
+  19   1                      if (n==7){P2= 0xf8; }            //7
+  20   1                      if (n==8){P2= 0x80; }            //8
+  21   1                      if (n==9){P2= 0x90; }            //9
+  22   1                        mydelay();
+  23   1      //              P2= 0x88; mydelay();    //A
+  24   1      //              P2= 0x83; mydelay();    //b
+  25   1      //              P2= 0xc6; mydelay();    //C
+  26   1      //              P2= 0xa1; mydelay();    //d
+  27   1      //              P2= 0x86; mydelay();    //E
+  28   1      //              P2= 0x8e; mydelay();    //F
+  29   1      
+  30   1      }
+  31          void main()
+  32          {                 int i;
+  33   1              while(1)
+  34   1              {
+  35   2                      for(i=0;i<10;i++)        display7(i); 
+  36   2                      for(i=10;i>0;i--)        display7(i); 
+  37   2                       
+  38   2              }
+  39   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    170    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

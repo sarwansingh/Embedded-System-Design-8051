@@ -1,0 +1,77 @@
+C51 COMPILER V8.02   P                                                                     06/23/2014 11:58:47 PAGE 1   
+
+
+C51 COMPILER V8.02, COMPILATION OF MODULE P
+OBJECT MODULE PLACED IN p.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE p.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          sbit R1 = P2^0;
+   3          sbit R2 = P2^1;
+   4          sbit R3 = P2^2;
+   5          sbit R4 = P2^3;
+   6          
+   7          sbit C1=  P2^4;
+   8          sbit C2=  P2^5;
+   9          sbit C3=  P2^6;
+  10          sbit C4=  P2^7;
+  11          
+  12          sbit RS = P3^0;
+  13          sbit E = P3^1;
+  14          void mydelay()
+  15          {                  int i;
+  16   1              for(i=0;i<30000;i++);
+  17   1      }
+  18          void lcd_data(char x)
+  19          {       RS = 1;         E=1;
+  20   1              P1 =x;  mydelay();
+  21   1              E=0;    
+  22   1      }
+  23          void lcd_cmd(char x)
+  24          {       RS =0 ;         E=1;
+  25   1              P1 =x;  mydelay();
+  26   1              E=0;    
+  27   1      }
+  28          void lcd_init()
+  29          {                
+  30   1                      lcd_cmd(0x38);
+  31   1                      lcd_cmd(0x01);
+  32   1                      lcd_cmd(0x0e);
+  33   1      }
+  34          void main()
+  35          {
+  36   1              P2 =0xff;  lcd_init() ;
+  37   1              while(1)
+  38   1              {
+  39   2                      R1=0;
+  40   2                      if (C1==0) { lcd_data('1' ); while(C1==0); } 
+  41   2                      if (C2==0) { lcd_data('2' );while(C2==0);} 
+  42   2                      if (C3==0)      {lcd_data('3' ); while(C3==0);} 
+  43   2                      if (C4==0) { lcd_data('4' );while(C4==0);} 
+  44   2                      R1=1;R2=0;
+  45   2                      if (C1==0) { lcd_data('5' ); while(C1==0); } 
+  46   2                      if (C2==0) { lcd_data('6' );while(C2==0);} 
+  47   2                      if (C3==0)      {lcd_data('7' ); while(C3==0);} 
+  48   2                      if (C4==0) { lcd_data('8' );while(C4==0);} 
+  49   2                      R2=1;
+  50   2              }
+  51   1      
+  52   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+C51 COMPILER V8.02   P                                                                     06/23/2014 11:58:47 PAGE 2   
+
+   CODE SIZE        =    158    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

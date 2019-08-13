@@ -1,0 +1,112 @@
+BL51 BANKED LINKER/LOCATER V6.05                                                        07/07/2014  17:22:21  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.05, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE prog.obj TO seven
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  prog.obj (PROG)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  seven (PROG)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     005BH     UNIT         ?PR?_DISPLAY7?PROG
+            CODE    085BH     0032H     UNIT         ?PR?MAIN?PROG
+            CODE    088DH     001DH     UNIT         ?PR?MYDELAY?PROG
+            CODE    08AAH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   seven (PROG)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?PROG
+
+?PR?MAIN?PROG
+  +--> ?PR?_DISPLAY7?PROG
+
+?PR?_DISPLAY7?PROG
+  +--> ?PR?MYDELAY?PROG
+
+
+
+SYMBOL TABLE OF MODULE:  seven (PROG)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        PROG
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  C:085BH         PUBLIC        main
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/07/2014  17:22:21  PAGE 2
+
+
+  C:0800H         PUBLIC        _display7
+  C:088DH         PUBLIC        mydelay
+  -------         PROC          MYDELAY
+  -------         DO            
+  D:0006H         SYMBOL        i
+  D:0004H         SYMBOL        j
+  -------         ENDDO         
+  C:088DH         LINE#         2
+  C:088DH         LINE#         3
+  C:088DH         LINE#         5
+  C:0890H         LINE#         6
+  C:08A9H         LINE#         7
+  -------         ENDPROC       MYDELAY
+  -------         PROC          _DISPLAY7
+  D:0006H         SYMBOL        n
+  C:0800H         LINE#         8
+  C:0800H         LINE#         9
+  C:0800H         LINE#         11
+  C:0807H         LINE#         12
+  C:0810H         LINE#         13
+  C:0819H         LINE#         15
+  C:0822H         LINE#         16
+  C:082BH         LINE#         17
+  C:0834H         LINE#         18
+  C:083DH         LINE#         19
+  C:0846H         LINE#         20
+  C:084FH         LINE#         21
+  C:0858H         LINE#         22
+  -------         ENDPROC       _DISPLAY7
+  -------         PROC          MAIN
+  -------         DO            
+  D:0002H         SYMBOL        i
+  -------         ENDDO         
+  C:085BH         LINE#         31
+  C:085BH         LINE#         32
+  C:085BH         LINE#         33
+  C:085BH         LINE#         34
+  C:085BH         LINE#         35
+  C:0870H         LINE#         36
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        PROG
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 00AAH BYTE ( 8%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=185
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

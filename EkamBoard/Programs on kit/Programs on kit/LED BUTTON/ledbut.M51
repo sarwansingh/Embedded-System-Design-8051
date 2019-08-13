@@ -1,0 +1,115 @@
+BL51 BANKED LINKER/LOCATER V6.05                                                        07/10/2014  17:34:38  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.05, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE chabbi.obj TO ledbut
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  chabbi.obj (CHABBI)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  ledbut (CHABBI)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0040H     UNIT         ?PR?MAIN?CHABBI
+            CODE    0840H     001DH     UNIT         ?PR?MYDELAY?CHABBI
+            CODE    085DH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   ledbut (CHABBI)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?CHABBI
+
+?PR?MAIN?CHABBI
+  +--> ?PR?MYDELAY?CHABBI
+
+
+
+SYMBOL TABLE OF MODULE:  ledbut (CHABBI)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        CHABBI
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  C:0800H         PUBLIC        main
+  B:00A0H.7       PUBLIC        But1
+  B:00A0H.6       PUBLIC        But2
+BL51 BANKED LINKER/LOCATER V6.05                                                      07/10/2014  17:34:38  PAGE 2
+
+
+  B:00A0H.5       PUBLIC        But3
+  B:00A0H.4       PUBLIC        But4
+  B:00B0H.7       PUBLIC        BUZZER
+  C:0840H         PUBLIC        mydelay
+  -------         PROC          MYDELAY
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0006H         SYMBOL        j
+  -------         ENDDO         
+  C:0840H         LINE#         7
+  C:0840H         LINE#         8
+  C:0840H         LINE#         9
+  C:0843H         LINE#         10
+  C:0851H         LINE#         11
+  C:085CH         LINE#         12
+  -------         ENDPROC       MYDELAY
+  -------         PROC          MAIN
+  C:0800H         LINE#         13
+  C:0800H         LINE#         14
+  C:0802H         LINE#         15
+  C:0802H         LINE#         16
+  C:0802H         LINE#         17
+  C:0805H         LINE#         18
+  C:0805H         LINE#         19
+  C:080BH         LINE#         20
+  C:0811H         LINE#         21
+  C:0811H         LINE#         22
+  C:0814H         LINE#         23
+  C:0814H         LINE#         24
+  C:081AH         LINE#         25
+  C:0820H         LINE#         26
+  C:0820H         LINE#         27
+  C:0823H         LINE#         28
+  C:0823H         LINE#         29
+  C:0829H         LINE#         30
+  C:082FH         LINE#         31
+  C:082FH         LINE#         32
+  C:0832H         LINE#         33
+  C:0832H         LINE#         34
+  C:0838H         LINE#         35
+  C:083EH         LINE#         36
+  C:083EH         LINE#         37
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        CHABBI
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 005DH BYTE ( 4%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=108
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

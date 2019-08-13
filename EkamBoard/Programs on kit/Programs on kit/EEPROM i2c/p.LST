@@ -1,0 +1,149 @@
+C51 COMPILER V8.08   P                                                                     07/08/2014 11:00:51 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE P
+OBJECT MODULE PLACED IN p.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE p.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg51.h>
+   2          #include<intrins.h>
+   3          sbit RS = P1^0;
+   4          sbit E  = P1^2;
+   5          sbit RW = P1^1; 
+   6          
+   7          sbit sda= P1^4;
+   8          sbit scl= P1^3;
+   9          bit ack;
+  10          void mydelay()
+  11          {                  int i;
+  12   1              for(i=0;i<30000;i++);
+  13   1      }
+  14          void lcd_data(char x)
+  15          {       RS = 1;         E=1;
+  16   1              P0 =x;  mydelay();
+  17   1              E=0;    
+  18   1      }
+  19          void lcd_cmd(char x)
+  20          {       RS =0 ;         E=1;
+  21   1              P0 =x;  mydelay();
+  22   1              E=0;    
+  23   1      }
+  24          void lcd_init()
+  25          {
+  26   1              lcd_cmd(0x38);
+  27   1                      lcd_cmd(0x01);
+  28   1                      lcd_cmd(0x0e);
+  29   1      }
+  30          char name[] = "hello I2c" ; 
+  31          
+  32          ///////////////// i2c wala kaaam
+  33          void aknowledge()         //acknowledge condition
+  34          {       scl=1;  _nop_();        _nop_();        scl=0;}
+  35          
+  36          void start()            //start condition
+  37          {       
+  38   1              sda=1;  scl=1;  
+  39   1              _nop_();    _nop_();         //No operation
+  40   1              sda=0;  scl=0;
+  41   1      }
+  42          void stop()                     //stop condition
+  43          {       
+  44   1              sda=0;  scl=1;  
+  45   1              _nop_();  _nop_();      
+  46   1              sda=1;  scl=0;
+  47   1      }
+  48          
+  49          
+  50          void send_byte(unsigned char x)
+  51          {       int i ;
+  52   1              for (i=0;i<8;i++)
+  53   1              {       sda = x/128;                             
+  54   2                      x=x<<1; 
+  55   2                      scl=1;          _nop_();                _nop_();        
+C51 COMPILER V8.08   P                                                                     07/08/2014 11:00:51 PAGE 2   
+
+  56   2                      scl=0;  
+  57   2              }  
+  58   1               ack=sda;                                       //reading acknowledge  
+  59   1               sda=0;
+  60   1      }
+  61          void write_i2c(unsigned char a)
+  62          {
+  63   1               start();
+  64   1               send_byte(0xA0);       aknowledge();   // address of device 
+  65   1               send_byte(0x00);       aknowledge();// device location 
+  66   1               send_byte(a);          aknowledge();// write data at that location  
+  67   1               send_byte('o');                aknowledge();
+  68   1               send_byte('s');                aknowledge();
+  69   1               stop();  
+  70   1               if(ack==0)             // data written successfully 
+  71   1               {      lcd_data('o');
+  72   2                              lcd_data('k');  
+  73   2               }  
+  74   1               aknowledge();
+  75   1      }
+  76          unsigned char read_byte()                       //reading from EEPROM serially
+  77          {       unsigned char reead=0;  
+  78   1              unsigned int i; sda=1;
+  79   1              for(i=0;i<8;i++)        {               
+  80   2                      reead=reead<<1;         
+  81   2                      scl=1;          _nop_();        _nop_();        
+  82   2                      if(sda==1)                      reead++;                
+  83   2                      scl=0;  
+  84   2              }                                                                //0101 0001
+  85   1              sda=0;  return reead;                           //Returns 8 bit data here
+  86   1      }                                         // reead =001010001     =81
+  87          void read_i2c()
+  88          {               unsigned  char j; 
+  89   1              start();        
+  90   1                      send_byte(0xA0);        aknowledge();           //device address
+  91   1                      send_byte(0x00);        aknowledge();           //word address
+  92   1              start();        
+  93   1                      send_byte(0xA1);        //device address        
+  94   1                      aknowledge();   
+  95   1              
+  96   1       
+  97   1              j=read_byte();  aknowledge();   lcd_data(j);
+  98   1              j=read_byte();  aknowledge();   lcd_data(j);
+  99   1              j=read_byte();  aknowledge();   lcd_data(j);
+ 100   1               
+ 101   1              stop();
+ 102   1      }
+ 103          
+ 104          /////////////////// kaaam khatam
+ 105          sbit BUZZER = P3^7; 
+ 106          void main()
+ 107          {               int i;
+ 108   1              RW = 0;  
+ 109   1              BUZZER = 0;
+ 110   1              lcd_init();     
+ 111   1              for (i=0;name[i] != '\0' ;i++ ) lcd_data(name[i]); 
+ 112   1              lcd_cmd(0xc0);
+ 113   1      
+ 114   1              write_i2c('C'); 
+ 115   1              read_i2c();
+ 116   1      //      while(1)
+ 117   1      //      {
+C51 COMPILER V8.08   P                                                                     07/08/2014 11:00:51 PAGE 3   
+
+ 118   1      //
+ 119   1      //      
+ 120   1      //      }
+ 121   1      
+ 122   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    296    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     10    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      1    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
