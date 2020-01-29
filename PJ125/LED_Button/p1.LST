@@ -1,4 +1,4 @@
-C51 COMPILER V8.08   P1                                                                    01/28/2020 11:23:59 PAGE 1   
+C51 COMPILER V8.08   P1                                                                    01/29/2020 10:11:53 PAGE 1   
 
 
 C51 COMPILER V8.08, COMPILATION OF MODULE P1
@@ -7,7 +7,7 @@ COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE p1.c BROWSE DEBUG OBJECTEXTEND
 
 line level    source
 
-   1          #include<reg51.h>
+   1           #include<reg51.h>
    2          sbit but1 = P2^0;
    3          void my_delay()
    4          {       int i,j;

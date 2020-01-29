@@ -5,7 +5,7 @@ Target (Target 1), 0x0000 // Tools: 'MCS-51'
 
 Group (Source Group 1)
 
-File 1,1,<.\p1.c><p1.c> 0x0 
+File 1,1,<.\buttonLEDpattern_v2.c><buttonLEDpattern_v2.c> 0x0 
 
 
 Options 1,0,0  // Target 'Target 1'

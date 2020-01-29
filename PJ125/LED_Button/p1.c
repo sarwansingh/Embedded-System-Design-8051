@@ -1,4 +1,4 @@
-#include<reg51.h>
+ #include<reg51.h>
 sbit but1 = P2^0;
 void my_delay()
 {	int i,j;

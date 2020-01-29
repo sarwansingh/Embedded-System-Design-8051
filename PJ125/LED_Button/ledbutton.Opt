@@ -13,7 +13,7 @@
 Target (Target 1), 0x0000 // Tools: 'MCS-51'
 GRPOPT 1,(Source Group 1),1,0,0
 
-OPTFFF 1,1,1,2,0,1,1,0,<.\p1.c><p1.c> { 44,0,0,0,2,0,0,0,3,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,225,255,255,255,104,0,0,0,104,0,0,0,148,4,0,0,80,1,0,0 }
+OPTFFF 1,1,1,285212674,0,3,9,0,<.\buttonLEDpattern_v2.c><buttonLEDpattern_v2.c> { 44,0,0,0,2,0,0,0,3,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,225,255,255,255,104,0,0,0,104,0,0,0,148,4,0,0,80,1,0,0 }
 
 
 TARGOPT 1, (Target 1)
@@ -30,6 +30,9 @@ TARGOPT 1, (Target 1)
   OPTBL 1,(Instruction Set Manual)<DATASHTS\ATMEL\AT_C51ISM.PDF>
   OPTDL (S8051.DLL)()(DP51.DLL)(-p51)(S8051.DLL)()(TP51.DLL)(-p51)
   OPTDBG 48125,-1,()()()()()()()()()() ()()()()
+  OPTBB 0,0,26,1,0,0,0,0,0,0,<buttonLEDpattern_v2.c>()()
+  OPTBB 1,0,17,1,0,0,0,0,0,0,<buttonLEDpattern_v2.c>()()
+  OPTBB 2,0,8,1,0,0,0,0,0,0,<buzzer.c>()()
   OPTDF 0x40000002
   OPTLE <>
   OPTLC <>
